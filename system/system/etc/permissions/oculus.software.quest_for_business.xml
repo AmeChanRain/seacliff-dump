@@ -1,0 +1,4 @@
+<!-- Indicates that this device supports Quest For Business (Q4B) -->
+<permissions>
+    <feature name="oculus.software.quest_for_business" />
+</permissions>

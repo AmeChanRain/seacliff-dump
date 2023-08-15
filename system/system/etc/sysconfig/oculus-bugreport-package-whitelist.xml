@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which system apps should be exempted from the Bugreport blacklisting.
+-->
+<config>
+  <bugreport-whitelisted package="com.oculus.bugreportservice" />
+</config>

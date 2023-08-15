@@ -1,0 +1,7 @@
+service vendor.oculus.keyboxinstaller-hal-1-0 /vendor/bin/hw/vendor.oculus.hardware.keyboxinstaller@1.0-service.kona
+    interface vendor.oculus.hardware.keyboxinstaller@1.0::IDeviceKeyboxInstaller default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

@@ -1,0 +1,18 @@
+[
+  {
+    "Backend": "TorchScript",
+    "Model": "bolt/model_boltnn_hta.ptl",
+    "QEngine": "QNNPACK",
+    "SingleThread": "True"
+  },
+  {
+    "Backend": "TorchScript",
+    "Model": "cpu/model_fp32.pt",
+    "QEngine": "QNNPACK"
+  },
+  {
+    "Backend": "TorchScript",
+    "Model": "cpu/model_fp32.pt",
+    "QEngine": "FBGEMM"
+  }
+]

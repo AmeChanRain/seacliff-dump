@@ -1,0 +1,396 @@
+# Copyright (c) 2009-2012, 2014-2018, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of The Linux Foundation nor
+#       the names of its contributors may be used to endorse or promote
+#       products derived from this software without specific prior written
+#       permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+import /vendor/etc/init/hw/init.kona.power.rc
+import /vendor/etc/init/hw/init.kona.usb.rc
+
+on charger
+    symlink /persist /mnt/vendor/persist
+
+on early-init
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+
+    mount_all /vendor/etc/fstab.persist --early
+    chown root system /persist
+    chmod 0771 /persist
+    restorecon_recursive /persist
+    mkdir /persist/anti_piracy 0770 root system
+    mkdir /persist/data 0700 system system
+    mkdir /persist/rc 0770 root system
+    mkdir /persist/secnvm 0770 system system
+    start set_secnvm_perms_sh
+
+on init
+    # Load kernel modules in background
+    start insmod_sh
+
+    # Change permissions for Syncboss nodes
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/cpu_affinity
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/enable_data_headers
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/minimum_time_between_transactions_us
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/next_avail_seq_num
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/num_rejected_transactions
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/poll_prio
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/power
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/reset
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/spi_max_clk_rate
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/stats
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/streaming
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/te_timestamp
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/transaction_length
+    chown system system /sys/devices/virtual/misc/syncboss0/spi/control/transaction_period_us
+    chown system system /sys/devices/virtual/misc/syncboss0/swd/update_firmware
+
+    chown system system /sys/devices/platform/soc/88c000.qcom,qup_uart/power/control
+
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/cpu_affinity
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/enable_data_headers
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/minimum_time_between_transactions_us
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/next_avail_seq_num
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/num_rejected_transactions
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/poll_prio
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/power
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/reset
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/spi_max_clk_rate
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/stats
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/streaming
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/te_timestamp
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/transaction_length
+    chmod 664 /sys/devices/virtual/misc/syncboss0/spi/control/transaction_period_us
+    chmod 664 /sys/devices/virtual/misc/syncboss0/swd/update_firmware
+
+    chmod 644 /sys/devices/platform/soc/88c000.qcom,qup_uart/power/control
+
+    # Set cpu affinity for kthreads contributing to tracking (eg syncboss, spi).
+    write /sys/devices/virtual/misc/syncboss0/spi/control/cpu_affinity 0f
+
+on fs
+    mount_all /vendor/etc/fstab.${ro.hardware} --early
+    symlink /persist /mnt/vendor/persist
+
+on post-fs
+    # set RLIMIT_MEMLOCK to 64MB
+    setrlimit 8 67108864 67108864
+
+    # Start syncboss logging before syncboss starts
+    start vendor.catty-1-0
+
+    # record pmic power-up reason,etc
+    start init_systemstart_sh
+
+on late-fs
+    wait_for_prop hwservicemanager.ready true
+    mount_all /vendor/etc/fstab.${ro.hardware} --late
+
+on post-fs-data
+    mkdir /tombstones/modem 0771 system system
+    mkdir /tombstones/lpass 0771 system system
+    mkdir /tombstones/wcnss 0771 system system
+    mkdir /tombstones/dsps 0771 system system
+
+    mkdir /data/vendor/misc 01771 system system
+
+    # Create the directories used by the Wireless subsystem
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/sockets 0770 wifi wifi
+    mkdir /data/vendor/wifi/hostapd 0770 wifi wifi
+    mkdir /data/vendor/wifi/hostapd/ctrl 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa_supplicant 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
+    # Mount wpa/sockets as tmpfs to avoid interface initialization
+    # errors when out of space on userdata
+    mount tmpfs tmpfs /data/vendor/wifi/wpa/sockets noexec nosuid nodev
+    chmod 0770 /data/vendor/wifi/wpa/sockets
+    chown wifi wifi /data/vendor/wifi/wpa/sockets
+    restorecon /data/vendor/wifi/wpa/sockets
+
+    # Create directory used by audio subsystem
+    mkdir /data/vendor/audio 0770 audio audio
+
+    # Create directory for audio delta files
+    mkdir /data/vendor/audio/acdbdata 0770 media audio
+    mkdir /data/vendor/audio/acdbdata/delta 0770 media audio
+
+    # Create directory used by neural network HAL
+    mkdir /data/vendor/nnhal 0700 system system
+
+    # Create /data/time folder for time-services
+    mkdir /data/vendor/time/ 0700 system system
+
+    # Create directory for tftp
+    mkdir /data/vendor/tombstones 0771 system system
+    mkdir /data/vendor/tombstones/rfs 0771 system system
+
+    setprop vold.post_fs_data_done 1
+
+on early-boot
+    # Wait for kernel modules to be loaded
+    wait_for_prop vendor.all.modules.ready 1
+
+    # Wait for device firmware download to occur
+    wait_for_prop vendor.all.devices.ready 1
+
+    # Setting vblankoffdelay to zero deactivates vblank disabling
+    # ensuring vsync comes in regularly at the desired refresh rate
+    write /sys/module/drm/parameters/vblankoffdelay "0"
+
+on boot
+    mkdir /persist/time 0770 system system
+
+    # Define TCP buffer sizes for various networks
+    # ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
+    setprop net.tcp.buffersize.wifi    524288,2097152,4194304,262144,524288,1048576
+
+    # Define TCP buffer sizes for various networks
+    # ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
+    setprop net.tcp.buffersize.default 4096,87380,524288,4096,16384,110208
+    setprop net.tcp.buffersize.lte     2097152,4194304,8388608,262144,524288,1048576
+    setprop net.tcp.buffersize.umts    4094,87380,110208,4096,16384,110208
+    setprop net.tcp.buffersize.hspa    4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hsupa   4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hsdpa   4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hspap   4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.edge    4093,26280,35040,4096,16384,35040
+    setprop net.tcp.buffersize.gprs    4092,8760,11680,4096,8760,11680
+    setprop net.tcp.buffersize.evdo    4094,87380,524288,4096,16384,262144
+
+    setprop net.tcp.2g_init_rwnd 10
+
+    # Assign TCP buffer thresholds to be ceiling value of technology maximums
+    # Increased technology maximums should be reflected here.
+    write /proc/sys/net/core/rmem_max  8388608
+    write /proc/sys/net/core/wmem_max  8388608
+
+    # To prevent out of order acknowledgements from making
+    # connection tracking to treat them as not belonging to
+    # the connection they belong to.
+    # Otherwise, a weird issue happens in which some long
+    # connections on high-throughput links get dropped when
+    # an ack packet comes out of order
+    write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
+
+    # Set the console loglevel to < KERN_INFO
+    # Set the default message loglevel to KERN_INFO
+    write /proc/sys/kernel/printk "6 6 1 7"
+
+    write /proc/sys/net/ipv6/conf/default/accept_ra_defrtr 1
+
+    write /proc/sys/net/ipv4/tcp_adv_win_scale 2
+
+    # Allow access to UFS device attributes on sysfs
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+    chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+
+    # Use hardware execution for CP15 barrier instructions
+    write /proc/sys/abi/cp15_barrier 2
+
+    # Battery charging permissions
+    chmod 0664 /sys/class/power_supply/usb/input_suspend
+    chmod 0664 /sys/class/power_supply/battery/input_suspend
+
+    # Enable GPU performance counters
+    write /sys/class/kgsl/kgsl-3d0/perfcounter 1
+
+# Services start here
+
+service bugreport /system/bin/dumpstate -d -p -B -z -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
+    class main
+    disabled
+    oneshot
+    keycodes 114 115 116
+
+service charger /system/bin/charger
+    class charger
+    seclabel u:r:charger:s0
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    file /dev/kmsg w
+    file /sys/fs/pstore/console-ramoops-0 r
+    file /sys/fs/pstore/console-ramoops r
+
+service health-hal-2-1 /vendor/bin/hw/android.hardware.health@2.1-service
+    class hal charger
+    user system
+    group system root
+    capabilities WAKE_ALARM BLOCK_SUSPEND
+    file /dev/kmsg w
+    override
+
+service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.cfg
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service init_systemstart_sh /system/bin/init.systemstart.sh
+    class main
+    user system
+    group root system
+    disabled
+    oneshot
+
+service set_secnvm_perms_sh /vendor/bin/init.set_secnvm_perms.sh
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service vendor.irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
+    class core
+    user root
+    oneshot
+
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f "/vendor/etc/msm_irqbalance.conf"
+    class core
+    user root
+    group root
+
+service vendor.pd_mapper /vendor/bin/pd-mapper
+    class core
+    user system
+    group system
+
+service vendor.per_mgr /vendor/bin/pm-service
+    class core
+    user system
+    group system
+    ioprio rt 4
+
+service vendor.per_proxy /vendor/bin/pm-proxy
+    class core
+    user system
+    group system
+    disabled
+
+on property:init.svc.vendor.per_mgr=running
+    start vendor.per_proxy
+
+on property:sys.shutdown.requested=*
+    stop vendor.per_proxy
+
+service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
+    class core
+    user vendor_qrtr
+    group vendor_qrtr
+    capabilities NET_BIND_SERVICE
+
+service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    socket pps stream 0660 system system
+    writepid /dev/cpuset/system-background/tasks
+    override
+    disabled
+
+service surfaceflinger /system/bin/surfaceflinger
+    class core animation
+    user system
+    group graphics drmrpc readproc
+    capabilities SYS_NICE
+    onrestart restart zygote
+    task_profiles HighPerformance
+    override
+    disabled
+    socket pdx/system/vr/display/client     stream 0666 system graphics u:object_r:pdx_display_client_endpoint_socket:s0
+    socket pdx/system/vr/display/manager    stream 0666 system graphics u:object_r:pdx_display_manager_endpoint_socket:s0
+    socket pdx/system/vr/display/vsync      stream 0666 system graphics u:object_r:pdx_display_vsync_endpoint_socket:s0
+
+on property:vendor.syncbosshal.fw_update_complete=true
+    # composer is a dependency of surfaceflinger, start it first
+    start vendor.qti.hardware.display.composer
+    start surfaceflinger
+
+service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
+    class main
+    user system
+    group system
+    disabled
+
+on property:persist.sys.ssr.enable_debug=*
+    write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
+
+on property:persist.sys.mba_boot_timeout=*
+    write /sys/module/pil_msa/parameters/pbl_mba_boot_timeout_ms ${persist.sys.mba_boot_timeout}
+
+on property:persist.sys.modem_auth_timeout=*
+    write /sys/module/pil_msa/parameters/modem_auth_timeout_ms ${persist.sys.modem_auth_timeout}
+
+on property:persist.sys.pil_proxy_timeout=*
+    write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.sys.pil_proxy_timeout}
+
+on property:persist.vendor.ssr.restart_level=*
+    start vendor.ssr_setup
+
+on property:persist.vendor.ssr.enable_ramdumps=1
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
+    mkdir /data/vendor/ramdump_ssr 770 system system
+    start vendor.ss_ramdump
+
+on property:persist.vendor.ssr.enable_ramdumps=0
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
+
+service vendor.ssr_setup /system/vendor/bin/ssr_setup
+    oneshot
+    disabled
+
+service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
+    -O/data/vendor/wifi/wpa/sockets -puse_p2p_group_interface=1 \
+    -g@android:wpa_wlan0
+    interface android.hardware.wifi.supplicant@1.0::ISupplicant default
+    interface android.hardware.wifi.supplicant@1.1::ISupplicant default
+    class main
+    socket wpa_wlan0 dgram 660 wifi wifi
+    disabled
+    oneshot
+
+# Property triggers start here
+on property:sys.boot_completed=1
+    write /dev/kmsg "Boot completed"
+
+on property:sys.hmt.mounted=1
+    write /sys/class/power_supply/bms/charge_profile 1
+
+on property:sys.hmt.mounted=0
+    write /sys/class/power_supply/bms/charge_profile 0
+
+on property:ovr.sched_rt_wakeup_on_idle=*
+    write /proc/sys/kernel/sched_rt_wakeup_on_idle ${ovr.sched_rt_wakeup_on_idle}
+
+on property:ovr.sched_rt_preempt_lowest=*
+    write /proc/sys/kernel/sched_rt_preempt_lowest ${ovr.sched_rt_preempt_lowest}
+
+on property:ovr.sched_migration_cost_ns=*
+    write /proc/sys/kernel/sched_migration_cost_ns ${ovr.sched_migration_cost_ns}

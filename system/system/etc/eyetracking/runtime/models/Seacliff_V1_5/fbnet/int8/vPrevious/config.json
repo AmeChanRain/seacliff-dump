@@ -1,0 +1,52 @@
+{
+    "version": 3,
+    "fblearner_id": "f362315615",
+    "bolt_input_order_NHWC": false,
+    "use_quantized_input": true,
+    "preprocess_params": {
+        "box_size": 256,
+        "radius": 200,
+        "left_eye": {
+            "x": 200,
+            "y": 200,
+            "rotation_type": 0
+        },
+        "right_eye": {
+            "x": 200,
+            "y": 200,
+            "rotation_type": 0
+        },
+        "rotation_type_description": [
+            " 0 - NONE",
+            " 1 - CW",
+            " 2 - CCW",
+            " 3 - FLIP",
+            " 4 - HFLIP",
+            " 5 - VFLIP",
+            " 6 - CCW+HFLIP"
+        ]
+    },
+    "postprocess_params": {
+        "sA": 0.3,
+        "sB": 0.89,
+        "mA": -0.024,
+        "mB": 2.73,
+        "pupil_mLX": -0.0017055189605983,
+        "pupil_mLY": 0.0045290040805944,
+        "pupil_mLZ": -0.01040792463589,
+        "pupil_mRX": 0.00046130682644319,
+        "pupil_mRY": 0.0017377919915684,
+        "pupil_mRZ": -0.010235720690707,
+        "pupil_sLX": 0.0035429674058232,
+        "pupil_sLY": 0.0050770516145521,
+        "pupil_sLZ": 0.0042806321969521,
+        "pupil_sRX": 0.0047817454012475,
+        "pupil_sRY": 0.0055140730704888,
+        "pupil_sRZ": 0.0051256563049549,
+        "comment": "gaze distance in millimeter if DNN does not yield one",
+        "default_fixation_z": 2000
+    },
+    "glasses_detection_params": {
+        "skipRate": 10
+    }
+}

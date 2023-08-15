@@ -1,0 +1,4 @@
+<!-- Indicates that this device has xrsp capabilities -->
+<permissions>
+    <feature name="oculus.software.xrsp" />
+</permissions>

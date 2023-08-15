@@ -1,0 +1,18 @@
+on post-fs-data
+    # Create directory for tracking service information
+    mkdir /data/misc/mrsystemservice 0775 system system
+
+on early-boot
+    # create mrsystem cpuset after cpusets are created by
+    # init.rc during the 'init' phase.
+    # device's init.rc must set correct cpus in 'on boot'
+    mkdir /dev/cpuset/mrsystem 0750 root system
+    write /dev/cpuset/mrsystem/cpus 0-3,7
+    write /dev/cpuset/mrsystem/mems 0
+    chmod 0664 /dev/cpuset/mrsystem/tasks
+
+service mrsystemservice /system/bin/mrsystemservice
+    class late_start
+    user system
+    group system camera
+    writepid /dev/cpuset/mrsystem/tasks

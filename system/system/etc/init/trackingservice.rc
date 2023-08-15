@@ -1,0 +1,11 @@
+on post-fs-data
+    # Create directory for tracking service information
+    mkdir /data/misc/tracking 0777 system system
+
+service trackingservice /system/bin/trackingservice
+    class late_start
+    user system
+    group system uhid inet audio
+    capabilities SYS_NICE
+    writepid /dev/cpuset/tracking/tasks
+    ioprio rt 4

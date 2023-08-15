@@ -1,0 +1,40 @@
+{
+  "mapping": [
+    {
+      "atom_id": 110000,
+      "entry_details": {
+        "event_name": "oculus_mobile_battery_fuel_gauge_qc",
+        "falco_version_hash": "deadbeefdeadbeef",
+        "fields": []
+      }
+    },
+    {
+      "atom_id": 110006,
+      "entry_details": {
+        "event_name": "oculus_mobile_ufs_events",
+        "fields": [
+          {
+            "fid": 2,
+            "fname": "ufs_eol_info",
+            "type": "int",
+            "marked": "optional"
+          },
+          {
+            "fid": 3,
+            "fname": "ufs_life_time_estimation_a",
+            "type": "int",
+            "marked": "optional"
+          },
+          {
+            "fid": 4,
+            "fname": "ufs_life_time_estimation_b",
+            "type": "int",
+            "marked": "optional"
+          }
+        ]
+      }
+    }
+  ],
+  "dictionary_id_hash": "abababababababababababababababab",
+  "version": "0.0.1"
+}

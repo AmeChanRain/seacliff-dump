@@ -1,0 +1,9 @@
+service blu_set /vendor/bin/blu_set
+    class main
+    user system
+    group root system
+    oneshot
+    disabled
+
+on property:service.bootanim.exit=1
+    start blu_set

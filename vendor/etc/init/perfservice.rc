@@ -1,0 +1,14 @@
+service perfservice /vendor/bin/hw/perf_service
+    interface android.hardware.power@1.0::IPower default
+    interface android.hardware.power@1.1::IPower default
+    interface android.hardware.power@1.2::IPower default
+    interface android.hardware.power@1.3::IPower default
+    interface android.hardware.thermal@1.0::IThermal default
+    interface android.hardware.thermal@2.0::IThermal default
+    class hal
+    user system
+    group root system
+
+# restart framework dies
+on property:init.svc.zygote=restarting
+   restart perfservice

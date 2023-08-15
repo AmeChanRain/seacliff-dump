@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/settings 0750 system system
+    mkdir /data/oculus/preferences 0750 system system
+
+    start settingsserver
+
+service settingsserver /system/bin/settingsserver
+    class core
+    user system
+    group system
+    disabled

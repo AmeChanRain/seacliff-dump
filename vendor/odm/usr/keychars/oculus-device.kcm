@@ -1,0 +1,7 @@
+type FULL
+
+# If the application does not consume KEYCODE_FORWARD,
+# the window manager treats it as KEYCODE_HOMEPAGE
+key FORWARD {
+    base:                               fallback HOME
+}

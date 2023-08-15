@@ -1,0 +1,22 @@
+on post-fs-data
+    # Create directory for sensor service scratch data
+    mkdir /data/vendor/misc/sensors 0775 system system
+    mkdir /data/vendor/misc/sensors/controllercal 0775 system system
+
+service vendor.oculus.sensors-hal-1-0 /vendor/bin/hw/vendor.oculus.hardware.sensors@1.0-service
+    interface vendor.oculus.hardware.sensors@1.0::ICameraProvider default
+    interface vendor.oculus.hardware.sensors@1.0::IControllerProvider default
+    interface vendor.oculus.hardware.sensors@1.0::IFaceEyeTrackingLed default
+    interface vendor.oculus.hardware.sensors@1.0::IImu default
+    interface vendor.oculus.hardware.sensors@1.0::IMag default
+    interface vendor.oculus.hardware.sensors@1.0::IZapper default
+    interface vendor.oculus.hardware.sensors_java@1.0::IPowerstate default
+    class hal
+    user system
+    group system
+    capabilities SYS_NICE
+    writepid /dev/cpuset/tracking/tasks
+    onrestart restart calibration_svr
+    onrestart restart mrsystemservice
+    onrestart restart sensorproxy
+    onrestart restart trackingservice

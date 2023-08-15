@@ -1,0 +1,4 @@
+<!-- Indicates that this supports hybrid applications (applications with both 2D + immersive activities) -->
+<permissions>
+    <feature name="oculus.software.vr.app.hybrid" version="0" />
+</permissions>

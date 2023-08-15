@@ -1,0 +1,8 @@
+on factorytest
+    start usbd
+
+service usbd /system/bin/usbd
+    class late_start
+    oneshot
+    user root
+    group root usb system

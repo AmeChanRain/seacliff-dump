@@ -1,0 +1,6 @@
+service vendor.oculus.iad-hal-1-0 /odm/bin/hw/vendor.oculus.hardware.sensors@1.0-iad
+    interface vendor.oculus.hardware.sensors@1.0::IIad default
+    class early_hal
+    user system
+    group system
+    writepid /dev/cpuset/tracking/tasks

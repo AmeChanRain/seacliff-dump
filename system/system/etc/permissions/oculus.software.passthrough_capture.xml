@@ -1,0 +1,7 @@
+<!--
+    Indicates the device has the capability of capturing passthrough as
+    part of recording with public user accounts.
+-->
+<permissions>
+    <feature name="oculus.software.passthrough_capture" />
+</permissions>

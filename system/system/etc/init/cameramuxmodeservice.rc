@@ -1,0 +1,8 @@
+service cameramuxmodeservice /system/bin/cameramuxmodeservice
+    class late_start
+    user system
+    group system camera
+    capabilities SYS_NICE
+
+on factorytest
+    start cameramuxmodeservice

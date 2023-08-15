@@ -1,0 +1,13 @@
+# Note: This file will be loaded with highest priority to override
+# other system properties if the property `androidboot.adb,rootable=1`
+# is present in the kernel command-line.
+
+# Disable adb authentication
+ro.adb.secure=0
+
+# Allow 'adb root'
+ro.debuggable=1
+
+# Introduce this property to indicate that init has loaded adb_debug.prop
+ro.force.adb=1
+ro.force.debuggable=1

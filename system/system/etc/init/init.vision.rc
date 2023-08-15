@@ -1,0 +1,7 @@
+on post-fs-data
+    mkdir /data/misc/vision 0770 system system
+    mkdir /data/misc/vision_img 0770 system system
+    exec - root root system -- /system/bin/init.vision.sh
+    mount ext4 ${ovr.vision.mount} /data/misc/vision rw
+    restorecon_recursive /data/misc/vision
+    chown system system /data/misc/vision

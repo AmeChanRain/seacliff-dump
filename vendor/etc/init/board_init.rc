@@ -1,0 +1,4 @@
+service board_init /system/vendor/bin/board_init --setprops
+    class core
+    user system
+    oneshot

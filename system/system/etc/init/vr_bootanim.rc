@@ -1,0 +1,6 @@
+service bootanim /system/bin/vr_bootanimation
+    class core animation
+    user graphics
+    group graphics audio
+    oneshot
+    writepid /dev/stune/top-app/tasks

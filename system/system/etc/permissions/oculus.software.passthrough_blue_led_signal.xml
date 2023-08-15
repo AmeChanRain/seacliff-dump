@@ -1,0 +1,7 @@
+<!--
+    Indicates that during passthrough activation blue LED bystander notification is activated.
+    Available on Seacliff.
+-->
+<permissions>
+    <feature name="oculus.software.passthrough_blue_led_signal" />
+</permissions>

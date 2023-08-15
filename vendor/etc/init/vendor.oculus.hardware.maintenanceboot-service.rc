@@ -1,0 +1,5 @@
+service vendor.oculus.hardware.maintenanceboot-service /vendor/bin/hw/vendor.oculus.hardware.maintenanceboot-service
+    interface aidl vendor.oculus.hardware.IMaintenanceBoot/default
+    class hal
+    user system
+    group system root

@@ -1,0 +1,4 @@
+<!-- This is used to enable the system resource service feature -->
+<permissions>
+  <feature name="oculus.software.system_resource_service" />
+</permissions>

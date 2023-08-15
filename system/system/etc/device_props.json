@@ -1,0 +1,9 @@
+{
+  "device_chipset":"sm8250",
+  "device_gpu":"ADRENO_640",
+  "device_region":"US",
+  "device_support_sdcard":"true",
+  "device_support_sdcard_path":"/sdcard",
+  "device_support_variable_refresh_rate":"true",
+  "device_default_refresh_rate":"72.0"
+}

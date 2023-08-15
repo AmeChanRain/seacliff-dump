@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Keep permissions sorted by package name. -->
+<permissions>
+    <privapp-permissions package="com.android.shell">
+        <permission name="android.permission.CLEAR_APP_USER_DATA"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.wearable.system.location.service">
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="android.permission.CHANGE_WIFI_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.wearable.system.location.proxy">
+        <permission name="android.permission.INSTALL_LOCATION_PROVIDER"/>
+        <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.facebook.spatial_persistence_service">
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_TRACKING_ENV"/>
+        <permission name="com.oculus.permission.COLOCATION_API_WRITE_MAP"/>
+        <permission name="com.oculus.permission.IMPORT_EXPORT_IOT_MAP_DATA"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.meta.federatedcomputing.oculus">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.meta.mr.awe">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.appsafety">
+        <permission name="android.permission.PACKAGE_VERIFICATION_AGENT"/>
+        <permission name="com.oculus.permission.USE_ACCOUNTS_OCULUS"/>
+        <permission name="com.oculus.permission.USE_DEVICE_AUTH"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.arwireless">
+        <permission name="android.permission.BATTERY_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.assistant">
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="com.oculus.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.backuptransportservice">
+        <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="com.oculus.permission.READ_FOCUS_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.bodyapiservice">
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.bugreportservice" >
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.captionservice">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.CAPTURE_MEDIA_OUTPUT"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="com.oculus.permission.PLAY_AUDIO_BACKGROUND"/>
+        <permission name="com.oculus.permission.RECORD_AUDIO_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.companion">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.companion.server">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.diagnostics.service">
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.guardian">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.identitymanagement.service">
+        <permission name="android.permission.OBSERVE_APP_USAGE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.oculus.identitymanagement.capabilities.CAPABILITY_UPDATED"/>
+        <permission name="com.oculus.permission.DEVICE_CONFIG_PUSH_TO_CLIENT"/>
+        <permission name="com.oculus.permission.READ_SETTINGS"/>
+        <permission name="com.oculus.permission.WRITE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.maintenanceboot">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.micservice">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.mrservice">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.notification_proxy">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.ocms">
+        <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.CLEAR_APP_CACHE"/>
+        <permission name="android.permission.CLEAR_APP_USER_DATA"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="com.oculus.permission.INSTALL_DOWNGRADED_PACKAGES"/>
+        <permission name="com.oculus.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="oculus.permission.CONTROL_DEVICE_IDLE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.clearactivity">
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.cm">
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.dialoghost">
+        <permission name="com.oculus.permissions.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.dialoglauncher">
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.vrusb">
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_DEBUGGING"/>
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.preloader">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.presence">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="com.oculus.horizon.notifications.receivers.RECEIVE_SILENT_NOTIFS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.q4bservice">
+        <permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.qalabresetservice">
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.shellenv">
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.statscollector">
+        <permission name="android.permission.DUMP"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemdriver">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+        <permission name="com.oculus.permission.TRACKING_FIDELITY_INTERNAL_API"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemutilities">
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REAL_GET_TASKS" />
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systemux">
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS" />
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.GRANT_RUNTIME_PERMISSIONS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+        <permission name="android.permission.NETWORK_SETTINGS"/>
+        <permission name="android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP"/>
+        <permission name="android.permission.NETWORK_STACK"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_WIFI_CREDENTIAL"/>
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.REQUEST_NETWORK_SCORES"/>
+        <permission name="android.permission.REVOKE_RUNTIME_PERMISSIONS" />
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="android.permission.SET_TIME"/>
+        <permission name="android.permission.SET_TIME_ZONE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.metacam">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.updater">
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.NOTIFY_PENDING_SYSTEM_UPDATE" />
+        <permission name="android.permission.MANAGE_ROLLBACKS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="com.oculus.permission.INSTALL_DOWNGRADED_PACKAGES"/>
+        <permission name="oculus.permission.CONTROL_DEVICE_IDLE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.userserver2">
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.vralertservice">
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+        <permission name="android.permission.DEVICE_POWER"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="com.oculus.permission.LAUNCH_CLEAR_ACTIVITY"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.os.vrlockscreen">
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.preshutdowntaskservice">
+        <permission name="android.permission.SHUTDOWN"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.vrshell">
+        <permission name="android.permission.BACKUP"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.SET_ACTIVITY_WATCHER"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_HEAD_TRACKING"/>
+        <permission name="com.oculus.permission.ACCESS_BACKGROUND_INPUT_TRACKING"/>
+        <permission name="com.oculus.permission.FILTER_GLOBAL_INPUT_EVENTS"/>
+        <permission name="com.oculus.permission.HANDLE_SYSTEM_KEYS"/>
+        <permission name="com.oculus.permission.LAUNCH_CLEAR_ACTIVITY"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.vrshell.desktop">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.websafety">
+        <permission name="com.oculus.permission.USE_DEVICE_AUTH"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.yadi">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.oculus.systempermissions">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    </privapp-permissions>
+</permissions>

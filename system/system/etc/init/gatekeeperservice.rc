@@ -1,0 +1,8 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/gatekeepers 0750 system system
+
+service gatekeeperserver /system/bin/gatekeeperserver
+    class main
+    user system
+    group system

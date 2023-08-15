@@ -1,0 +1,28 @@
+#line 1 "vendor/oculus/sepolicy-common/private/property_contexts"
+# Property naming conventions:
+# debug.oculus.*: Used for old-style GearVR compatibility
+#                 DO NOT create new properties in this namespace
+# persist.ovr.*: Used for persistent, runtime read-write properties
+# ovr.*: Used for non-persistent, runtime read-write properties
+# ro.ovr.*: Used for read-only properties set at build time
+
+default_prop.                                 u:object_r:ctl_default_prop:s0
+debug.vulkan.profiler.namedsocket             u:object_r:qcom_pil_prop:s0
+debug.egl.profiler.namedsocket                u:object_r:qcom_pil_prop:s0
+debug.egl.profiler                            u:object_r:qcom_pil_prop:s0
+oculus.                                       u:object_r:oculus_prop:s0
+ovr.                                          u:object_r:oculus_prop:s0
+ovr.instsampd.                                u:object_r:oculus_instsampd_prop:s0
+ovr.lazy_gpumem.                              u:object_r:debug_prop:s0
+persist.cmm.                                  u:object_r:cameramuxmode_prop:s0
+persist.ovr.system_resource.                  u:object_r:oculus_system_resource_prop:s0
+persist.ovr.tracking.                         u:object_r:oculus_tracking_prop:s0
+persist.ovr.                                  u:object_r:oculus_prop:s0
+ro.boot.bootloader_ipd_offset                 u:object_r:bootloader_ipd_prop:s0
+ro.config.use_native_telemetry                u:object_r:exported_config_prop:s0
+ro.ovr.                                       u:object_r:oculus_prop:s0
+ro.surface_flinger.disable_refresh_rate_update u:object_r:surfaceflinger_prop:s0
+ro.surface_flinger.has_writeback_dpu_cac      u:object_r:surfaceflinger_prop:s0
+ro.surface_flinger.use_headless_mode          u:object_r:surfaceflinger_prop:s0
+sys.hmt.mounted                               u:object_r:oculus_prop:s0
+sys.oem_unlock_allowed                        u:object_r:sys_oem_unlock_allowed_prop:s0

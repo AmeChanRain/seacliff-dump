@@ -1,0 +1,2 @@
+on boot
+    read_prev_vendor_shutdown_stats

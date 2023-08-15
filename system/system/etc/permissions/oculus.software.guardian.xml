@@ -1,0 +1,4 @@
+<!-- Indicates that this device has guardian capabilities-->
+<permissions>
+    <feature name="oculus.software.guardian" />
+</permissions>

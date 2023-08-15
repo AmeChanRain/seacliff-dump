@@ -1,0 +1,3 @@
+# record fwinit duration when bootstat store becomes ready, bootstat store is created during post-fs
+on property:vendor.fw_init.duration_ms=*
+    exec_background - system log -- /system/bin/bootstat -r FwInitDuration --value ${vendor.fw_init.duration_ms}

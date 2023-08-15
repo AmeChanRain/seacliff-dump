@@ -1,0 +1,6 @@
+libinstsamp.oculus.so
+libopenxr_forwardloader.oculus.so
+libossdk.oculus.so
+libripcclient.oculus.so
+libOVRMrcLib.oculus.so
+libxrstreaminghost.oculus.so

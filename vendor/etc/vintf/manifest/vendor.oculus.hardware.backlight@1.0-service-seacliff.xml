@@ -1,0 +1,11 @@
+<manifest version="1.0" type="device">
+    <hal>
+        <name>vendor.oculus.hardware.backlight</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBacklight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

@@ -1,0 +1,3 @@
+vendor.oculus.hardware.clocks::IClocks u:object_r:hal_power_hwservice:s0
+vendor.oculus.hardware.health::IHealth u:object_r:hal_health_hwservice:s0
+vendor.oculus.hardware.telemetry::IDeviceTelemetry u:object_r:hal_oculus_telemetry_hwservice:s0

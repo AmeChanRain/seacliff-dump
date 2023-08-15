@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<!--Revision: I65b8f0 Created: 2021-09-02 21:34:40.640699483-->
+<!--Enable chip level RF reconfiguration for BRCM Chipset-->
+<brcmconfig>
+  <!--"target" attribute can be defined as per hcd target and host will match
+  the value against getprop of "persist.bluetooth.module" -->
+  <module chipname="BCM4389C1" target="semco" version="1">
+    <!--Each config corresponds to one HCI command along with its parameters-->
+    <!-- Config parameters:
+        1. disable : When set to true, host shall ignore config
+        2. format  : Data type of the configured value. Currently supported values are "int8" and "uint8"
+    -->
+    <!--<Max Target power values for Antenna(0/1) and Mode (BR/EDR/LE1/LE2), (12 * 1) = 12 Bytes
+        255 is reserved value for this config -->
+    <config cmd="1" subcmd="0" disable="false">
+      <values format="uint8" info="Max_Target_Power" length="12">
+        1, 1,  1,  1, 255, 255,
+        19, 21, 255, 255, 255, 255
+      </values>
+    </config>
+    <!--PADGC Offset for 9 Bins for Antenna(0/1), PA(IPA/EPA) and Mode(BR/EDR/LE), (2 * 2 * 3 * 9 - 2*1*1*9) = 90 Bytes
+        LE EPA is not there hence removed 2*1*1*9 = 18 bytes in above calculation -->
+    <config cmd="1" subcmd="1" disable="false">
+      <values format="int8" info="PADGC_Offset" length="90">
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0
+      </values>
+    </config>
+    <!--Power Control Step Correction for 8 steps for Antenna(0/1), Mode (BR/EDR/LE)  (2 * 3 * 8) = 48 Bytes
+        -128 is reserved value for this config -->
+    <config cmd="1" subcmd="2" disable="false">
+      <values format="int8" info="Index_Offset" length="48">
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0, -128, -128, -128, -128, -128, -128,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0, -128, -128, -128, -128, -128, -128
+      </values>
+    </config>
+    <!-- Enable TxOp configuration -->
+    <config cmd="1" subcmd="6" disable="false">
+      <values format="uint8" info="Tx Op update enable" length="1">
+       1
+      </values>
+    </config>
+    <!--Default Antenna for different Configurations. -->
+    <config cmd="1" subcmd="5" disable="false">
+      <values format="uint8" info="Default_Antenna" length="1">
+       1
+      </values>
+    </config>
+  </module>
+  <module chipname="BCM4389C1" target="seacliff" version="1">
+    <config cmd="1" subcmd="0" disable="false">
+      <values format="uint8" info="Max_Target_Power" length="12">
+        5, 5,  5,  5, 255, 255,
+        19, 19, 255, 255, 255, 255
+      </values>
+    </config>
+    <config cmd="1" subcmd="1" disable="false">
+      <values format="int8" info="PADGC_Offset" length="90">
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0
+      </values>
+    </config>
+    <config cmd="1" subcmd="2" disable="false">
+      <values format="int8" info="Index_Offset" length="48">
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0, -128, -128, -128, -128, -128, -128,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0,    0,    0,    0,    0,    0,    0,
+        0,   0, -128, -128, -128, -128, -128, -128
+      </values>
+    </config>
+    <config cmd="1" subcmd="6" disable="false">
+      <values format="uint8" info="Tx Op update enable" length="1">
+       1
+      </values>
+    </config>
+  </module>
+</brcmconfig>

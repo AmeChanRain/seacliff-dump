@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /persist/calibration 0754 system system
+    mkdir /persist/calibration/online 0744 system system
+    # remove all uncommitted files from prev session
+    exec -- rm -rf /persist/calibration/online.tmp
+    mkdir /persist/calibration/online.tmp 0744 system system
+
+service calibration_svr /system/bin/calibrationserver
+    class late_start
+    user system
+    group system
+    shutdown delayed 5

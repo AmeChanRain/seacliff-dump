@@ -1,0 +1,243 @@
+on charger
+    setprop sys.start_dvfs_init 1
+
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu6/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
+
+on early-init
+    write /proc/sys/kernel/sched_boost 1
+
+on init
+    write /dev/stune/foreground/schedtune.sched_boost_no_override 1
+    write /dev/stune/top-app/schedtune.sched_boost_no_override 1
+    write /dev/stune/schedtune.colocate 0
+    write /dev/stune/background/schedtune.colocate 0
+    write /dev/stune/system-background/schedtune.colocate 0
+    write /dev/stune/foreground/schedtune.colocate 0
+    write /dev/stune/top-app/schedtune.colocate 1
+
+    write /sys/block/dm-0/queue/read_ahead_kb 2048
+    write /sys/block/dm-1/queue/read_ahead_kb 2048
+
+    # create compositor cpuset for high priority processes
+    mkdir /dev/cpuset/compositor
+    copy /dev/cpuset/cpus /dev/cpuset/compositor/cpus
+    copy /dev/cpuset/mems /dev/cpuset/compositor/mems
+
+    chown system system /dev/cpuset/compositor
+    chown system system /dev/cpuset/compositor/tasks
+    chmod 0664 /dev/cpuset/compositor/tasks
+
+    # create dev_opt_in cpuset for developer opt in features
+    mkdir /dev/cpuset/dev_opt_in
+    copy /dev/cpuset/cpus /dev/cpuset/dev_opt_in/cpus
+    copy /dev/cpuset/mems /dev/cpuset/dev_opt_in/mems
+
+    chown system system /dev/cpuset/dev_opt_in
+    chown system system /dev/cpuset/dev_opt_in/tasks
+    chmod 0664 /dev/cpuset/dev_opt_in/tasks
+
+    # Set the cpusets early to boost boot time and adjust back after boot complete
+    write /dev/cpuset/top-app/cpus 4-6
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/background/cpus 0-7
+    write /dev/cpuset/system-background/cpus 0-7
+
+on early-boot
+    # create tracking cpuset
+    mkdir /dev/cpuset/tracking 0750 root system
+    write /dev/cpuset/tracking/cpus 0-7
+    write /dev/cpuset/tracking/mems 0
+    chmod 0664 /dev/cpuset/tracking/tasks
+
+    # create object_tracking cpuset
+    mkdir /dev/cpuset/object_tracking
+    write /dev/cpuset/object_tracking/cpus 0-7
+    write /dev/cpuset/object_tracking/mems 0
+    chown system system /dev/cpuset/object_tracking
+    chown system system /dev/cpuset/object_tracking/tasks
+    chmod 0664 /dev/cpuset/object_tracking/tasks
+
+    # create social_presence cpuset
+    mkdir /dev/cpuset/social_presence
+    write /dev/cpuset/social_presence/cpus 0-7
+    write /dev/cpuset/social_presence/mems 0
+    chown system system /dev/cpuset/social_presence
+    chown system system /dev/cpuset/social_presence/tasks
+    chmod 0664 /dev/cpuset/social_presence/tasks
+
+on boot
+    write /dev/cpuset/compositor/cpus 0-3,7
+    write /dev/cpuset/mrsystem/cpus 0-3,7
+    write /dev/cpuset/dev_opt_in/cpus 4-6
+
+    setprop sys.start_dvfs_init 1
+
+on property:sys.start_dvfs_init=1
+    # Core control parameters for gold
+    write /sys/devices/system/cpu/cpu4/core_ctl/min_cpus 3
+    write /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres 60
+    write /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres 30
+    write /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms 100
+    write /sys/devices/system/cpu/cpu4/core_ctl/task_thres 3
+
+    # Core control parameters for gold+
+    write /sys/devices/system/cpu/cpu7/core_ctl/min_cpus 1
+    write /sys/devices/system/cpu/cpu7/core_ctl/busy_up_thres 60
+    write /sys/devices/system/cpu/cpu7/core_ctl/busy_down_thres 30
+    write /sys/devices/system/cpu/cpu7/core_ctl/offline_delay_ms 100
+    write /sys/devices/system/cpu/cpu7/core_ctl/task_thres 1
+    # Controls how many more tasks should be eligible to run on gold CPUs
+    # w.r.t number of gold CPUs available to trigger assist (max number of
+    # tasks eligible to run on previous cluster minus number of CPUs in
+    # the previous cluster).
+    #
+    # Setting to 3 by default which means there should be at least
+    # 6 tasks eligible to run on gold cluster (tasks running on gold cores
+    # plus misfit tasks on silver cores) to trigger assitance from gold+.
+    write /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh 3
+
+    # Disable Core control on silver
+    write /sys/devices/system/cpu/cpu0/core_ctl/enable 0
+
+    # Setting b.L scheduler parameters
+    write /proc/sys/kernel/sched_upmigrate "95 95"
+    write /proc/sys/kernel/sched_downmigrate "85 85"
+    write /proc/sys/kernel/sched_group_upmigrate 100
+    write /proc/sys/kernel/sched_group_downmigrate 95
+    write /proc/sys/kernel/sched_walt_rotate_big_tasks 1
+
+    # configure governor settings for silver cluster
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq 1612800
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl 1
+
+    # configure governor settings for gold cluster
+    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq 1382400
+    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl 1
+
+    # configure governor settings for gold+ cluster
+    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor "schedutil"
+    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq 1075200
+    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl 1
+
+    write /proc/sys/vm/watermark_scale_factor 120
+
+    # Enable oom_reaper
+    write /sys/module/lowmemorykiller/parameters/oom_reaper 1
+
+    # Enable bus-dcvs
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/polling_interval 40
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/mbps_zones "2288 4577 7110 9155 12298 14236 15258"
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms 4
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent 50
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_length 10
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/down_thres 30
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/guard_band_mbps 0
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/up_scale 250
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/idle_mbps 1600
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/max_freq 15258
+
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/polling_interval 40
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/mbps_zones "1720 2929 3879 5931 6881 7980"
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms 4
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent 80
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/hyst_length 10
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/down_thres 30
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/guard_band_mbps 0
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/up_scale 250
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/idle_mbps 1600
+    write /sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/max_freq 7980
+
+    write /sys/devices/virtual/npu/msm_npu/pwr 1
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/polling_interval 40
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/mbps_zones "1720 2929 3879 5931 6881 7980"
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/sample_ms 4
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/io_percent 80
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/hyst_length 10
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/down_thres 30
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/guard_band_mbps 0
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/up_scale 250
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/bw_hwmon/idle_mbps 1600
+    write /sys/class/devfreq/soc:qcom,npu-llcc-ddr-bw/max_freq 7980
+
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/polling_interval 40
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/mbps_zones "2288 4577 7110 9155 12298 14236 15258"
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/sample_ms 4
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/io_percent 80
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/hyst_length 10
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/down_thres 30
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/guard_band_mbps 0
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/up_scale 250
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/bw_hwmon/idle_mbps 1600
+    write /sys/class/devfreq/soc:qcom,npu-npu-llcc-bw/max_freq 15258
+
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/polling_interval 40
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/mbps_zones "1720 2929 3879 5931 6881 7980"
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/sample_ms 4
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/io_percent 80
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/hyst_length 10
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/down_thres 30
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/guard_band_mbps 0
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/up_scale 250
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/bw_hwmon/idle_mbps 1600
+    write /sys/class/devfreq/soc:qcom,npudsp-npu-ddr-bw/max_freq 7980
+    write /sys/devices/virtual/npu/msm_npu/pwr 0
+
+    # Enable memlat governor
+    write /sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat/governor "cdspl3"
+
+    # Turn on sleep modes.
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
+    # Enable ZRAM on boot_complete
+    write /sys/block/zram0/comp_algorithm "zstd"
+    write /proc/sys/vm/page-cluster 0
+    swapon_all /vendor/etc/fstab.${ro.hardware}
+
+    # Reset read ahead for dm-0 and dm-1 to 512kb
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    write /sys/block/dm-1/queue/read_ahead_kb 512
+
+    # Enable power HAL to process hints
+    setprop vendor.powerhal.init 1
+
+on property:vendor.boot.boost.finished=1
+    # Set runtime cpuset configuration
+    write /dev/cpuset/foreground/cpus 0-3
+    write /dev/cpuset/foreground/boost/cpus 0-3
+    write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/tracking/cpus 0-3
+    write /dev/cpuset/social_presence/cpus 7
+    write /dev/cpuset/object_tracking/cpus ${ro.ovr.default.object_tracking.cpus}
+
+    # Turn off scheduler boost at the end
+    write /proc/sys/kernel/sched_boost 0
+
+on property:debug.oculus.cpu_governor=*
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor ${debug.oculus.cpu_governor}
+
+on property:persist.ovr.enable_downclock_gpu=*
+    setprop debug.oculus.adaclocks.lowerGpu ${persist.ovr.enable_downclock_gpu}
+
+on property:vendor.powerhal.init=1 && property:persist.ovr.object_tracking.cpus=*
+    write /dev/cpuset/object_tracking/cpus ${persist.ovr.object_tracking.cpus}

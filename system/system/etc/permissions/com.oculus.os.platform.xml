@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <library name="com.oculus.os.platform" file="/system/framework/com.oculus.os.platform.jar" />
+
+    <!-- Allow vrruntimeservice to speak to USB devices for host mode operation -->
+    <permission name="com.oculus.permission.XRS_STREAM">
+        <group gid="usb" />
+    </permission>
+</permissions>

@@ -1,0 +1,9 @@
+on init
+    chown system system /sys/devices/virtual/misc/blu0/rolloff_en
+    chown system system /sys/devices/virtual/misc/blu1/rolloff_en
+service vendor.oculus.backlight-hal-1-0 /vendor/bin/hw/vendor.oculus.hardware.backlight@1.0-service-seacliff
+    interface vendor.oculus.hardware.backlight@1.0::IBacklight default
+    class hal
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks

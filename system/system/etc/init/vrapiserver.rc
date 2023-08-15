@@ -1,0 +1,6 @@
+service vrapi_svr /system/bin/vrapiserver
+    class late_start
+    user system
+    group system readproc
+    capabilities SYS_NICE
+    writepid /dev/cpuset/foreground/tasks

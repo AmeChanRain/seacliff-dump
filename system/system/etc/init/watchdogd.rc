@@ -1,0 +1,3 @@
+service watchdogd /system/bin/watchdogd 10 20
+    class core
+    seclabel u:r:watchdogd:s0

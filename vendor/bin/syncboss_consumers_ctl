@@ -1,0 +1,43 @@
+#!/system/bin/sh
+
+ARG=$1
+PATH=/system/bin:$PATH
+
+SERVICES=(
+  vendor.oculus.sensors-hal-1-0
+  trackingservice
+  wifisighelper
+  calibration_svr
+  mrsystemservice
+  sensorproxy
+)
+function _stop() {
+  # stop the services in the reverse order in which they were started, note k=NF then k--
+  for service in $(echo ${SERVICES[@]} | awk '{for(k=NF; k; k--) {printf("%s ", $(k)) }; print ""}') ; do
+    getprop | grep -q init.svc.$service || continue && ([ $service == trackingservice ] && trackingservice_ctl stop || stop $service)
+  done
+}
+
+function _start() {
+  for service in ${SERVICES[@]} ; do
+    getprop | grep -q init.svc.$service || continue && ([ $service == trackingservice ] && trackingservice_ctl start || start $service)
+  done
+}
+
+log -t syncboss_consumers_ctl "Running $@"
+
+case "$ARG" in
+start)
+  _start
+  ;;
+stop)
+  _stop
+  ;;
+restart)
+  _stop
+  _start
+  ;;
+*)
+  echo "Usage: syncboss_consumers_ctl [start|stop|restart]"
+  ;;
+esac

@@ -1,0 +1,5 @@
+service blu_init /vendor/bin/blu_init
+    class main
+    user system
+    group root system
+    oneshot

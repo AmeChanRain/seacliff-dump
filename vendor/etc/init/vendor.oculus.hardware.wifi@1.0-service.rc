@@ -1,0 +1,6 @@
+service vendor.oculus.wifi-hal-1-0 /vendor/bin/hw/vendor.oculus.hardware.wifi@1.0-service
+    interface vendor.oculus.hardware.wifi@1.0::IWifi default
+    class hal
+    user system
+    group system wifi inet net_admin
+    capabilities NET_ADMIN

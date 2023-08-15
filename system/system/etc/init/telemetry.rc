@@ -1,0 +1,14 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/telemetry 0750 system system
+
+    # sessions and tests data doesn't need to be kept around across boots, so delete the old one here
+    rm /data/oculus/telemetry/session.db
+    rm /data/oculus/telemetry/tests.db
+
+service telemetry /system/bin/telemetry
+    class main
+    user system
+    group system inet
+    writepid /dev/cpuset/system-background/tasks
+    oom_score_adjust -600

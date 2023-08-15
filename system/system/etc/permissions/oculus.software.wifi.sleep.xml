@@ -1,0 +1,4 @@
+<!-- This feature is used to set wifi sleep policy -->
+<permissions>
+    <feature name="oculus.software.wifi.sleep" />
+</permissions>

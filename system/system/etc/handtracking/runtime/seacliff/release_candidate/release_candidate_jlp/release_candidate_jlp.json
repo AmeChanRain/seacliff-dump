@@ -1,0 +1,2748 @@
+{
+  "version": "HEXAGON-0.1",
+  "name": "mf_jlp_xirj2b_v21.15_DC1_NDE_v4_hta",
+  "const_node": [
+    {"id": 2, "shape": [ 4 ], "location": [ 0, 16 ]},
+    {"id": 3, "shape": [ 1 ], "location": [ 16, 1 ]},
+    {"id": 4, "shape": [ 4 ], "location": [ 17, 16 ]},
+    {"id": 6, "shape": [ 1 ], "location": [ 33, 4 ]},
+    {"id": 7, "shape": [ 1 ], "location": [ 37, 4 ]},
+    {"id": 8, "shape": [ 1 ], "location": [ 41, 4 ]},
+    {"id": 9, "shape": [ 1 ], "location": [ 45, 4 ]},
+    {"id": 12, "shape": [ 1 ], "location": [ 49, 4 ]},
+    {"id": 13, "shape": [ 1 ], "location": [ 53, 4 ]},
+    {"id": 14, "shape": [ 1 ], "location": [ 57, 4 ]},
+    {"id": 15, "shape": [ 1 ], "location": [ 61, 8 ]},
+    {"id": 16, "shape": [ 1, 1 ], "location": [ 0, 0 ]},
+    {"id": 17, "shape": [ 0, 0 ], "location": [ 0, 0 ]},
+    {"id": 18, "shape": [ 144, 16, 32, 4 ], "location": [ 69, 294912 ]},
+    {"id": 19, "shape": [ 4608 ], "location": [ 294981, 18432 ]},
+    {"id": 20, "shape": [ 1, 1, 63, 4608 ], "location": [ 0, 0 ]},
+    {"id": 21, "shape": [ 4 ], "location": [ 313413, 16 ]},
+    {"id": 23, "shape": [ 1 ], "location": [ 313429, 4 ]},
+    {"id": 24, "shape": [ 1 ], "location": [ 313433, 4 ]},
+    {"id": 25, "shape": [ 2 ], "location": [ 313437, 8 ]},
+    {"id": 27, "shape": [ 1 ], "location": [ 313445, 4 ]},
+    {"id": 28, "shape": [ 1 ], "location": [ 313449, 4 ]},
+    {"id": 29, "shape": [ 1 ], "location": [ 313453, 4 ]},
+    {"id": 30, "shape": [ 1 ], "location": [ 313457, 4 ]},
+    {"id": 32, "shape": [ 1 ], "location": [ 313461, 4 ]},
+    {"id": 33, "shape": [ 1 ], "location": [ 313465, 4 ]},
+    {"id": 35, "shape": [ 4 ], "location": [ 313469, 16 ]},
+    {"id": 37, "shape": [ 1 ], "location": [ 313485, 4 ]},
+    {"id": 38, "shape": [ 1 ], "location": [ 313489, 4 ]},
+    {"id": 39, "shape": [ 0, 2, 3, 1 ], "location": [ 0, 0 ]},
+    {"id": 41, "shape": [ 1 ], "location": [ 313493, 4 ]},
+    {"id": 42, "shape": [ 1 ], "location": [ 313497, 4 ]},
+    {"id": 46, "shape": [ 1, 1 ], "location": [ 0, 0 ]},
+    {"id": 47, "shape": [ 2, 2 ], "location": [ 0, 0 ]},
+    {"id": 48, "shape": [ 1 ], "location": [ 1836601, 4 ]},
+    {"id": 49, "shape": [ 1 ], "location": [ 1836605, 4 ]},
+    {"id": 50, "shape": [ 1 ], "location": [ 1836609, 4 ]},
+    {"id": 51, "shape": [ 1 ], "location": [ 1836613, 8 ]},
+    {"id": 52, "shape": [ 2, 360, 32, 4 ], "location": [ 1836621, 92160 ]},
+    {"id": 53, "shape": [ 63 ], "location": [ 1928781, 252 ]},
+    {"id": 54, "shape": [ 3, 3, 160, 63 ], "location": [ 0, 0 ]},
+    {"id": 58, "shape": [ 1, 1 ], "location": [ 0, 0 ]},
+    {"id": 59, "shape": [ 2, 2 ], "location": [ 0, 0 ]},
+    {"id": 60, "shape": [ 1 ], "location": [ 1939833, 4 ]},
+    {"id": 61, "shape": [ 1 ], "location": [ 1939837, 4 ]},
+    {"id": 62, "shape": [ 1 ], "location": [ 1939841, 4 ]},
+    {"id": 63, "shape": [ 1 ], "location": [ 1939845, 8 ]},
+    {"id": 64, "shape": [ 1, 96, 32, 4 ], "location": [ 1939853, 12288 ]},
+    {"id": 65, "shape": [ 21 ], "location": [ 1952141, 84 ]},
+    {"id": 66, "shape": [ 3, 3, 42, 21 ], "location": [ 0, 0 ]},
+    {"id": 67, "shape": [ 0, 3, 1, 2 ], "location": [ 0, 0 ]},
+    {"id": 69, "shape": [ 1 ], "location": [ 1952225, 4 ]},
+    {"id": 70, "shape": [ 1 ], "location": [ 1952229, 4 ]},
+    {"id": 71, "shape": [ 1 ], "location": [ 1952233, 4 ]},
+    {"id": 72, "shape": [ 1 ], "location": [ 1952237, 4 ]},
+    {"id": 74, "shape": [ 3 ], "location": [ 1952241, 12 ]},
+    {"id": 76, "shape": [ 1 ], "location": [ 1952253, 4 ]},
+    {"id": 77, "shape": [ 1 ], "location": [ 1952257, 4 ]},
+    {"id": 78, "shape": [ 1 ], "location": [ 1952261, 4 ]},
+    {"id": 79, "shape": [ 1 ], "location": [ 1952265, 4 ]}
+  ],
+  "node": [
+    {
+      "comment": [
+        "TensorNode #205 [mono]_int8 shape: (8, 1, 96, 96) order: NCHW quantized: True format: TensorLayout.PLAIN None",
+        "TensorNode #1 [prevNormalizedXYDistance] shape: (8, 63) order: None quantized: False format: TensorLayout.PLAIN None"
+      ],
+      "id": 1,
+      "name": "",
+      "op": "OP_INPUT",
+      "padding": "NN_PAD_NA",
+      "input": [],
+      "output": [
+        {"shape": [ 8, 1, 96, 96 ], "elem_size": 1},
+        {"shape": [ 8, 63 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "ReshapeNode #91 (quantized: True)",
+          "in:    TensorNode #205 [mono]_int8 shape: (8, 1, 96, 96) order: NCHW quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #206 [mono]_NHWC_int8 shape: (8, 96, 96, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 5,
+      "name": "[mono]_reshape",
+      "op": "OP_QuantizedReshape",
+      "padding": "NN_PAD_NA",
+      "input": [[ 1, 0 ], [ 2, 0 ], [ 3, 0 ], [ 4, 0 ], [ 6, 0 ], [ 7, 0 ]],
+      "output": [
+        {"shape": [ 8, 96, 96, 1 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "QuantizeNode #4 (quantized: True)",
+          "in:    TensorNode #1 [prevNormalizedXYDistance] shape: (8, 63) order: None quantized: False format: TensorLayout.PLAIN None",
+          "out:    TensorNode #118 [prevNormalizedXYDistance]_int8 shape: (8, 63) order: None quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 10,
+      "name": "Int8Quantize (#2)",
+      "op": "OP_Caffe2_Quantize",
+      "padding": "NN_PAD_NA",
+      "input": [[ 1, 1 ], [ 8, 0 ], [ 9, 0 ]],
+      "output": [
+        {"shape": [ 8, 63 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "Reshape for FC input: (8, 63) to (-1, 1, 1, 63)"
+        ]
+      ],
+      "id": 22,
+      "name": "Int8FC (#25)",
+      "op": "OP_QuantizedReshape",
+      "padding": "NN_PAD_NA",
+      "input": [[ 10, 0 ], [ 21, 0 ], [ 23, 0 ], [ 24, 0 ]],
+      "output": [
+        {"shape": [ 8, 1, 1, 63 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "FCNode #27 (quantized: True)",
+          "in:    TensorNode #118 [prevNormalizedXYDistance]_int8 shape: (8, 63) order: None quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #56 0.model_base.stages_landmark.xif5_0.0.weight_int8 shape: (4608, 63) order: None quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #71 0.model_base.stages_landmark.xif5_0.0.bias_int8 shape: (4608,) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #141 283_int8 shape: (8, 4608) order: None quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 11,
+      "name": "Int8FC (#25)",
+      "op": "OP_Caffe2_QuantizedConv2d_8x8to8",
+      "padding": "NN_PAD_NA",
+      "input": [[ 22, 0 ], [ 18, 0 ], [ 19, 0 ], [ 20, 0 ], [ 16, 0 ], [ 17, 0 ], [ 12, 0 ], [ 13, 0 ], [ 14, 0 ], [ 15, 0 ]],
+      "output": [
+        {"shape": [ 8, 1, 1, 4608 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "Reshape for FC: (8, 1, 1, 4608) to (-1, 4608)"
+        ]
+      ],
+      "id": 26,
+      "name": "Int8FC (#25)",
+      "op": "OP_QuantizedReshape",
+      "padding": "NN_PAD_NA",
+      "input": [[ 11, 0 ], [ 25, 0 ], [ 27, 0 ], [ 28, 0 ]],
+      "output": [
+        {"shape": [ 8, 4608 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "DequantizeNode #28 (quantized: True)",
+          "in:    TensorNode #141 283_int8 shape: (8, 4608) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #142 283 shape: (8, 4608) order: None quantized: False format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 31,
+      "name": "Int8Dequantize (#26)",
+      "op": "OP_Caffe2_Dequantize",
+      "padding": "NN_PAD_NA",
+      "input": [[ 26, 0 ], [ 29, 0 ], [ 30, 0 ]],
+      "output": [
+        {"shape": [ 8, 4608 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "QuantizeNode #94 (quantized: True)",
+          "in:    TensorNode #142 283 shape: (8, 4608) order: None quantized: False format: TensorLayout.PLAIN None",
+          "out:    TensorNode #209 283_int8 shape: (8, 4608) order: None quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 34,
+      "name": "283_Quantize",
+      "op": "OP_Caffe2_Quantize",
+      "padding": "NN_PAD_NA",
+      "input": [[ 31, 0 ], [ 32, 0 ], [ 33, 0 ]],
+      "output": [
+        {"shape": [ 8, 4608 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "ReshapeNode #29 (quantized: True)",
+          "in:    TensorNode #209 283_int8 shape: (8, 4608) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #210 285_int8 shape: (8, 32, 12, 12) order: NCHW quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 36,
+      "name": "Reshape (#27)",
+      "op": "OP_QuantizedReshape",
+      "padding": "NN_PAD_NA",
+      "input": [[ 34, 0 ], [ 35, 0 ], [ 37, 0 ], [ 38, 0 ]],
+      "output": [
+        {"shape": [ 8, 32, 12, 12 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "TransposeNode #86 (quantized: True)",
+          "in:    TensorNode #210 285_int8 shape: (8, 32, 12, 12) order: NCHW quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #208 285_NHWC_int8 shape: (8, 12, 12, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 40,
+      "name": "285_Transpose",
+      "op": "OP_Caffe2_QuantizedTranspose_8",
+      "padding": "NN_PAD_NA",
+      "input": [[ 36, 0 ], [ 39, 0 ], [ 41, 0 ], [ 42, 0 ]],
+      "output": [
+        {"shape": [ 8, 12, 12, 32 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "id": 43,
+      "name": "HTANode:0",
+      "op": "OP_HTASubgraph",
+      "hta_subgraph": {
+        "version": "HTA-0.1",
+        "name": "HTA subgraph 96",
+        "const_node": [
+          {"id": 2, "shape": [ 1 ], "location": [ 313501, 4 ]},
+          {"id": 3, "shape": [ 1 ], "location": [ 313505, 4 ]},
+          {"id": 4, "shape": [ 1, 2, 2, 1 ], "location": [ 0, 0 ]},
+          {"id": 5, "shape": [ 1 ], "location": [ 313509, 4 ]},
+          {"id": 6, "shape": [ 1 ], "location": [ 313513, 4 ]},
+          {"id": 7, "shape": [ 3, 3, 1, 32 ], "location": [ 313517, 288 ]},
+          {"id": 9, "shape": [ 1 ], "location": [ 313805, 4 ]},
+          {"id": 10, "shape": [ 1 ], "location": [ 313809, 4 ]},
+          {"id": 11, "shape": [ 1 ], "location": [ 313813, 4 ]},
+          {"id": 12, "shape": [ 1 ], "location": [ 313817, 4 ]},
+          {
+            "id": 13,
+            "shape": [ 32 ],
+            "location": [ 313821, 128 ],
+            "comment": "TensorNode #2 376_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 14, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 15, "shape": [ 1 ], "location": [ 313949, 4 ]},
+          {"id": 16, "shape": [ 1 ], "location": [ 313953, 4 ]},
+          {"id": 17, "shape": [ 3, 3, 32, 1 ], "location": [ 313957, 288 ]},
+          {"id": 19, "shape": [ 1 ], "location": [ 314245, 4 ]},
+          {"id": 20, "shape": [ 1 ], "location": [ 314249, 4 ]},
+          {"id": 21, "shape": [ 1 ], "location": [ 314253, 4 ]},
+          {"id": 22, "shape": [ 1 ], "location": [ 314257, 4 ]},
+          {
+            "id": 23,
+            "shape": [ 32 ],
+            "location": [ 314261, 128 ],
+            "comment": "TensorNode #5 b_zero_generated_245_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 24, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 25, "shape": [ 1 ], "location": [ 314389, 4 ]},
+          {"id": 26, "shape": [ 1 ], "location": [ 314393, 4 ]},
+          {"id": 27, "shape": [ 1, 1, 32, 32 ], "location": [ 314397, 1024 ]},
+          {"id": 29, "shape": [ 1 ], "location": [ 315421, 4 ]},
+          {"id": 30, "shape": [ 1 ], "location": [ 315425, 4 ]},
+          {"id": 31, "shape": [ 1 ], "location": [ 315429, 4 ]},
+          {"id": 32, "shape": [ 1 ], "location": [ 315433, 4 ]},
+          {
+            "id": 33,
+            "shape": [ 32 ],
+            "location": [ 315437, 128 ],
+            "comment": "TensorNode #8 379_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 35, "shape": [ 1 ], "location": [ 315565, 4 ]},
+          {"id": 36, "shape": [ 1 ], "location": [ 315569, 4 ]},
+          {"id": 37, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 38, "shape": [ 1 ], "location": [ 315573, 4 ]},
+          {"id": 39, "shape": [ 1 ], "location": [ 315577, 4 ]},
+          {"id": 40, "shape": [ 1, 1, 32, 96 ], "location": [ 315581, 3072 ]},
+          {"id": 42, "shape": [ 1 ], "location": [ 318653, 4 ]},
+          {"id": 43, "shape": [ 1 ], "location": [ 318657, 4 ]},
+          {"id": 44, "shape": [ 1 ], "location": [ 318661, 4 ]},
+          {"id": 45, "shape": [ 1 ], "location": [ 318665, 4 ]},
+          {
+            "id": 46,
+            "shape": [ 96 ],
+            "location": [ 318669, 384 ],
+            "comment": "TensorNode #12 382_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 47, "shape": [ 1, 2, 2, 1 ], "location": [ 0, 0 ]},
+          {"id": 48, "shape": [ 1 ], "location": [ 319053, 4 ]},
+          {"id": 49, "shape": [ 1 ], "location": [ 319057, 4 ]},
+          {"id": 50, "shape": [ 3, 3, 96, 1 ], "location": [ 319061, 864 ]},
+          {"id": 52, "shape": [ 1 ], "location": [ 319925, 4 ]},
+          {"id": 53, "shape": [ 1 ], "location": [ 319929, 4 ]},
+          {"id": 54, "shape": [ 1 ], "location": [ 319933, 4 ]},
+          {"id": 55, "shape": [ 1 ], "location": [ 319937, 4 ]},
+          {
+            "id": 56,
+            "shape": [ 96 ],
+            "location": [ 319941, 384 ],
+            "comment": "TensorNode #15 b_zero_generated_252_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 57, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 58, "shape": [ 1 ], "location": [ 320325, 4 ]},
+          {"id": 59, "shape": [ 1 ], "location": [ 320329, 4 ]},
+          {"id": 60, "shape": [ 1, 1, 96, 32 ], "location": [ 320333, 3072 ]},
+          {"id": 62, "shape": [ 1 ], "location": [ 323405, 4 ]},
+          {"id": 63, "shape": [ 1 ], "location": [ 323409, 4 ]},
+          {"id": 64, "shape": [ 1 ], "location": [ 323413, 4 ]},
+          {"id": 65, "shape": [ 1 ], "location": [ 323417, 4 ]},
+          {
+            "id": 66,
+            "shape": [ 32 ],
+            "location": [ 323421, 128 ],
+            "comment": "TensorNode #18 385_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 67, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 68, "shape": [ 1 ], "location": [ 323549, 4 ]},
+          {"id": 69, "shape": [ 1 ], "location": [ 323553, 4 ]},
+          {"id": 70, "shape": [ 1, 1, 32, 192 ], "location": [ 323557, 6144 ]},
+          {"id": 72, "shape": [ 1 ], "location": [ 329701, 4 ]},
+          {"id": 73, "shape": [ 1 ], "location": [ 329705, 4 ]},
+          {"id": 74, "shape": [ 1 ], "location": [ 329709, 4 ]},
+          {"id": 75, "shape": [ 1 ], "location": [ 329713, 4 ]},
+          {
+            "id": 76,
+            "shape": [ 192 ],
+            "location": [ 329717, 768 ],
+            "comment": "TensorNode #21 388_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 77, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 78, "shape": [ 1 ], "location": [ 330485, 4 ]},
+          {"id": 79, "shape": [ 1 ], "location": [ 330489, 4 ]},
+          {"id": 80, "shape": [ 3, 3, 192, 1 ], "location": [ 330493, 1728 ]},
+          {"id": 82, "shape": [ 1 ], "location": [ 332221, 4 ]},
+          {"id": 83, "shape": [ 1 ], "location": [ 332225, 4 ]},
+          {"id": 84, "shape": [ 1 ], "location": [ 332229, 4 ]},
+          {"id": 85, "shape": [ 1 ], "location": [ 332233, 4 ]},
+          {
+            "id": 86,
+            "shape": [ 192 ],
+            "location": [ 332237, 768 ],
+            "comment": "TensorNode #24 b_zero_generated_258_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 87, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 88, "shape": [ 1 ], "location": [ 333005, 4 ]},
+          {"id": 89, "shape": [ 1 ], "location": [ 333009, 4 ]},
+          {"id": 90, "shape": [ 1, 1, 192, 32 ], "location": [ 333013, 6144 ]},
+          {"id": 92, "shape": [ 1 ], "location": [ 339157, 4 ]},
+          {"id": 93, "shape": [ 1 ], "location": [ 339161, 4 ]},
+          {"id": 94, "shape": [ 1 ], "location": [ 339165, 4 ]},
+          {"id": 95, "shape": [ 1 ], "location": [ 339169, 4 ]},
+          {
+            "id": 96,
+            "shape": [ 32 ],
+            "location": [ 339173, 128 ],
+            "comment": "TensorNode #27 391_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 98, "shape": [ 1 ], "location": [ 339301, 4 ]},
+          {"id": 99, "shape": [ 1 ], "location": [ 339305, 4 ]},
+          {"id": 100, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 101, "shape": [ 1 ], "location": [ 339309, 4 ]},
+          {"id": 102, "shape": [ 1 ], "location": [ 339313, 4 ]},
+          {"id": 103, "shape": [ 1, 1, 32, 192 ], "location": [ 339317, 6144 ]},
+          {"id": 105, "shape": [ 1 ], "location": [ 345461, 4 ]},
+          {"id": 106, "shape": [ 1 ], "location": [ 345465, 4 ]},
+          {"id": 107, "shape": [ 1 ], "location": [ 345469, 4 ]},
+          {"id": 108, "shape": [ 1 ], "location": [ 345473, 4 ]},
+          {
+            "id": 109,
+            "shape": [ 192 ],
+            "location": [ 345477, 768 ],
+            "comment": "TensorNode #31 394_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 110, "shape": [ 1, 2, 2, 1 ], "location": [ 0, 0 ]},
+          {"id": 111, "shape": [ 1 ], "location": [ 346245, 4 ]},
+          {"id": 112, "shape": [ 1 ], "location": [ 346249, 4 ]},
+          {"id": 113, "shape": [ 3, 3, 192, 1 ], "location": [ 346253, 1728 ]},
+          {"id": 115, "shape": [ 1 ], "location": [ 347981, 4 ]},
+          {"id": 116, "shape": [ 1 ], "location": [ 347985, 4 ]},
+          {"id": 117, "shape": [ 1 ], "location": [ 347989, 4 ]},
+          {"id": 118, "shape": [ 1 ], "location": [ 347993, 4 ]},
+          {
+            "id": 119,
+            "shape": [ 192 ],
+            "location": [ 347997, 768 ],
+            "comment": "TensorNode #34 b_zero_generated_265_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 120, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 121, "shape": [ 1 ], "location": [ 348765, 4 ]},
+          {"id": 122, "shape": [ 1 ], "location": [ 348769, 4 ]},
+          {"id": 123, "shape": [ 1, 1, 192, 64 ], "location": [ 348773, 12288 ]},
+          {"id": 125, "shape": [ 1 ], "location": [ 361061, 4 ]},
+          {"id": 126, "shape": [ 1 ], "location": [ 361065, 4 ]},
+          {"id": 127, "shape": [ 1 ], "location": [ 361069, 4 ]},
+          {"id": 128, "shape": [ 1 ], "location": [ 361073, 4 ]},
+          {
+            "id": 129,
+            "shape": [ 64 ],
+            "location": [ 361077, 256 ],
+            "comment": "TensorNode #37 397_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 130, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 131, "shape": [ 1 ], "location": [ 361333, 4 ]},
+          {"id": 132, "shape": [ 1 ], "location": [ 361337, 4 ]},
+          {"id": 133, "shape": [ 1, 1, 64, 384 ], "location": [ 361341, 24576 ]},
+          {"id": 135, "shape": [ 1 ], "location": [ 385917, 4 ]},
+          {"id": 136, "shape": [ 1 ], "location": [ 385921, 4 ]},
+          {"id": 137, "shape": [ 1 ], "location": [ 385925, 4 ]},
+          {"id": 138, "shape": [ 1 ], "location": [ 385929, 4 ]},
+          {
+            "id": 139,
+            "shape": [ 384 ],
+            "location": [ 385933, 1536 ],
+            "comment": "TensorNode #40 400_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 140, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 141, "shape": [ 1 ], "location": [ 387469, 4 ]},
+          {"id": 142, "shape": [ 1 ], "location": [ 387473, 4 ]},
+          {"id": 143, "shape": [ 3, 3, 384, 1 ], "location": [ 387477, 3456 ]},
+          {"id": 145, "shape": [ 1 ], "location": [ 390933, 4 ]},
+          {"id": 146, "shape": [ 1 ], "location": [ 390937, 4 ]},
+          {"id": 147, "shape": [ 1 ], "location": [ 390941, 4 ]},
+          {"id": 148, "shape": [ 1 ], "location": [ 390945, 4 ]},
+          {
+            "id": 149,
+            "shape": [ 384 ],
+            "location": [ 390949, 1536 ],
+            "comment": "TensorNode #43 b_zero_generated_271_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 150, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 151, "shape": [ 1 ], "location": [ 392485, 4 ]},
+          {"id": 152, "shape": [ 1 ], "location": [ 392489, 4 ]},
+          {"id": 153, "shape": [ 1, 1, 384, 64 ], "location": [ 392493, 24576 ]},
+          {"id": 155, "shape": [ 1 ], "location": [ 417069, 4 ]},
+          {"id": 156, "shape": [ 1 ], "location": [ 417073, 4 ]},
+          {"id": 157, "shape": [ 1 ], "location": [ 417077, 4 ]},
+          {"id": 158, "shape": [ 1 ], "location": [ 417081, 4 ]},
+          {
+            "id": 159,
+            "shape": [ 64 ],
+            "location": [ 417085, 256 ],
+            "comment": "TensorNode #46 403_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 161, "shape": [ 1 ], "location": [ 417341, 4 ]},
+          {"id": 162, "shape": [ 1 ], "location": [ 417345, 4 ]},
+          {"id": 163, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 164, "shape": [ 1 ], "location": [ 417349, 4 ]},
+          {"id": 165, "shape": [ 1 ], "location": [ 417353, 4 ]},
+          {"id": 166, "shape": [ 1, 1, 64, 384 ], "location": [ 417357, 24576 ]},
+          {"id": 168, "shape": [ 1 ], "location": [ 441933, 4 ]},
+          {"id": 169, "shape": [ 1 ], "location": [ 441937, 4 ]},
+          {"id": 170, "shape": [ 1 ], "location": [ 441941, 4 ]},
+          {"id": 171, "shape": [ 1 ], "location": [ 441945, 4 ]},
+          {
+            "id": 172,
+            "shape": [ 384 ],
+            "location": [ 441949, 1536 ],
+            "comment": "TensorNode #50 406_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 173, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 174, "shape": [ 1 ], "location": [ 443485, 4 ]},
+          {"id": 175, "shape": [ 1 ], "location": [ 443489, 4 ]},
+          {"id": 176, "shape": [ 3, 3, 384, 1 ], "location": [ 443493, 3456 ]},
+          {"id": 178, "shape": [ 1 ], "location": [ 446949, 4 ]},
+          {"id": 179, "shape": [ 1 ], "location": [ 446953, 4 ]},
+          {"id": 180, "shape": [ 1 ], "location": [ 446957, 4 ]},
+          {"id": 181, "shape": [ 1 ], "location": [ 446961, 4 ]},
+          {
+            "id": 182,
+            "shape": [ 384 ],
+            "location": [ 446965, 1536 ],
+            "comment": "TensorNode #53 b_zero_generated_278_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 183, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 184, "shape": [ 1 ], "location": [ 448501, 4 ]},
+          {"id": 185, "shape": [ 1 ], "location": [ 448505, 4 ]},
+          {"id": 186, "shape": [ 1, 1, 384, 64 ], "location": [ 448509, 24576 ]},
+          {"id": 188, "shape": [ 1 ], "location": [ 473085, 4 ]},
+          {"id": 189, "shape": [ 1 ], "location": [ 473089, 4 ]},
+          {"id": 190, "shape": [ 1 ], "location": [ 473093, 4 ]},
+          {"id": 191, "shape": [ 1 ], "location": [ 473097, 4 ]},
+          {
+            "id": 192,
+            "shape": [ 64 ],
+            "location": [ 473101, 256 ],
+            "comment": "TensorNode #56 409_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 194, "shape": [ 1 ], "location": [ 473357, 4 ]},
+          {"id": 195, "shape": [ 1 ], "location": [ 473361, 4 ]},
+          {"id": 196, "shape": [ 1 ], "location": [ 473365, 4 ]},
+          {"id": 197, "shape": [ 1 ], "location": [ 473369, 4 ]},
+          {"id": 199, "shape": [ 1 ], "location": [ 473373, 4 ]},
+          {"id": 200, "shape": [ 1 ], "location": [ 473377, 4 ]},
+          {"id": 201, "shape": [ 1 ], "location": [ 473381, 4 ]},
+          {"id": 203, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 204, "shape": [ 1 ], "location": [ 473385, 4 ]},
+          {"id": 205, "shape": [ 1 ], "location": [ 473389, 4 ]},
+          {"id": 206, "shape": [ 1, 1, 96, 384 ], "location": [ 473393, 36864 ]},
+          {"id": 208, "shape": [ 1 ], "location": [ 510257, 4 ]},
+          {"id": 209, "shape": [ 1 ], "location": [ 510261, 4 ]},
+          {"id": 210, "shape": [ 1 ], "location": [ 510265, 4 ]},
+          {"id": 211, "shape": [ 1 ], "location": [ 510269, 4 ]},
+          {
+            "id": 212,
+            "shape": [ 384 ],
+            "location": [ 510273, 1536 ],
+            "comment": "TensorNode #63 412_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 213, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 214, "shape": [ 1 ], "location": [ 511809, 4 ]},
+          {"id": 215, "shape": [ 1 ], "location": [ 511813, 4 ]},
+          {"id": 216, "shape": [ 3, 3, 384, 1 ], "location": [ 511817, 3456 ]},
+          {"id": 218, "shape": [ 1 ], "location": [ 515273, 4 ]},
+          {"id": 219, "shape": [ 1 ], "location": [ 515277, 4 ]},
+          {"id": 220, "shape": [ 1 ], "location": [ 515281, 4 ]},
+          {"id": 221, "shape": [ 1 ], "location": [ 515285, 4 ]},
+          {
+            "id": 222,
+            "shape": [ 384 ],
+            "location": [ 515289, 1536 ],
+            "comment": "TensorNode #66 b_zero_generated_290_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 223, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 224, "shape": [ 1 ], "location": [ 516825, 4 ]},
+          {"id": 225, "shape": [ 1 ], "location": [ 516829, 4 ]},
+          {"id": 226, "shape": [ 1, 1, 384, 64 ], "location": [ 516833, 24576 ]},
+          {"id": 228, "shape": [ 1 ], "location": [ 541409, 4 ]},
+          {"id": 229, "shape": [ 1 ], "location": [ 541413, 4 ]},
+          {"id": 230, "shape": [ 1 ], "location": [ 541417, 4 ]},
+          {"id": 231, "shape": [ 1 ], "location": [ 541421, 4 ]},
+          {
+            "id": 232,
+            "shape": [ 64 ],
+            "location": [ 541425, 256 ],
+            "comment": "TensorNode #69 415_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 233, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 234, "shape": [ 1 ], "location": [ 541681, 4 ]},
+          {"id": 235, "shape": [ 1 ], "location": [ 541685, 4 ]},
+          {"id": 236, "shape": [ 1, 1, 64, 384 ], "location": [ 541689, 24576 ]},
+          {"id": 238, "shape": [ 1 ], "location": [ 566265, 4 ]},
+          {"id": 239, "shape": [ 1 ], "location": [ 566269, 4 ]},
+          {"id": 240, "shape": [ 1 ], "location": [ 566273, 4 ]},
+          {"id": 241, "shape": [ 1 ], "location": [ 566277, 4 ]},
+          {
+            "id": 242,
+            "shape": [ 384 ],
+            "location": [ 566281, 1536 ],
+            "comment": "TensorNode #72 418_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 243, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 244, "shape": [ 1 ], "location": [ 567817, 4 ]},
+          {"id": 245, "shape": [ 1 ], "location": [ 567821, 4 ]},
+          {"id": 246, "shape": [ 3, 3, 384, 1 ], "location": [ 567825, 3456 ]},
+          {"id": 248, "shape": [ 1 ], "location": [ 571281, 4 ]},
+          {"id": 249, "shape": [ 1 ], "location": [ 571285, 4 ]},
+          {"id": 250, "shape": [ 1 ], "location": [ 571289, 4 ]},
+          {"id": 251, "shape": [ 1 ], "location": [ 571293, 4 ]},
+          {
+            "id": 252,
+            "shape": [ 384 ],
+            "location": [ 571297, 1536 ],
+            "comment": "TensorNode #75 b_zero_generated_296_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 253, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 254, "shape": [ 1 ], "location": [ 572833, 4 ]},
+          {"id": 255, "shape": [ 1 ], "location": [ 572837, 4 ]},
+          {"id": 256, "shape": [ 1, 1, 384, 64 ], "location": [ 572841, 24576 ]},
+          {"id": 258, "shape": [ 1 ], "location": [ 597417, 4 ]},
+          {"id": 259, "shape": [ 1 ], "location": [ 597421, 4 ]},
+          {"id": 260, "shape": [ 1 ], "location": [ 597425, 4 ]},
+          {"id": 261, "shape": [ 1 ], "location": [ 597429, 4 ]},
+          {
+            "id": 262,
+            "shape": [ 64 ],
+            "location": [ 597433, 256 ],
+            "comment": "TensorNode #78 421_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 264, "shape": [ 1 ], "location": [ 597689, 4 ]},
+          {"id": 265, "shape": [ 1 ], "location": [ 597693, 4 ]},
+          {"id": 266, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 267, "shape": [ 1 ], "location": [ 597697, 4 ]},
+          {"id": 268, "shape": [ 1 ], "location": [ 597701, 4 ]},
+          {"id": 269, "shape": [ 1, 1, 64, 384 ], "location": [ 597705, 24576 ]},
+          {"id": 271, "shape": [ 1 ], "location": [ 622281, 4 ]},
+          {"id": 272, "shape": [ 1 ], "location": [ 622285, 4 ]},
+          {"id": 273, "shape": [ 1 ], "location": [ 622289, 4 ]},
+          {"id": 274, "shape": [ 1 ], "location": [ 622293, 4 ]},
+          {
+            "id": 275,
+            "shape": [ 384 ],
+            "location": [ 622297, 1536 ],
+            "comment": "TensorNode #82 424_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 276, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 277, "shape": [ 1 ], "location": [ 623833, 4 ]},
+          {"id": 278, "shape": [ 1 ], "location": [ 623837, 4 ]},
+          {"id": 279, "shape": [ 3, 3, 384, 1 ], "location": [ 623841, 3456 ]},
+          {"id": 281, "shape": [ 1 ], "location": [ 627297, 4 ]},
+          {"id": 282, "shape": [ 1 ], "location": [ 627301, 4 ]},
+          {"id": 283, "shape": [ 1 ], "location": [ 627305, 4 ]},
+          {"id": 284, "shape": [ 1 ], "location": [ 627309, 4 ]},
+          {
+            "id": 285,
+            "shape": [ 384 ],
+            "location": [ 627313, 1536 ],
+            "comment": "TensorNode #85 b_zero_generated_303_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 286, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 287, "shape": [ 1 ], "location": [ 628849, 4 ]},
+          {"id": 288, "shape": [ 1 ], "location": [ 628853, 4 ]},
+          {"id": 289, "shape": [ 1, 1, 384, 64 ], "location": [ 628857, 24576 ]},
+          {"id": 291, "shape": [ 1 ], "location": [ 653433, 4 ]},
+          {"id": 292, "shape": [ 1 ], "location": [ 653437, 4 ]},
+          {"id": 293, "shape": [ 1 ], "location": [ 653441, 4 ]},
+          {"id": 294, "shape": [ 1 ], "location": [ 653445, 4 ]},
+          {
+            "id": 295,
+            "shape": [ 64 ],
+            "location": [ 653449, 256 ],
+            "comment": "TensorNode #88 427_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 297, "shape": [ 1 ], "location": [ 653705, 4 ]},
+          {"id": 298, "shape": [ 1 ], "location": [ 653709, 4 ]},
+          {"id": 299, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 300, "shape": [ 1 ], "location": [ 653713, 4 ]},
+          {"id": 301, "shape": [ 1 ], "location": [ 653717, 4 ]},
+          {"id": 302, "shape": [ 1, 1, 64, 384 ], "location": [ 653721, 24576 ]},
+          {"id": 304, "shape": [ 1 ], "location": [ 678297, 4 ]},
+          {"id": 305, "shape": [ 1 ], "location": [ 678301, 4 ]},
+          {"id": 306, "shape": [ 1 ], "location": [ 678305, 4 ]},
+          {"id": 307, "shape": [ 1 ], "location": [ 678309, 4 ]},
+          {
+            "id": 308,
+            "shape": [ 384 ],
+            "location": [ 678313, 1536 ],
+            "comment": "TensorNode #92 430_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 309, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 310, "shape": [ 1 ], "location": [ 679849, 4 ]},
+          {"id": 311, "shape": [ 1 ], "location": [ 679853, 4 ]},
+          {"id": 312, "shape": [ 3, 3, 384, 1 ], "location": [ 679857, 3456 ]},
+          {"id": 314, "shape": [ 1 ], "location": [ 683313, 4 ]},
+          {"id": 315, "shape": [ 1 ], "location": [ 683317, 4 ]},
+          {"id": 316, "shape": [ 1 ], "location": [ 683321, 4 ]},
+          {"id": 317, "shape": [ 1 ], "location": [ 683325, 4 ]},
+          {
+            "id": 318,
+            "shape": [ 384 ],
+            "location": [ 683329, 1536 ],
+            "comment": "TensorNode #95 b_zero_generated_310_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 319, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 320, "shape": [ 1 ], "location": [ 684865, 4 ]},
+          {"id": 321, "shape": [ 1 ], "location": [ 684869, 4 ]},
+          {"id": 322, "shape": [ 1, 1, 384, 64 ], "location": [ 684873, 24576 ]},
+          {"id": 324, "shape": [ 1 ], "location": [ 709449, 4 ]},
+          {"id": 325, "shape": [ 1 ], "location": [ 709453, 4 ]},
+          {"id": 326, "shape": [ 1 ], "location": [ 709457, 4 ]},
+          {"id": 327, "shape": [ 1 ], "location": [ 709461, 4 ]},
+          {
+            "id": 328,
+            "shape": [ 64 ],
+            "location": [ 709465, 256 ],
+            "comment": "TensorNode #98 433_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 330, "shape": [ 1 ], "location": [ 709721, 4 ]},
+          {"id": 331, "shape": [ 1 ], "location": [ 709725, 4 ]},
+          {"id": 332, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 333, "shape": [ 1 ], "location": [ 709729, 4 ]},
+          {"id": 334, "shape": [ 1 ], "location": [ 709733, 4 ]},
+          {"id": 335, "shape": [ 1, 1, 64, 384 ], "location": [ 709737, 24576 ]},
+          {"id": 337, "shape": [ 1 ], "location": [ 734313, 4 ]},
+          {"id": 338, "shape": [ 1 ], "location": [ 734317, 4 ]},
+          {"id": 339, "shape": [ 1 ], "location": [ 734321, 4 ]},
+          {"id": 340, "shape": [ 1 ], "location": [ 734325, 4 ]},
+          {
+            "id": 341,
+            "shape": [ 384 ],
+            "location": [ 734329, 1536 ],
+            "comment": "TensorNode #102 436_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 342, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 343, "shape": [ 1 ], "location": [ 735865, 4 ]},
+          {"id": 344, "shape": [ 1 ], "location": [ 735869, 4 ]},
+          {"id": 345, "shape": [ 3, 3, 384, 1 ], "location": [ 735873, 3456 ]},
+          {"id": 347, "shape": [ 1 ], "location": [ 739329, 4 ]},
+          {"id": 348, "shape": [ 1 ], "location": [ 739333, 4 ]},
+          {"id": 349, "shape": [ 1 ], "location": [ 739337, 4 ]},
+          {"id": 350, "shape": [ 1 ], "location": [ 739341, 4 ]},
+          {
+            "id": 351,
+            "shape": [ 384 ],
+            "location": [ 739345, 1536 ],
+            "comment": "TensorNode #105 b_zero_generated_317_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 352, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 353, "shape": [ 1 ], "location": [ 740881, 4 ]},
+          {"id": 354, "shape": [ 1 ], "location": [ 740885, 4 ]},
+          {"id": 355, "shape": [ 1, 1, 384, 96 ], "location": [ 740889, 36864 ]},
+          {"id": 357, "shape": [ 1 ], "location": [ 777753, 4 ]},
+          {"id": 358, "shape": [ 1 ], "location": [ 777757, 4 ]},
+          {"id": 359, "shape": [ 1 ], "location": [ 777761, 4 ]},
+          {"id": 360, "shape": [ 1 ], "location": [ 777765, 4 ]},
+          {
+            "id": 361,
+            "shape": [ 96 ],
+            "location": [ 777769, 384 ],
+            "comment": "TensorNode #108 439_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 362, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 363, "shape": [ 1 ], "location": [ 778153, 4 ]},
+          {"id": 364, "shape": [ 1 ], "location": [ 778157, 4 ]},
+          {"id": 365, "shape": [ 1, 1, 96, 480 ], "location": [ 778161, 46080 ]},
+          {"id": 367, "shape": [ 1 ], "location": [ 824241, 4 ]},
+          {"id": 368, "shape": [ 1 ], "location": [ 824245, 4 ]},
+          {"id": 369, "shape": [ 1 ], "location": [ 824249, 4 ]},
+          {"id": 370, "shape": [ 1 ], "location": [ 824253, 4 ]},
+          {
+            "id": 371,
+            "shape": [ 480 ],
+            "location": [ 824257, 1920 ],
+            "comment": "TensorNode #111 442_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 372, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 373, "shape": [ 1 ], "location": [ 826177, 4 ]},
+          {"id": 374, "shape": [ 1 ], "location": [ 826181, 4 ]},
+          {"id": 375, "shape": [ 3, 3, 480, 1 ], "location": [ 826185, 4320 ]},
+          {"id": 377, "shape": [ 1 ], "location": [ 830505, 4 ]},
+          {"id": 378, "shape": [ 1 ], "location": [ 830509, 4 ]},
+          {"id": 379, "shape": [ 1 ], "location": [ 830513, 4 ]},
+          {"id": 380, "shape": [ 1 ], "location": [ 830517, 4 ]},
+          {
+            "id": 381,
+            "shape": [ 480 ],
+            "location": [ 830521, 1920 ],
+            "comment": "TensorNode #114 b_zero_generated_323_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 382, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 383, "shape": [ 1 ], "location": [ 832441, 4 ]},
+          {"id": 384, "shape": [ 1 ], "location": [ 832445, 4 ]},
+          {"id": 385, "shape": [ 1, 1, 480, 96 ], "location": [ 832449, 46080 ]},
+          {"id": 387, "shape": [ 1 ], "location": [ 878529, 4 ]},
+          {"id": 388, "shape": [ 1 ], "location": [ 878533, 4 ]},
+          {"id": 389, "shape": [ 1 ], "location": [ 878537, 4 ]},
+          {"id": 390, "shape": [ 1 ], "location": [ 878541, 4 ]},
+          {
+            "id": 391,
+            "shape": [ 96 ],
+            "location": [ 878545, 384 ],
+            "comment": "TensorNode #117 445_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 393, "shape": [ 1 ], "location": [ 878929, 4 ]},
+          {"id": 394, "shape": [ 1 ], "location": [ 878933, 4 ]},
+          {"id": 395, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 396, "shape": [ 1 ], "location": [ 878937, 4 ]},
+          {"id": 397, "shape": [ 1 ], "location": [ 878941, 4 ]},
+          {"id": 398, "shape": [ 1, 1, 96, 480 ], "location": [ 878945, 46080 ]},
+          {"id": 400, "shape": [ 1 ], "location": [ 925025, 4 ]},
+          {"id": 401, "shape": [ 1 ], "location": [ 925029, 4 ]},
+          {"id": 402, "shape": [ 1 ], "location": [ 925033, 4 ]},
+          {"id": 403, "shape": [ 1 ], "location": [ 925037, 4 ]},
+          {
+            "id": 404,
+            "shape": [ 480 ],
+            "location": [ 925041, 1920 ],
+            "comment": "TensorNode #121 448_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 405, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 406, "shape": [ 1 ], "location": [ 926961, 4 ]},
+          {"id": 407, "shape": [ 1 ], "location": [ 926965, 4 ]},
+          {"id": 408, "shape": [ 3, 3, 480, 1 ], "location": [ 926969, 4320 ]},
+          {"id": 410, "shape": [ 1 ], "location": [ 931289, 4 ]},
+          {"id": 411, "shape": [ 1 ], "location": [ 931293, 4 ]},
+          {"id": 412, "shape": [ 1 ], "location": [ 931297, 4 ]},
+          {"id": 413, "shape": [ 1 ], "location": [ 931301, 4 ]},
+          {
+            "id": 414,
+            "shape": [ 480 ],
+            "location": [ 931305, 1920 ],
+            "comment": "TensorNode #124 b_zero_generated_330_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 415, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 416, "shape": [ 1 ], "location": [ 933225, 4 ]},
+          {"id": 417, "shape": [ 1 ], "location": [ 933229, 4 ]},
+          {"id": 418, "shape": [ 1, 1, 480, 96 ], "location": [ 933233, 46080 ]},
+          {"id": 420, "shape": [ 1 ], "location": [ 979313, 4 ]},
+          {"id": 421, "shape": [ 1 ], "location": [ 979317, 4 ]},
+          {"id": 422, "shape": [ 1 ], "location": [ 979321, 4 ]},
+          {"id": 423, "shape": [ 1 ], "location": [ 979325, 4 ]},
+          {
+            "id": 424,
+            "shape": [ 96 ],
+            "location": [ 979329, 384 ],
+            "comment": "TensorNode #127 451_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 426, "shape": [ 1 ], "location": [ 979713, 4 ]},
+          {"id": 427, "shape": [ 1 ], "location": [ 979717, 4 ]},
+          {"id": 428, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 429, "shape": [ 1 ], "location": [ 979721, 4 ]},
+          {"id": 430, "shape": [ 1 ], "location": [ 979725, 4 ]},
+          {"id": 431, "shape": [ 1, 1, 96, 576 ], "location": [ 979729, 55296 ]},
+          {"id": 433, "shape": [ 1 ], "location": [ 1035025, 4 ]},
+          {"id": 434, "shape": [ 1 ], "location": [ 1035029, 4 ]},
+          {"id": 435, "shape": [ 1 ], "location": [ 1035033, 4 ]},
+          {"id": 436, "shape": [ 1 ], "location": [ 1035037, 4 ]},
+          {
+            "id": 437,
+            "shape": [ 576 ],
+            "location": [ 1035041, 2304 ],
+            "comment": "TensorNode #131 454_int8 shape: (576,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 438, "shape": [ 1, 2, 2, 1 ], "location": [ 0, 0 ]},
+          {"id": 439, "shape": [ 1 ], "location": [ 1037345, 4 ]},
+          {"id": 440, "shape": [ 1 ], "location": [ 1037349, 4 ]},
+          {"id": 441, "shape": [ 3, 3, 576, 1 ], "location": [ 1037353, 5184 ]},
+          {"id": 443, "shape": [ 1 ], "location": [ 1042537, 4 ]},
+          {"id": 444, "shape": [ 1 ], "location": [ 1042541, 4 ]},
+          {"id": 445, "shape": [ 1 ], "location": [ 1042545, 4 ]},
+          {"id": 446, "shape": [ 1 ], "location": [ 1042549, 4 ]},
+          {
+            "id": 447,
+            "shape": [ 576 ],
+            "location": [ 1042553, 2304 ],
+            "comment": "TensorNode #134 b_zero_generated_337_int8 shape: (576,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 448, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 449, "shape": [ 1 ], "location": [ 1044857, 4 ]},
+          {"id": 450, "shape": [ 1 ], "location": [ 1044861, 4 ]},
+          {"id": 451, "shape": [ 1, 1, 576, 128 ], "location": [ 1044865, 73728 ]},
+          {"id": 453, "shape": [ 1 ], "location": [ 1118593, 4 ]},
+          {"id": 454, "shape": [ 1 ], "location": [ 1118597, 4 ]},
+          {"id": 455, "shape": [ 1 ], "location": [ 1118601, 4 ]},
+          {"id": 456, "shape": [ 1 ], "location": [ 1118605, 4 ]},
+          {
+            "id": 457,
+            "shape": [ 128 ],
+            "location": [ 1118609, 512 ],
+            "comment": "TensorNode #137 457_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 458, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 459, "shape": [ 1 ], "location": [ 1119121, 4 ]},
+          {"id": 460, "shape": [ 1 ], "location": [ 1119125, 4 ]},
+          {"id": 461, "shape": [ 1, 1, 128, 768 ], "location": [ 1119129, 98304 ]},
+          {"id": 463, "shape": [ 1 ], "location": [ 1217433, 4 ]},
+          {"id": 464, "shape": [ 1 ], "location": [ 1217437, 4 ]},
+          {"id": 465, "shape": [ 1 ], "location": [ 1217441, 4 ]},
+          {"id": 466, "shape": [ 1 ], "location": [ 1217445, 4 ]},
+          {
+            "id": 467,
+            "shape": [ 768 ],
+            "location": [ 1217449, 3072 ],
+            "comment": "TensorNode #140 460_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 468, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 469, "shape": [ 1 ], "location": [ 1220521, 4 ]},
+          {"id": 470, "shape": [ 1 ], "location": [ 1220525, 4 ]},
+          {"id": 471, "shape": [ 3, 3, 768, 1 ], "location": [ 1220529, 6912 ]},
+          {"id": 473, "shape": [ 1 ], "location": [ 1227441, 4 ]},
+          {"id": 474, "shape": [ 1 ], "location": [ 1227445, 4 ]},
+          {"id": 475, "shape": [ 1 ], "location": [ 1227449, 4 ]},
+          {"id": 476, "shape": [ 1 ], "location": [ 1227453, 4 ]},
+          {
+            "id": 477,
+            "shape": [ 768 ],
+            "location": [ 1227457, 3072 ],
+            "comment": "TensorNode #143 b_zero_generated_343_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 478, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 479, "shape": [ 1 ], "location": [ 1230529, 4 ]},
+          {"id": 480, "shape": [ 1 ], "location": [ 1230533, 4 ]},
+          {"id": 481, "shape": [ 1, 1, 768, 128 ], "location": [ 1230537, 98304 ]},
+          {"id": 483, "shape": [ 1 ], "location": [ 1328841, 4 ]},
+          {"id": 484, "shape": [ 1 ], "location": [ 1328845, 4 ]},
+          {"id": 485, "shape": [ 1 ], "location": [ 1328849, 4 ]},
+          {"id": 486, "shape": [ 1 ], "location": [ 1328853, 4 ]},
+          {
+            "id": 487,
+            "shape": [ 128 ],
+            "location": [ 1328857, 512 ],
+            "comment": "TensorNode #146 463_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 489, "shape": [ 1 ], "location": [ 1329369, 4 ]},
+          {"id": 490, "shape": [ 1 ], "location": [ 1329373, 4 ]},
+          {"id": 491, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 492, "shape": [ 1 ], "location": [ 1329377, 4 ]},
+          {"id": 493, "shape": [ 1 ], "location": [ 1329381, 4 ]},
+          {"id": 494, "shape": [ 1, 1, 128, 768 ], "location": [ 1329385, 98304 ]},
+          {"id": 496, "shape": [ 1 ], "location": [ 1427689, 4 ]},
+          {"id": 497, "shape": [ 1 ], "location": [ 1427693, 4 ]},
+          {"id": 498, "shape": [ 1 ], "location": [ 1427697, 4 ]},
+          {"id": 499, "shape": [ 1 ], "location": [ 1427701, 4 ]},
+          {
+            "id": 500,
+            "shape": [ 768 ],
+            "location": [ 1427705, 3072 ],
+            "comment": "TensorNode #150 466_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 501, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 502, "shape": [ 1 ], "location": [ 1430777, 4 ]},
+          {"id": 503, "shape": [ 1 ], "location": [ 1430781, 4 ]},
+          {"id": 504, "shape": [ 3, 3, 768, 1 ], "location": [ 1430785, 6912 ]},
+          {"id": 506, "shape": [ 1 ], "location": [ 1437697, 4 ]},
+          {"id": 507, "shape": [ 1 ], "location": [ 1437701, 4 ]},
+          {"id": 508, "shape": [ 1 ], "location": [ 1437705, 4 ]},
+          {"id": 509, "shape": [ 1 ], "location": [ 1437709, 4 ]},
+          {
+            "id": 510,
+            "shape": [ 768 ],
+            "location": [ 1437713, 3072 ],
+            "comment": "TensorNode #153 b_zero_generated_350_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 511, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 512, "shape": [ 1 ], "location": [ 1440785, 4 ]},
+          {"id": 513, "shape": [ 1 ], "location": [ 1440789, 4 ]},
+          {"id": 514, "shape": [ 1, 1, 768, 128 ], "location": [ 1440793, 98304 ]},
+          {"id": 516, "shape": [ 1 ], "location": [ 1539097, 4 ]},
+          {"id": 517, "shape": [ 1 ], "location": [ 1539101, 4 ]},
+          {"id": 518, "shape": [ 1 ], "location": [ 1539105, 4 ]},
+          {"id": 519, "shape": [ 1 ], "location": [ 1539109, 4 ]},
+          {
+            "id": 520,
+            "shape": [ 128 ],
+            "location": [ 1539113, 512 ],
+            "comment": "TensorNode #156 469_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 522, "shape": [ 1 ], "location": [ 1539625, 4 ]},
+          {"id": 523, "shape": [ 1 ], "location": [ 1539629, 4 ]},
+          {"id": 524, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 525, "shape": [ 1 ], "location": [ 1539633, 4 ]},
+          {"id": 526, "shape": [ 1 ], "location": [ 1539637, 4 ]},
+          {"id": 527, "shape": [ 1, 1, 128, 768 ], "location": [ 1539641, 98304 ]},
+          {"id": 529, "shape": [ 1 ], "location": [ 1637945, 4 ]},
+          {"id": 530, "shape": [ 1 ], "location": [ 1637949, 4 ]},
+          {"id": 531, "shape": [ 1 ], "location": [ 1637953, 4 ]},
+          {"id": 532, "shape": [ 1 ], "location": [ 1637957, 4 ]},
+          {
+            "id": 533,
+            "shape": [ 768 ],
+            "location": [ 1637961, 3072 ],
+            "comment": "TensorNode #160 472_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 534, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 535, "shape": [ 1 ], "location": [ 1641033, 4 ]},
+          {"id": 536, "shape": [ 1 ], "location": [ 1641037, 4 ]},
+          {"id": 537, "shape": [ 3, 3, 768, 1 ], "location": [ 1641041, 6912 ]},
+          {"id": 539, "shape": [ 1 ], "location": [ 1647953, 4 ]},
+          {"id": 540, "shape": [ 1 ], "location": [ 1647957, 4 ]},
+          {"id": 541, "shape": [ 1 ], "location": [ 1647961, 4 ]},
+          {"id": 542, "shape": [ 1 ], "location": [ 1647965, 4 ]},
+          {
+            "id": 543,
+            "shape": [ 768 ],
+            "location": [ 1647969, 3072 ],
+            "comment": "TensorNode #163 b_zero_generated_357_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 544, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 545, "shape": [ 1 ], "location": [ 1651041, 4 ]},
+          {"id": 546, "shape": [ 1 ], "location": [ 1651045, 4 ]},
+          {"id": 547, "shape": [ 1, 1, 768, 160 ], "location": [ 1651049, 122880 ]},
+          {"id": 549, "shape": [ 1 ], "location": [ 1773929, 4 ]},
+          {"id": 550, "shape": [ 1 ], "location": [ 1773933, 4 ]},
+          {"id": 551, "shape": [ 1 ], "location": [ 1773937, 4 ]},
+          {"id": 552, "shape": [ 1 ], "location": [ 1773941, 4 ]},
+          {
+            "id": 553,
+            "shape": [ 160 ],
+            "location": [ 1773945, 640 ],
+            "comment": "TensorNode #166 475_int8 shape: (160,) order: None quantized: True format: TensorLayout.PLAIN None"
+          },
+          {"id": 554, "shape": [ 1, 6, 6, 1 ], "location": [ 0, 0 ]},
+          {"id": 555, "shape": [ 1, 6, 6, 1 ], "location": [ 0, 0 ]},
+          {"id": 557, "shape": [ 1, 1, 1, 1 ], "location": [ 0, 0 ]},
+          {"id": 558, "shape": [ 1 ], "location": [ 1774585, 4 ]},
+          {"id": 559, "shape": [ 1 ], "location": [ 1774589, 4 ]},
+          {"id": 560, "shape": [ 1, 1, 160, 378 ], "location": [ 1774593, 60480 ]},
+          {"id": 562, "shape": [ 1 ], "location": [ 1835073, 4 ]},
+          {"id": 563, "shape": [ 1 ], "location": [ 1835077, 4 ]},
+          {"id": 564, "shape": [ 1 ], "location": [ 1835081, 4 ]},
+          {"id": 565, "shape": [ 1 ], "location": [ 1835085, 4 ]},
+          {
+            "id": 566,
+            "shape": [ 378 ],
+            "location": [ 1835089, 1512 ],
+            "comment": "TensorNode #170 0.additional_layers.1.1.bias_int8 shape: (378,) order: None quantized: True format: TensorLayout.PLAIN None"
+          }
+        ],
+        "node": [
+          {
+            "comment": [
+              "TensorNode #0 [mono]_NHWC_int8 shape: (8, 96, 96, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+              "TensorNode #59 285_NHWC_int8 shape: (8, 12, 12, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+            ],
+            "id": 1,
+            "name": "",
+            "op": "HTA_OP_INPUT",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [],
+            "output": [
+              {"shape": [ 8, 96, 96, 1 ], "elem_size": 1},
+              {"shape": [ 8, 12, 12, 32 ], "elem_size": 1}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #0 (quantized: True)",
+                "in:    TensorNode #0 [mono]_NHWC_int8 shape: (8, 96, 96, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #1 375_int8 shape: (32, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #2 376_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #3 245_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 8,
+            "name": "Int8ConvRelu (#3)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 1, 0 ], [ 7, 0 ], [ 2, 0 ], [ 3, 0 ], [ 9, 0 ], [ 10, 0 ], [ 4, 0 ], [ 13, 0 ], [ 5, 0 ], [ 6, 0 ], [ 11, 0 ], [ 12, 0 ]],
+            "output": [
+              {"shape": [ 8, 48, 48, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #2 (quantized: True)",
+                "in:    TensorNode #3 245_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #4 0.model_base.stages_image.xif0_0.dw.conv.weight_int8 shape: (32, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #5 b_zero_generated_245_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #6 246_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 18,
+            "name": "Int8Conv (#4)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 8, 0 ], [ 17, 0 ], [ 8, 1 ], [ 8, 2 ], [ 19, 0 ], [ 20, 0 ], [ 14, 0 ], [ 23, 0 ], [ 15, 0 ], [ 16, 0 ], [ 21, 0 ], [ 22, 0 ]],
+            "output": [
+              {"shape": [ 8, 48, 48, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #3 (quantized: True)",
+                "in:    TensorNode #6 246_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #7 378_int8 shape: (32, 1, 1, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #8 379_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #9 377_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 28,
+            "name": "Int8Conv (#5)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 18, 0 ], [ 27, 0 ], [ 18, 1 ], [ 18, 2 ], [ 29, 0 ], [ 30, 0 ], [ 24, 0 ], [ 33, 0 ], [ 25, 0 ], [ 26, 0 ], [ 31, 0 ], [ 32, 0 ]],
+            "output": [
+              {"shape": [ 8, 48, 48, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #4 (quantized: True)",
+                "in:    TensorNode #3 245_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #9 377_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #10 249_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 34,
+            "name": "Int8Add (#6)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 8, 0 ], [ 28, 0 ], [ 8, 1 ], [ 8, 2 ], [ 28, 1 ], [ 28, 2 ], [ 35, 0 ], [ 36, 0 ]],
+            "output": [
+              {"shape": [ 8, 48, 48, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #5 (quantized: True)",
+                "in:    TensorNode #10 249_int8 shape: (8, 48, 48, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #11 381_int8 shape: (96, 1, 1, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #12 382_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #13 252_int8 shape: (8, 48, 48, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 41,
+            "name": "Int8ConvRelu (#7)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 34, 0 ], [ 40, 0 ], [ 34, 1 ], [ 34, 2 ], [ 42, 0 ], [ 43, 0 ], [ 37, 0 ], [ 46, 0 ], [ 38, 0 ], [ 39, 0 ], [ 44, 0 ], [ 45, 0 ]],
+            "output": [
+              {"shape": [ 8, 48, 48, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #6 (quantized: True)",
+                "in:    TensorNode #13 252_int8 shape: (8, 48, 48, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #14 0.model_base.stages_image.xif1_0.dw.conv.weight_int8 shape: (96, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #15 b_zero_generated_252_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #16 253_int8 shape: (8, 24, 24, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 51,
+            "name": "Int8Conv (#8)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 41, 0 ], [ 50, 0 ], [ 41, 1 ], [ 41, 2 ], [ 52, 0 ], [ 53, 0 ], [ 47, 0 ], [ 56, 0 ], [ 48, 0 ], [ 49, 0 ], [ 54, 0 ], [ 55, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #7 (quantized: True)",
+                "in:    TensorNode #16 253_int8 shape: (8, 24, 24, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #17 384_int8 shape: (32, 1, 1, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #18 385_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #19 383_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 61,
+            "name": "Int8Conv (#9)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 51, 0 ], [ 60, 0 ], [ 51, 1 ], [ 51, 2 ], [ 62, 0 ], [ 63, 0 ], [ 57, 0 ], [ 66, 0 ], [ 58, 0 ], [ 59, 0 ], [ 64, 0 ], [ 65, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #8 (quantized: True)",
+                "in:    TensorNode #19 383_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #20 387_int8 shape: (192, 1, 1, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #21 388_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #22 258_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 71,
+            "name": "Int8ConvRelu (#10)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 61, 0 ], [ 70, 0 ], [ 61, 1 ], [ 61, 2 ], [ 72, 0 ], [ 73, 0 ], [ 67, 0 ], [ 76, 0 ], [ 68, 0 ], [ 69, 0 ], [ 74, 0 ], [ 75, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 192 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #9 (quantized: True)",
+                "in:    TensorNode #22 258_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #23 0.model_base.stages_image.xif1_1.dw.conv.weight_int8 shape: (192, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #24 b_zero_generated_258_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #25 259_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 81,
+            "name": "Int8Conv (#11)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 71, 0 ], [ 80, 0 ], [ 71, 1 ], [ 71, 2 ], [ 82, 0 ], [ 83, 0 ], [ 77, 0 ], [ 86, 0 ], [ 78, 0 ], [ 79, 0 ], [ 84, 0 ], [ 85, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 192 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #10 (quantized: True)",
+                "in:    TensorNode #25 259_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #26 390_int8 shape: (32, 1, 1, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #27 391_int8 shape: (32,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #28 389_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 91,
+            "name": "Int8Conv (#12)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 81, 0 ], [ 90, 0 ], [ 81, 1 ], [ 81, 2 ], [ 92, 0 ], [ 93, 0 ], [ 87, 0 ], [ 96, 0 ], [ 88, 0 ], [ 89, 0 ], [ 94, 0 ], [ 95, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #11 (quantized: True)",
+                "in:    TensorNode #19 383_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #28 389_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #29 262_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 97,
+            "name": "Int8Add (#13)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 61, 0 ], [ 91, 0 ], [ 61, 1 ], [ 61, 2 ], [ 91, 1 ], [ 91, 2 ], [ 98, 0 ], [ 99, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #12 (quantized: True)",
+                "in:    TensorNode #29 262_int8 shape: (8, 24, 24, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #30 393_int8 shape: (192, 1, 1, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #31 394_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #32 265_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 104,
+            "name": "Int8ConvRelu (#14)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 97, 0 ], [ 103, 0 ], [ 97, 1 ], [ 97, 2 ], [ 105, 0 ], [ 106, 0 ], [ 100, 0 ], [ 109, 0 ], [ 101, 0 ], [ 102, 0 ], [ 107, 0 ], [ 108, 0 ]],
+            "output": [
+              {"shape": [ 8, 24, 24, 192 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #13 (quantized: True)",
+                "in:    TensorNode #32 265_int8 shape: (8, 24, 24, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #33 0.model_base.stages_image.xif2_0.dw.conv.weight_int8 shape: (192, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #34 b_zero_generated_265_int8 shape: (192,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #35 266_int8 shape: (8, 12, 12, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 114,
+            "name": "Int8Conv (#15)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 104, 0 ], [ 113, 0 ], [ 104, 1 ], [ 104, 2 ], [ 115, 0 ], [ 116, 0 ], [ 110, 0 ], [ 119, 0 ], [ 111, 0 ], [ 112, 0 ], [ 117, 0 ], [ 118, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 192 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #14 (quantized: True)",
+                "in:    TensorNode #35 266_int8 shape: (8, 12, 12, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #36 396_int8 shape: (64, 1, 1, 192) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #37 397_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #38 395_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 124,
+            "name": "Int8Conv (#16)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 114, 0 ], [ 123, 0 ], [ 114, 1 ], [ 114, 2 ], [ 125, 0 ], [ 126, 0 ], [ 120, 0 ], [ 129, 0 ], [ 121, 0 ], [ 122, 0 ], [ 127, 0 ], [ 128, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #15 (quantized: True)",
+                "in:    TensorNode #38 395_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #39 399_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #40 400_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #41 271_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 134,
+            "name": "Int8ConvRelu (#17)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 124, 0 ], [ 133, 0 ], [ 124, 1 ], [ 124, 2 ], [ 135, 0 ], [ 136, 0 ], [ 130, 0 ], [ 139, 0 ], [ 131, 0 ], [ 132, 0 ], [ 137, 0 ], [ 138, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #16 (quantized: True)",
+                "in:    TensorNode #41 271_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #42 0.model_base.stages_image.xif2_1.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #43 b_zero_generated_271_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #44 272_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 144,
+            "name": "Int8Conv (#18)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 134, 0 ], [ 143, 0 ], [ 134, 1 ], [ 134, 2 ], [ 145, 0 ], [ 146, 0 ], [ 140, 0 ], [ 149, 0 ], [ 141, 0 ], [ 142, 0 ], [ 147, 0 ], [ 148, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #17 (quantized: True)",
+                "in:    TensorNode #44 272_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #45 402_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #46 403_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #47 401_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 154,
+            "name": "Int8Conv (#19)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 144, 0 ], [ 153, 0 ], [ 144, 1 ], [ 144, 2 ], [ 155, 0 ], [ 156, 0 ], [ 150, 0 ], [ 159, 0 ], [ 151, 0 ], [ 152, 0 ], [ 157, 0 ], [ 158, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #18 (quantized: True)",
+                "in:    TensorNode #38 395_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #47 401_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #48 275_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 160,
+            "name": "Int8Add (#20)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 124, 0 ], [ 154, 0 ], [ 124, 1 ], [ 124, 2 ], [ 154, 1 ], [ 154, 2 ], [ 161, 0 ], [ 162, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #19 (quantized: True)",
+                "in:    TensorNode #48 275_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #49 405_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #50 406_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #51 278_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 167,
+            "name": "Int8ConvRelu (#21)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 160, 0 ], [ 166, 0 ], [ 160, 1 ], [ 160, 2 ], [ 168, 0 ], [ 169, 0 ], [ 163, 0 ], [ 172, 0 ], [ 164, 0 ], [ 165, 0 ], [ 170, 0 ], [ 171, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #20 (quantized: True)",
+                "in:    TensorNode #51 278_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #52 0.model_base.stages_image.xif2_2.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #53 b_zero_generated_278_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #54 279_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 177,
+            "name": "Int8Conv (#22)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 167, 0 ], [ 176, 0 ], [ 167, 1 ], [ 167, 2 ], [ 178, 0 ], [ 179, 0 ], [ 173, 0 ], [ 182, 0 ], [ 174, 0 ], [ 175, 0 ], [ 180, 0 ], [ 181, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #21 (quantized: True)",
+                "in:    TensorNode #54 279_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #55 408_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #56 409_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #57 407_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 187,
+            "name": "Int8Conv (#23)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 177, 0 ], [ 186, 0 ], [ 177, 1 ], [ 177, 2 ], [ 188, 0 ], [ 189, 0 ], [ 183, 0 ], [ 192, 0 ], [ 184, 0 ], [ 185, 0 ], [ 190, 0 ], [ 191, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #22 (quantized: True)",
+                "in:    TensorNode #48 275_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #57 407_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #58 282_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 193,
+            "name": "Int8Add (#24)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 160, 0 ], [ 187, 0 ], [ 160, 1 ], [ 160, 2 ], [ 187, 1 ], [ 187, 2 ], [ 194, 0 ], [ 195, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ReluNode #23 (quantized: True)",
+                "in:    TensorNode #59 285_NHWC_int8 shape: (8, 12, 12, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #60 286_int8 shape: (8, 12, 12, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 198,
+            "name": "Int8Relu (#30)",
+            "op": "HTA_OP_QuantizedRelu_8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 1, 1 ], [ 196, 0 ], [ 197, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 32 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConcatNode #25 (quantized: True)",
+                "in:    TensorNode #58 282_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #60 286_int8 shape: (8, 12, 12, 32) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #61 287_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 202,
+            "name": "Int8Concat (#31)",
+            "op": "HTA_OP_QuantizedConcat_8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 199, 0 ], [ 193, 0 ], [ 198, 0 ], [ 194, 0 ], [ 200, 0 ], [ 195, 0 ], [ 201, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #26 (quantized: True)",
+                "in:    TensorNode #61 287_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #62 411_int8 shape: (384, 1, 1, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #63 412_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #64 290_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 207,
+            "name": "Int8ConvRelu (#32)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 202, 0 ], [ 206, 0 ], [ 202, 1 ], [ 202, 2 ], [ 208, 0 ], [ 209, 0 ], [ 203, 0 ], [ 212, 0 ], [ 204, 0 ], [ 205, 0 ], [ 210, 0 ], [ 211, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #27 (quantized: True)",
+                "in:    TensorNode #64 290_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #65 0.model_base.stages_fused.xif3_0.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #66 b_zero_generated_290_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #67 291_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 217,
+            "name": "Int8Conv (#33)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 207, 0 ], [ 216, 0 ], [ 207, 1 ], [ 207, 2 ], [ 218, 0 ], [ 219, 0 ], [ 213, 0 ], [ 222, 0 ], [ 214, 0 ], [ 215, 0 ], [ 220, 0 ], [ 221, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #28 (quantized: True)",
+                "in:    TensorNode #67 291_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #68 414_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #69 415_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #70 413_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 227,
+            "name": "Int8Conv (#34)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 217, 0 ], [ 226, 0 ], [ 217, 1 ], [ 217, 2 ], [ 228, 0 ], [ 229, 0 ], [ 223, 0 ], [ 232, 0 ], [ 224, 0 ], [ 225, 0 ], [ 230, 0 ], [ 231, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #29 (quantized: True)",
+                "in:    TensorNode #70 413_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #71 417_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #72 418_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #73 296_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 237,
+            "name": "Int8ConvRelu (#35)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 227, 0 ], [ 236, 0 ], [ 227, 1 ], [ 227, 2 ], [ 238, 0 ], [ 239, 0 ], [ 233, 0 ], [ 242, 0 ], [ 234, 0 ], [ 235, 0 ], [ 240, 0 ], [ 241, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #30 (quantized: True)",
+                "in:    TensorNode #73 296_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #74 0.model_base.stages_fused.xif3_1.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #75 b_zero_generated_296_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #76 297_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 247,
+            "name": "Int8Conv (#36)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 237, 0 ], [ 246, 0 ], [ 237, 1 ], [ 237, 2 ], [ 248, 0 ], [ 249, 0 ], [ 243, 0 ], [ 252, 0 ], [ 244, 0 ], [ 245, 0 ], [ 250, 0 ], [ 251, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #31 (quantized: True)",
+                "in:    TensorNode #76 297_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #77 420_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #78 421_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #79 419_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 257,
+            "name": "Int8Conv (#37)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 247, 0 ], [ 256, 0 ], [ 247, 1 ], [ 247, 2 ], [ 258, 0 ], [ 259, 0 ], [ 253, 0 ], [ 262, 0 ], [ 254, 0 ], [ 255, 0 ], [ 260, 0 ], [ 261, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #32 (quantized: True)",
+                "in:    TensorNode #70 413_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #79 419_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #80 300_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 263,
+            "name": "Int8Add (#38)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 227, 0 ], [ 257, 0 ], [ 227, 1 ], [ 227, 2 ], [ 257, 1 ], [ 257, 2 ], [ 264, 0 ], [ 265, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #33 (quantized: True)",
+                "in:    TensorNode #80 300_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #81 423_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #82 424_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #83 303_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 270,
+            "name": "Int8ConvRelu (#39)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 263, 0 ], [ 269, 0 ], [ 263, 1 ], [ 263, 2 ], [ 271, 0 ], [ 272, 0 ], [ 266, 0 ], [ 275, 0 ], [ 267, 0 ], [ 268, 0 ], [ 273, 0 ], [ 274, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #34 (quantized: True)",
+                "in:    TensorNode #83 303_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #84 0.model_base.stages_fused.xif3_2.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #85 b_zero_generated_303_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #86 304_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 280,
+            "name": "Int8Conv (#40)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 270, 0 ], [ 279, 0 ], [ 270, 1 ], [ 270, 2 ], [ 281, 0 ], [ 282, 0 ], [ 276, 0 ], [ 285, 0 ], [ 277, 0 ], [ 278, 0 ], [ 283, 0 ], [ 284, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #35 (quantized: True)",
+                "in:    TensorNode #86 304_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #87 426_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #88 427_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #89 425_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 290,
+            "name": "Int8Conv (#41)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 280, 0 ], [ 289, 0 ], [ 280, 1 ], [ 280, 2 ], [ 291, 0 ], [ 292, 0 ], [ 286, 0 ], [ 295, 0 ], [ 287, 0 ], [ 288, 0 ], [ 293, 0 ], [ 294, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #36 (quantized: True)",
+                "in:    TensorNode #80 300_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #89 425_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #90 307_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 296,
+            "name": "Int8Add (#42)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 263, 0 ], [ 290, 0 ], [ 263, 1 ], [ 263, 2 ], [ 290, 1 ], [ 290, 2 ], [ 297, 0 ], [ 298, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #37 (quantized: True)",
+                "in:    TensorNode #90 307_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #91 429_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #92 430_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #93 310_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 303,
+            "name": "Int8ConvRelu (#43)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 296, 0 ], [ 302, 0 ], [ 296, 1 ], [ 296, 2 ], [ 304, 0 ], [ 305, 0 ], [ 299, 0 ], [ 308, 0 ], [ 300, 0 ], [ 301, 0 ], [ 306, 0 ], [ 307, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #38 (quantized: True)",
+                "in:    TensorNode #93 310_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #94 0.model_base.stages_fused.xif3_3.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #95 b_zero_generated_310_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #96 311_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 313,
+            "name": "Int8Conv (#44)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 303, 0 ], [ 312, 0 ], [ 303, 1 ], [ 303, 2 ], [ 314, 0 ], [ 315, 0 ], [ 309, 0 ], [ 318, 0 ], [ 310, 0 ], [ 311, 0 ], [ 316, 0 ], [ 317, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #39 (quantized: True)",
+                "in:    TensorNode #96 311_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #97 432_int8 shape: (64, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #98 433_int8 shape: (64,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #99 431_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 323,
+            "name": "Int8Conv (#45)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 313, 0 ], [ 322, 0 ], [ 313, 1 ], [ 313, 2 ], [ 324, 0 ], [ 325, 0 ], [ 319, 0 ], [ 328, 0 ], [ 320, 0 ], [ 321, 0 ], [ 326, 0 ], [ 327, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #40 (quantized: True)",
+                "in:    TensorNode #90 307_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #99 431_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #100 314_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 329,
+            "name": "Int8Add (#46)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 296, 0 ], [ 323, 0 ], [ 296, 1 ], [ 296, 2 ], [ 323, 1 ], [ 323, 2 ], [ 330, 0 ], [ 331, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 64 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #41 (quantized: True)",
+                "in:    TensorNode #100 314_int8 shape: (8, 12, 12, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #101 435_int8 shape: (384, 1, 1, 64) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #102 436_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #103 317_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 336,
+            "name": "Int8ConvRelu (#47)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 329, 0 ], [ 335, 0 ], [ 329, 1 ], [ 329, 2 ], [ 337, 0 ], [ 338, 0 ], [ 332, 0 ], [ 341, 0 ], [ 333, 0 ], [ 334, 0 ], [ 339, 0 ], [ 340, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #42 (quantized: True)",
+                "in:    TensorNode #103 317_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #104 0.model_base.stages_fused.xif3_4.dw.conv.weight_int8 shape: (384, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #105 b_zero_generated_317_int8 shape: (384,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #106 318_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 346,
+            "name": "Int8Conv (#48)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 336, 0 ], [ 345, 0 ], [ 336, 1 ], [ 336, 2 ], [ 347, 0 ], [ 348, 0 ], [ 342, 0 ], [ 351, 0 ], [ 343, 0 ], [ 344, 0 ], [ 349, 0 ], [ 350, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 384 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #43 (quantized: True)",
+                "in:    TensorNode #106 318_int8 shape: (8, 12, 12, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #107 438_int8 shape: (96, 1, 1, 384) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #108 439_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #109 437_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 356,
+            "name": "Int8Conv (#49)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 346, 0 ], [ 355, 0 ], [ 346, 1 ], [ 346, 2 ], [ 357, 0 ], [ 358, 0 ], [ 352, 0 ], [ 361, 0 ], [ 353, 0 ], [ 354, 0 ], [ 359, 0 ], [ 360, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #44 (quantized: True)",
+                "in:    TensorNode #109 437_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #110 441_int8 shape: (480, 1, 1, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #111 442_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #112 323_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 366,
+            "name": "Int8ConvRelu (#50)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 356, 0 ], [ 365, 0 ], [ 356, 1 ], [ 356, 2 ], [ 367, 0 ], [ 368, 0 ], [ 362, 0 ], [ 371, 0 ], [ 363, 0 ], [ 364, 0 ], [ 369, 0 ], [ 370, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 480 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #45 (quantized: True)",
+                "in:    TensorNode #112 323_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #113 0.model_base.stages_fused.xif3_5.dw.conv.weight_int8 shape: (480, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #114 b_zero_generated_323_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #115 324_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 376,
+            "name": "Int8Conv (#51)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 366, 0 ], [ 375, 0 ], [ 366, 1 ], [ 366, 2 ], [ 377, 0 ], [ 378, 0 ], [ 372, 0 ], [ 381, 0 ], [ 373, 0 ], [ 374, 0 ], [ 379, 0 ], [ 380, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 480 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #46 (quantized: True)",
+                "in:    TensorNode #115 324_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #116 444_int8 shape: (96, 1, 1, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #117 445_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #118 443_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 386,
+            "name": "Int8Conv (#52)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 376, 0 ], [ 385, 0 ], [ 376, 1 ], [ 376, 2 ], [ 387, 0 ], [ 388, 0 ], [ 382, 0 ], [ 391, 0 ], [ 383, 0 ], [ 384, 0 ], [ 389, 0 ], [ 390, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #47 (quantized: True)",
+                "in:    TensorNode #109 437_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #118 443_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #119 327_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 392,
+            "name": "Int8Add (#53)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 356, 0 ], [ 386, 0 ], [ 356, 1 ], [ 356, 2 ], [ 386, 1 ], [ 386, 2 ], [ 393, 0 ], [ 394, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #48 (quantized: True)",
+                "in:    TensorNode #119 327_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #120 447_int8 shape: (480, 1, 1, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #121 448_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #122 330_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 399,
+            "name": "Int8ConvRelu (#54)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 392, 0 ], [ 398, 0 ], [ 392, 1 ], [ 392, 2 ], [ 400, 0 ], [ 401, 0 ], [ 395, 0 ], [ 404, 0 ], [ 396, 0 ], [ 397, 0 ], [ 402, 0 ], [ 403, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 480 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #49 (quantized: True)",
+                "in:    TensorNode #122 330_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #123 0.model_base.stages_fused.xif3_6.dw.conv.weight_int8 shape: (480, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #124 b_zero_generated_330_int8 shape: (480,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #125 331_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 409,
+            "name": "Int8Conv (#55)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 399, 0 ], [ 408, 0 ], [ 399, 1 ], [ 399, 2 ], [ 410, 0 ], [ 411, 0 ], [ 405, 0 ], [ 414, 0 ], [ 406, 0 ], [ 407, 0 ], [ 412, 0 ], [ 413, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 480 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #50 (quantized: True)",
+                "in:    TensorNode #125 331_int8 shape: (8, 12, 12, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #126 450_int8 shape: (96, 1, 1, 480) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #127 451_int8 shape: (96,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #128 449_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 419,
+            "name": "Int8Conv (#56)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 409, 0 ], [ 418, 0 ], [ 409, 1 ], [ 409, 2 ], [ 420, 0 ], [ 421, 0 ], [ 415, 0 ], [ 424, 0 ], [ 416, 0 ], [ 417, 0 ], [ 422, 0 ], [ 423, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #51 (quantized: True)",
+                "in:    TensorNode #119 327_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #128 449_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #129 334_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 425,
+            "name": "Int8Add (#57)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 392, 0 ], [ 419, 0 ], [ 392, 1 ], [ 392, 2 ], [ 419, 1 ], [ 419, 2 ], [ 426, 0 ], [ 427, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 96 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #52 (quantized: True)",
+                "in:    TensorNode #129 334_int8 shape: (8, 12, 12, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #130 453_int8 shape: (576, 1, 1, 96) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #131 454_int8 shape: (576,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #132 337_int8 shape: (8, 12, 12, 576) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 432,
+            "name": "Int8ConvRelu (#58)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 425, 0 ], [ 431, 0 ], [ 425, 1 ], [ 425, 2 ], [ 433, 0 ], [ 434, 0 ], [ 428, 0 ], [ 437, 0 ], [ 429, 0 ], [ 430, 0 ], [ 435, 0 ], [ 436, 0 ]],
+            "output": [
+              {"shape": [ 8, 12, 12, 576 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #53 (quantized: True)",
+                "in:    TensorNode #132 337_int8 shape: (8, 12, 12, 576) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #133 0.model_base.stages_fused.xif4_0.dw.conv.weight_int8 shape: (576, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #134 b_zero_generated_337_int8 shape: (576,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #135 338_int8 shape: (8, 6, 6, 576) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 442,
+            "name": "Int8Conv (#59)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 432, 0 ], [ 441, 0 ], [ 432, 1 ], [ 432, 2 ], [ 443, 0 ], [ 444, 0 ], [ 438, 0 ], [ 447, 0 ], [ 439, 0 ], [ 440, 0 ], [ 445, 0 ], [ 446, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 576 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #54 (quantized: True)",
+                "in:    TensorNode #135 338_int8 shape: (8, 6, 6, 576) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #136 456_int8 shape: (128, 1, 1, 576) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #137 457_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #138 455_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 452,
+            "name": "Int8Conv (#60)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 442, 0 ], [ 451, 0 ], [ 442, 1 ], [ 442, 2 ], [ 453, 0 ], [ 454, 0 ], [ 448, 0 ], [ 457, 0 ], [ 449, 0 ], [ 450, 0 ], [ 455, 0 ], [ 456, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 128 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #55 (quantized: True)",
+                "in:    TensorNode #138 455_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #139 459_int8 shape: (768, 1, 1, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #140 460_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #141 343_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 462,
+            "name": "Int8ConvRelu (#61)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 452, 0 ], [ 461, 0 ], [ 452, 1 ], [ 452, 2 ], [ 463, 0 ], [ 464, 0 ], [ 458, 0 ], [ 467, 0 ], [ 459, 0 ], [ 460, 0 ], [ 465, 0 ], [ 466, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #56 (quantized: True)",
+                "in:    TensorNode #141 343_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #142 0.model_base.stages_fused.xif4_1.dw.conv.weight_int8 shape: (768, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #143 b_zero_generated_343_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #144 344_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 472,
+            "name": "Int8Conv (#62)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 462, 0 ], [ 471, 0 ], [ 462, 1 ], [ 462, 2 ], [ 473, 0 ], [ 474, 0 ], [ 468, 0 ], [ 477, 0 ], [ 469, 0 ], [ 470, 0 ], [ 475, 0 ], [ 476, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #57 (quantized: True)",
+                "in:    TensorNode #144 344_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #145 462_int8 shape: (128, 1, 1, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #146 463_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #147 461_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 482,
+            "name": "Int8Conv (#63)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 472, 0 ], [ 481, 0 ], [ 472, 1 ], [ 472, 2 ], [ 483, 0 ], [ 484, 0 ], [ 478, 0 ], [ 487, 0 ], [ 479, 0 ], [ 480, 0 ], [ 485, 0 ], [ 486, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 128 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #58 (quantized: True)",
+                "in:    TensorNode #138 455_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #147 461_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #148 347_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 488,
+            "name": "Int8Add (#64)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 452, 0 ], [ 482, 0 ], [ 452, 1 ], [ 452, 2 ], [ 482, 1 ], [ 482, 2 ], [ 489, 0 ], [ 490, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 128 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #59 (quantized: True)",
+                "in:    TensorNode #148 347_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #149 465_int8 shape: (768, 1, 1, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #150 466_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #151 350_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 495,
+            "name": "Int8ConvRelu (#65)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 488, 0 ], [ 494, 0 ], [ 488, 1 ], [ 488, 2 ], [ 496, 0 ], [ 497, 0 ], [ 491, 0 ], [ 500, 0 ], [ 492, 0 ], [ 493, 0 ], [ 498, 0 ], [ 499, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #60 (quantized: True)",
+                "in:    TensorNode #151 350_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #152 0.model_base.stages_fused.xif4_2.dw.conv.weight_int8 shape: (768, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #153 b_zero_generated_350_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #154 351_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 505,
+            "name": "Int8Conv (#66)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 495, 0 ], [ 504, 0 ], [ 495, 1 ], [ 495, 2 ], [ 506, 0 ], [ 507, 0 ], [ 501, 0 ], [ 510, 0 ], [ 502, 0 ], [ 503, 0 ], [ 508, 0 ], [ 509, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #61 (quantized: True)",
+                "in:    TensorNode #154 351_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #155 468_int8 shape: (128, 1, 1, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #156 469_int8 shape: (128,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #157 467_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 515,
+            "name": "Int8Conv (#67)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 505, 0 ], [ 514, 0 ], [ 505, 1 ], [ 505, 2 ], [ 516, 0 ], [ 517, 0 ], [ 511, 0 ], [ 520, 0 ], [ 512, 0 ], [ 513, 0 ], [ 518, 0 ], [ 519, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 128 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AddNode #62 (quantized: True)",
+                "in:    TensorNode #148 347_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #157 467_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #158 354_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 521,
+            "name": "Int8Add (#68)",
+            "op": "HTA_OP_QuantizedAdd_8p8to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 488, 0 ], [ 515, 0 ], [ 488, 1 ], [ 488, 2 ], [ 515, 1 ], [ 515, 2 ], [ 522, 0 ], [ 523, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 128 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #63 (quantized: True)",
+                "in:    TensorNode #158 354_int8 shape: (8, 6, 6, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #159 471_int8 shape: (768, 1, 1, 128) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #160 472_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #161 357_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 528,
+            "name": "Int8ConvRelu (#69)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 521, 0 ], [ 527, 0 ], [ 521, 1 ], [ 521, 2 ], [ 529, 0 ], [ 530, 0 ], [ 524, 0 ], [ 533, 0 ], [ 525, 0 ], [ 526, 0 ], [ 531, 0 ], [ 532, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "DepthwiseConvNode #64 (quantized: True)",
+                "in:    TensorNode #161 357_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #162 0.model_base.stages_fused.xif4_3.dw.conv.weight_int8 shape: (768, 3, 3, 1) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #163 b_zero_generated_357_int8 shape: (768,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #164 358_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 538,
+            "name": "Int8Conv (#70)",
+            "op": "HTA_OP_DepthwiseSupernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_SAME_CAFFE",
+            "input": [[ 528, 0 ], [ 537, 0 ], [ 528, 1 ], [ 528, 2 ], [ 539, 0 ], [ 540, 0 ], [ 534, 0 ], [ 543, 0 ], [ 535, 0 ], [ 536, 0 ], [ 541, 0 ], [ 542, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 768 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #65 (quantized: True)",
+                "in:    TensorNode #164 358_int8 shape: (8, 6, 6, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #165 474_int8 shape: (160, 1, 1, 768) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #166 475_int8 shape: (160,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #167 473_int8 shape: (8, 6, 6, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 548,
+            "name": "Int8Conv (#71)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 538, 0 ], [ 547, 0 ], [ 538, 1 ], [ 538, 2 ], [ 549, 0 ], [ 550, 0 ], [ 544, 0 ], [ 553, 0 ], [ 545, 0 ], [ 546, 0 ], [ 551, 0 ], [ 552, 0 ]],
+            "output": [
+              {"shape": [ 8, 6, 6, 160 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "AveragePoolNode #67 (quantized: True)",
+                "in:    TensorNode #167 473_int8 shape: (8, 6, 6, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #168 369_int8 shape: (8, 1, 1, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 556,
+            "name": "Int8AveragePool (#75)",
+            "op": "HTA_OP_QuantizedAvgPool_8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 548, 0 ], [ 548, 1 ], [ 548, 2 ], [ 554, 0 ], [ 555, 0 ]],
+            "output": [
+              {"shape": [ 8, 1, 1, 160 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvNode #68 (quantized: True)",
+                "in:    TensorNode #168 369_int8 shape: (8, 1, 1, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #169 0.additional_layers.1.1.weight_int8 shape: (378, 1, 1, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #170 0.additional_layers.1.1.bias_int8 shape: (378,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #171 371_int8 shape: (8, 1, 1, 378) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 561,
+            "name": "Int8ConvRelu (#76)",
+            "op": "HTA_OP_Supernode_8x8p32to8",
+            "padding": "HTA_NN_PAD_VALID",
+            "input": [[ 556, 0 ], [ 560, 0 ], [ 556, 1 ], [ 556, 2 ], [ 562, 0 ], [ 563, 0 ], [ 557, 0 ], [ 566, 0 ], [ 558, 0 ], [ 559, 0 ], [ 564, 0 ], [ 565, 0 ]],
+            "output": [
+              {"shape": [ 8, 1, 1, 378 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              "TensorNode #167 473_int8 shape: (8, 6, 6, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+              "TensorNode #171 371_int8 shape: (8, 1, 1, 378) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+            ],
+            "id": 567,
+            "name": "",
+            "op": "HTA_OP_OUTPUT",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 548, 0 ], [ 561, 0 ]],
+            "output": []
+          }
+        ],
+        "input": [
+          {
+            "shape": [ 8, 96, 96, 1 ],
+            "order": "NHWC",
+            "name": "[mono]_NHWC_int8",
+            "quantized": true,
+            "scale": 0.003921568859368563,
+            "zero_point": 0
+          },
+          {
+            "shape": [ 8, 12, 12, 32 ],
+            "order": "NHWC",
+            "name": "285_NHWC_int8",
+            "quantized": true,
+            "scale": 0.006898569408804178,
+            "zero_point": 136
+          }
+        ],
+        "output": [
+          {
+            "shape": [ 8, 6, 6, 160 ],
+            "order": "NHWC",
+            "name": "473_int8",
+            "quantized": true,
+            "scale": 0.14777116477489471,
+            "zero_point": 143
+          },
+          {
+            "shape": [ 8, 1, 1, 378 ],
+            "order": "NHWC",
+            "name": "371_int8",
+            "quantized": true,
+            "scale": 0.26652655005455017,
+            "zero_point": 0
+          }
+        ],
+        "args": {}
+      },
+      "padding": "NN_PAD_NA",
+      "input": [[ 5, 0 ], [ 40, 0 ]],
+      "output": [
+        {"shape": [ 8, 6, 6, 160 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 8, 1, 1, 378 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "ConvNode #74 (quantized: True)",
+          "in:    TensorNode #380 473_int8 shape: (8, 6, 6, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #50 477_int8 shape: (63, 3, 3, 160) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #80 478_int8 shape: (63,) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #188 363_int8 shape: (8, 8, 8, 63) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 44,
+      "name": "Int8ConvRelu (#72)",
+      "op": "OP_Caffe2_QuantizedConv2d_8x8to8",
+      "padding": "NN_PAD_NA",
+      "input": [[ 43, 0 ], [ 52, 0 ], [ 53, 0 ], [ 54, 0 ], [ 46, 0 ], [ 47, 0 ], [ 48, 0 ], [ 49, 0 ], [ 50, 0 ], [ 51, 0 ]],
+      "output": [
+        {"shape": [ 8, 8, 8, 63 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "id": 55,
+      "name": "HTANode:1",
+      "op": "OP_HTASubgraph",
+      "hta_subgraph": {
+        "version": "HTA-0.1",
+        "name": "HTA subgraph 97",
+        "const_node": [
+          {"id": 2, "shape": [ 1 ], "location": [ 1929033, 4 ]},
+          {"id": 3, "shape": [ 1 ], "location": [ 1929037, 4 ]},
+          {"id": 4, "shape": [ 1 ], "location": [ 1929041, 4 ]},
+          {"id": 5, "shape": [ 1 ], "location": [ 1929045, 4 ]},
+          {"id": 6, "shape": [ 42, 2, 2, 63 ], "location": [ 1929049, 10584 ]},
+          {"id": 7, "shape": [ 4 ], "location": [ 1939633, 16 ]},
+          {"id": 8, "shape": [ 1, 2, 2, 1 ], "location": [ 0, 0 ]},
+          {"id": 9, "shape": [ 1 ], "location": [ 1939649, 4 ]},
+          {"id": 10, "shape": [ 1 ], "location": [ 1939653, 4 ]},
+          {"id": 12, "shape": [ 1 ], "location": [ 1939657, 4 ]},
+          {"id": 13, "shape": [ 1 ], "location": [ 1939661, 4 ]},
+          {
+            "id": 14,
+            "shape": [ 42 ],
+            "location": [ 1939665, 168 ],
+            "comment": "TensorNode #2 0.additional_layers.0.3.bias_int8 shape: (42,) order: None quantized: True format: TensorLayout.PLAIN None"
+          }
+        ],
+        "node": [
+          {
+            "comment": [
+              "TensorNode #0 363_int8 shape: (8, 8, 8, 63) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+            ],
+            "id": 1,
+            "name": "",
+            "op": "HTA_OP_INPUT",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [],
+            "output": [
+              {"shape": [ 8, 8, 8, 63 ], "elem_size": 1}
+            ]
+          },
+          {
+            "comment": [
+              [
+                "ConvTransposeNode #0 (quantized: True)",
+                "in:    TensorNode #0 363_int8 shape: (8, 8, 8, 63) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #1 0.additional_layers.0.3.weight_int8 shape: (63, 2, 2, 42) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+                "    TensorNode #2 0.additional_layers.0.3.bias_int8 shape: (42,) order: None quantized: True format: TensorLayout.PLAIN None",
+                "out:    TensorNode #3 364_int8 shape: (8, 16, 16, 42) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+              ]
+            ],
+            "id": 11,
+            "name": "Int8ConvTranspose (#73)",
+            "op": "HTA_OP_QuantizedTransposeConv2d_8x8p32to8",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 1, 0 ], [ 6, 0 ], [ 2, 0 ], [ 3, 0 ], [ 4, 0 ], [ 5, 0 ], [ 7, 0 ], [ 8, 0 ], [ 14, 0 ], [ 9, 0 ], [ 10, 0 ], [ 12, 0 ], [ 13, 0 ]],
+            "output": [
+              {"shape": [ 8, 16, 16, 42 ], "elem_size": 1},
+              {"shape": [ 1 ], "elem_size": 4},
+              {"shape": [ 1 ], "elem_size": 4}
+            ]
+          },
+          {
+            "comment": [
+              "TensorNode #3 364_int8 shape: (8, 16, 16, 42) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+            ],
+            "id": 15,
+            "name": "",
+            "op": "HTA_OP_OUTPUT",
+            "padding": "HTA_NN_PAD_NA",
+            "input": [[ 11, 0 ]],
+            "output": []
+          }
+        ],
+        "input": [
+          {
+            "shape": [ 8, 8, 8, 63 ],
+            "order": "NHWC",
+            "name": "363_int8",
+            "quantized": true,
+            "scale": 0.0038195052184164524,
+            "zero_point": 0
+          }
+        ],
+        "output": [
+          {
+            "shape": [ 8, 16, 16, 42 ],
+            "order": "NHWC",
+            "name": "364_int8",
+            "quantized": true,
+            "scale": 0.00111905368976295,
+            "zero_point": 113
+          }
+        ],
+        "args": {}
+      },
+      "padding": "NN_PAD_NA",
+      "input": [[ 44, 0 ]],
+      "output": [
+        {"shape": [ 8, 16, 16, 42 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "ConvNode #76 (quantized: True)",
+          "in:    TensorNode #388 364_int8 shape: (8, 16, 16, 42) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #63 480_int8 shape: (21, 3, 3, 42) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "    TensorNode #65 481_int8 shape: (21,) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #190 joint location heat maps_int8 shape: (8, 18, 18, 21) order: NHWC quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 56,
+      "name": "Int8ConvRelu (#74)",
+      "op": "OP_Caffe2_QuantizedConv2d_8x8to8",
+      "padding": "NN_PAD_NA",
+      "input": [[ 55, 0 ], [ 64, 0 ], [ 65, 0 ], [ 66, 0 ], [ 58, 0 ], [ 59, 0 ], [ 60, 0 ], [ 61, 0 ], [ 62, 0 ], [ 63, 0 ]],
+      "output": [
+        {"shape": [ 8, 18, 18, 21 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "TransposeNode #88 (quantized: True)",
+          "in:    TensorNode #190 joint location heat maps_int8 shape: (8, 18, 18, 21) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #200 joint location heat maps_int8_NCHW shape: (8, 21, 18, 18) order: NCHW quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 68,
+      "name": "joint location heat maps_int8_NHWC2NCHW",
+      "op": "OP_Caffe2_QuantizedTranspose_8",
+      "padding": "NN_PAD_NA",
+      "input": [[ 56, 0 ], [ 67, 0 ], [ 69, 0 ], [ 70, 0 ]],
+      "output": [
+        {"shape": [ 8, 21, 18, 18 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "DequantizeNode #82 (quantized: True)",
+          "in:    TensorNode #200 joint location heat maps_int8_NCHW shape: (8, 21, 18, 18) order: NCHW quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #201 joint location heat maps shape: (8, 21, 18, 18) order: NCHW quantized: False format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 73,
+      "name": "Int8Dequantize (#80)",
+      "op": "OP_Caffe2_Dequantize",
+      "padding": "NN_PAD_NA",
+      "input": [[ 68, 0 ], [ 71, 0 ], [ 72, 0 ]],
+      "output": [
+        {"shape": [ 8, 21, 18, 18 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "ReshapeNode #81 (quantized: True)",
+          "in:    TensorNode #384 371_int8 shape: (8, 1, 1, 378) order: NHWC quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #211 joint distance heat maps_int8 shape: (8, 21, 18) order: None quantized: True format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 75,
+      "name": "Reshape (#79)",
+      "op": "OP_QuantizedReshape",
+      "padding": "NN_PAD_NA",
+      "input": [[ 43, 3 ], [ 74, 0 ], [ 76, 0 ], [ 77, 0 ]],
+      "output": [
+        {"shape": [ 8, 21, 18 ], "elem_size": 1},
+        {"shape": [ 1 ], "elem_size": 4},
+        {"shape": [ 1 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        [
+          "DequantizeNode #95 (quantized: True)",
+          "in:    TensorNode #211 joint distance heat maps_int8 shape: (8, 21, 18) order: None quantized: True format: TensorLayout.PLAIN None",
+          "out:    TensorNode #212 joint distance heat maps shape: (8, 21, 18) order: None quantized: False format: TensorLayout.PLAIN None"
+        ]
+      ],
+      "id": 80,
+      "name": "QuantizedDequantizeNode:0",
+      "op": "OP_Caffe2_Dequantize",
+      "padding": "NN_PAD_NA",
+      "input": [[ 75, 0 ], [ 78, 0 ], [ 79, 0 ]],
+      "output": [
+        {"shape": [ 8, 21, 18 ], "elem_size": 4}
+      ]
+    },
+    {
+      "comment": [
+        "TensorNode #201 joint location heat maps shape: (8, 21, 18, 18) order: NCHW quantized: False format: TensorLayout.PLAIN None",
+        "TensorNode #212 joint distance heat maps shape: (8, 21, 18) order: None quantized: False format: TensorLayout.PLAIN None"
+      ],
+      "id": 81,
+      "name": "",
+      "op": "OP_OUTPUT",
+      "padding": "NN_PAD_NA",
+      "input": [[ 73, 0 ], [ 80, 0 ]],
+      "output": []
+    }
+  ],
+  "input": [
+    {
+      "shape": [ 8, 1, 96, 96 ],
+      "order": "NCHW",
+      "name": "[mono]_int8",
+      "quantized": true,
+      "scale": 0.003921568859368563,
+      "zero_point": 0
+    },
+    {
+      "shape": [ 8, 63 ],
+      "order": "NONE",
+      "name": "[prevNormalizedXYDistance]",
+      "quantized": false,
+      "scale": 0.0,
+      "zero_point": 0
+    }
+  ],
+  "output": [
+    {
+      "shape": [ 8, 21, 18, 18 ],
+      "order": "NCHW",
+      "name": "joint location heat maps",
+      "quantized": false,
+      "scale": 0.0,
+      "zero_point": 0
+    },
+    {
+      "shape": [ 8, 21, 18 ],
+      "order": "NONE",
+      "name": "joint distance heat maps",
+      "quantized": false,
+      "scale": 0.0,
+      "zero_point": 0
+    }
+  ],
+  "args": {
+    "evalKernel": "9",
+    "invalidXYVal": "0",
+    "invalidDVal": "0",
+    "nnInputSize": "96",
+    "minDClamp": "-0.25",
+    "maxDClamp": "1.25",
+    "dPredictionScale": "0.5",
+    "outputScale": "183",
+    "heatMapSize": "18",
+    "heatMapSigma": "1.0606601717798212",
+    "numFeatures": "21",
+    "inputChannelNames": "[mono, prevNormalizedXYDistance]",
+    "outputNames": "[joint location heat maps, joint distance heat maps]",
+    "glusterPath": "manifold://oculus-nimble/tree/Users/nsorensen/output/NDEv4_experimental_20/caffe2_manual"
+  },
+  "_": "@generated"
+}

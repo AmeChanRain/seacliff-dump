@@ -1,0 +1,13 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/systemupdate 0750 system system
+    mkdir /data/oculus/systemupdate/orchestrator 0750 system system
+
+service systemupdate-orchestrator /system/bin/systemupdate-orchestrator
+    interface aidl systemupdate-orchestrator
+    interface aidl systemupdate-initiator
+    class core
+    user system
+    group system
+    disabled
+    oneshot

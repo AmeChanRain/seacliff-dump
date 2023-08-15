@@ -1,0 +1,11 @@
+service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.seacliff
+    interface android.hardware.light@2.0::ILight default
+    interface vendor.oculus.hardware.light@2.0::ILight default
+    class hal
+    user system
+    group system
+    shutdown critical
+
+on fs
+    chown system system /persist/calibration/Status_LED_RGB
+    chmod 400 /persist/calibration/Status_LED_RGB

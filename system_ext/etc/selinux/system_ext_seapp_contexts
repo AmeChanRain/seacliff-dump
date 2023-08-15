@@ -1,0 +1,10 @@
+user=system seinfo=platform name=com.oculus.preloader domain=preloader_app type=app_data_file
+user=system seinfo=platform name=com.oculus.provisioningservice domain=provisioning_app type=system_app_data_file
+user=_app seinfo=oculus_metacam name=com.oculus.metacam domain=metacam_app type=app_data_file levelFrom=all
+user=_app seinfo=oculus_workrooms name=com.facebook.workrooms* domain=workrooms_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.oculus.gaiaviz domain=gaia_app type=app_data_file levelFrom=app
+user=_app seinfo=platform name=com.oculus.xrstreamingclient domain=xrs_app type=app_data_file levelFrom=all
+user=_app seinfo=oculus_inhouse name=com.oculus.balvenievr domain=balvenie_app type=app_data_file levelFrom=app
+user=_app seinfo=oculus_inhouse name=com.oculus.os.instsampui domain=instsamp_app type=app_data_file levelFrom=app
+user=_app seinfo=platform name=com.oculus.appsafety domain=app_safety type=app_data_file levelFrom=all
+user=_app seinfo=echovr name=com.readyatdawn.r15 domain=echovr_app type=app_data_file levelFrom=all

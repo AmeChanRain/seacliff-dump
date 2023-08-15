@@ -1,0 +1,4 @@
+<!-- Indicates that this device has hand tracking capabilities-->
+<permissions>
+    <feature name="oculus.software.handtracking" />
+</permissions>

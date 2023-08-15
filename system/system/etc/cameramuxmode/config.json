@@ -1,0 +1,240 @@
+{
+  "default": {
+    "consumerToFrameTypesMap": {
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_1"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "InsideOutBodyTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "FlexibleFrame",
+      "GENERIC_SLOT_2": "InsideOutTracking"
+    }
+  },
+  "HandTracking": {
+    "consumerToFrameTypesMap": {
+      "HandTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_1"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "InsideOutBodyTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "FlexibleFrame",
+      "GENERIC_SLOT_2": "InsideOutTracking"
+    }
+  },
+  "HandTrackingUseIOT": {
+    "consumerToFrameTypesMap": {
+      "HandTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_1",
+        "GENERIC_SLOT_2",
+        "GENERIC_SLOT_3"
+      ],
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_0"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "InsideOutBodyTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "HandTracking",
+      "GENERIC_SLOT_2": "InsideOutTracking",
+      "GENERIC_SLOT_3": "HandTracking"
+    }
+  },
+  "RubyTracking": {
+    "consumerToFrameTypesMap": {
+      "ConstellationTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "GENERIC_SLOT_3"
+      ],
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_1"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "FlexibleFrame",
+      "GENERIC_SLOT_2": "InsideOutTracking",
+      "GENERIC_SLOT_3": "ConstellationTracking"
+    }
+  },
+  "ConstellationTracking": {
+    "consumerToFrameTypesMap": {
+      "ConstellationTrackingEngine": [
+        "GENERIC_SLOT_1",
+        "GENERIC_SLOT_3"
+      ],
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_0"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "ConstellationTracking",
+      "GENERIC_SLOT_2": "InsideOutTracking",
+      "GENERIC_SLOT_3": "ConstellationTracking"
+    }
+  },
+  "FakeNoice": {
+    "consumerToFrameTypesMap": {
+      "HandTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "InsideOutTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ],
+      "MrSystemService": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "ObjectTrackingEngine": [
+        "GENERIC_SLOT_1"
+      ],
+      "RgbOCal": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2",
+        "COLOR"
+      ],
+      "InsideOutBodyTrackingEngine": [
+        "GENERIC_SLOT_0",
+        "GENERIC_SLOT_2"
+      ]
+    },
+    "frameConfiguration": [
+      "GENERIC_SLOT_0",
+      "GENERIC_SLOT_1",
+      "GENERIC_SLOT_2",
+      "GENERIC_SLOT_3",
+      "GENERIC_SLOT_4",
+      "GENERIC_SLOT_5",
+      "GENERIC_SLOT_6",
+      "GENERIC_SLOT_7"
+    ],
+    "frameTypeToExposureAlgorithmMap": {
+      "GENERIC_SLOT_0": "InsideOutTracking",
+      "GENERIC_SLOT_1": "FlexibleFrame",
+      "GENERIC_SLOT_2": "InsideOutTracking"
+    }
+  }
+}

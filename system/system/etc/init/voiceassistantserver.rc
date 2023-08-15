@@ -1,0 +1,12 @@
+service voiceassistantserver /system/bin/voiceassistantserver
+    class late_start
+    user system
+    group system
+    ioprio rt 4
+    oneshot
+
+on property:ovr.assistant.ww_enabled=false
+    stop voiceassistantserver
+
+on property:ovr.assistant.ww_enabled=true
+    start voiceassistantserver

@@ -1,0 +1,4 @@
+<!-- This is used to enable anti-piracy feature -->
+<permissions>
+  <feature name="oculus.software.anti_piracy" />
+</permissions>

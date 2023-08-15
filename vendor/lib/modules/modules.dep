@@ -1,0 +1,20 @@
+/vendor/lib/modules/hdmi_dlkm.ko:
+/vendor/lib/modules/llcc_perfmon.ko:
+/vendor/lib/modules/usbserial.ko:
+/vendor/lib/modules/q6_notifier_dlkm.ko: /vendor/lib/modules/q6_pdr_dlkm.ko
+/vendor/lib/modules/audio_ext_clk_up_dlkm.ko: /vendor/lib/modules/q6_dlkm.ko /vendor/lib/modules/apr_dlkm.ko /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/platform_dlkm.ko: /vendor/lib/modules/q6_dlkm.ko /vendor/lib/modules/apr_dlkm.ko /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/q6_pdr_dlkm.ko:
+/vendor/lib/modules/stub_dlkm.ko:
+/vendor/lib/modules/rdbg.ko:
+/vendor/lib/modules/snd-usb-audio.ko: /vendor/lib/modules/snd-usbmidi-lib.ko
+/vendor/lib/modules/q6_dlkm.ko: /vendor/lib/modules/apr_dlkm.ko /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/fpga_aggregator.ko:
+/vendor/lib/modules/apr_dlkm.ko: /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/snd_event_dlkm.ko:
+/vendor/lib/modules/machine_dlkm.ko: /vendor/lib/modules/q6_dlkm.ko /vendor/lib/modules/apr_dlkm.ko /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/cdc-acm.ko:
+/vendor/lib/modules/adsp_loader_dlkm.ko: /vendor/lib/modules/apr_dlkm.ko /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/pinctrl_lpi_dlkm.ko: /vendor/lib/modules/q6_notifier_dlkm.ko /vendor/lib/modules/q6_pdr_dlkm.ko /vendor/lib/modules/snd_event_dlkm.ko
+/vendor/lib/modules/bcmdhd.ko:
+/vendor/lib/modules/snd-usbmidi-lib.ko:

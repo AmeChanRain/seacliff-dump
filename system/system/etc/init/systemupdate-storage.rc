@@ -1,0 +1,12 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/systemupdate 0750 system system
+    mkdir /data/oculus/systemupdate/storage 0750 system system
+
+service systemupdate-storage /system/bin/systemupdate-storage
+    interface aidl SystemImageStorageService
+    class core
+    user system
+    group system
+    disabled
+    oneshot

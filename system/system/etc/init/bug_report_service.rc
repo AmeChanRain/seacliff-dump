@@ -1,0 +1,3 @@
+on post-fs-data
+    # Create folder for bugreports
+    mkdir /data/misc/bugreports 0770 system system

@@ -1,0 +1,44 @@
+#
+# XBox X/S wireless controller - Model 1914 QAU-00002
+#
+
+# Mapping according to https://developer.android.com/training/game-controllers/controller-input.html
+
+key 304   BUTTON_A
+key 305   BUTTON_B
+key 307   BUTTON_X
+key 308   BUTTON_Y
+key 310   BUTTON_L1
+key 311   BUTTON_R1
+
+key 317   BUTTON_THUMBL
+key 318   BUTTON_THUMBR
+
+# Left and right stick.
+# The reported value for flat is 128 out of a range from -32767 to 32768, which is absurd.
+# This confuses applications that rely on the flat value because the joystick actually
+# settles in a flat range of +/- 4096 or so.
+axis 0x00 X flat 4096
+axis 0x01 Y flat 4096
+axis 0x02 Z flat 4096
+axis 0x05 RZ flat 4096
+
+# Triggers.
+axis 0x0A LTRIGGER
+axis 0x09 RTRIGGER
+
+# Hat.
+axis 0x10 HAT_X
+axis 0x11 HAT_Y
+
+# Two overlapping rectangles
+key 314   BUTTON_SELECT
+
+# Hamburger - 3 parallel lines
+key 315   BUTTON_START
+
+# XBox button in the center of the controller
+key 316   BUTTON_MODE
+
+# "Share" button in center below XBox button
+key 167   MEDIA_RECORD

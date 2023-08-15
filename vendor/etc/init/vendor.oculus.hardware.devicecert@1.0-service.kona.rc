@@ -1,0 +1,8 @@
+on post-fs-data
+  mkdir /persist/certificates 0755 system system
+
+service vendor.oculus.devicecert-hal-1-0 /vendor/bin/hw/vendor.oculus.hardware.devicecert@1.0-service.kona
+  interface vendor.oculus.hardware.devicecert@1.0::IDeviceCert default
+  class hal
+  user system
+  group system

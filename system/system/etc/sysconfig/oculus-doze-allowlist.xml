@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which oculus packages should be exempted from doze, i.e.
+which packages should be allowed to acquire and maintain wakelocks in the doze window.
+-->
+<config>
+  <allow-in-power-save package="com.oculus.companion" />
+  <allow-in-power-save package="com.oculus.companion.server" />
+  <allow-in-power-save package="com.oculus.horizon" />
+  <allow-in-power-save package="com.oculus.ocms" />
+  <allow-in-power-save package="com.oculus.systemutilities" />
+  <allow-in-power-save package="com.oculus.updater" />
+</config>

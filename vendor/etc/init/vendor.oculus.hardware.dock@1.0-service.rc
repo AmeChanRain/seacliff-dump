@@ -1,0 +1,9 @@
+service vendor.dock-1-0 /vendor/bin/hw/vendor.oculus.hardware.dock@1.0-service
+    interface vendor.oculus.hardware.dock@1.0::IDock default
+    class main
+    user system
+    group system
+
+on init
+    chown system system /sys/devices/platform/vendor/vendor:oculus,charging_dock/docked
+    chown system system /sys/devices/platform/vendor/vendor:oculus,charging_dock/log

@@ -1,0 +1,6 @@
+# Crash uploader daemon
+service crashuploader /system/bin/ovr_crashuploader64
+    class main
+    user system
+    group system inet
+    writepid /dev/cpuset/system-background/tasks

@@ -1,0 +1,19 @@
+# x y r g b a font_file
+percent_display: c 1010 216 216 216 255 font
+
+# cycles first_frame_repeats animation_file
+animation: 3 2 charger/battery_scale
+
+# disp_time min_batt_level max_batt_level
+frame: 750  0 9
+frame: 750  0 9
+frame: 750 10 24
+frame: 750 10 24
+frame: 750 25 49
+frame: 750 25 49
+frame: 750 50 74
+frame: 750 50 74
+frame: 750 75 99
+frame: 750 75 99
+frame: 750 100 100
+frame: 750 100 100

@@ -1,0 +1,561 @@
+{
+    "faceTrackingModel": {
+        "workflowId": "f407173705",
+        "version": "7.0.13",
+        "versionExternal": "1.0.2",
+        "name": "20230209_7148U_incremental_official_f407173705",
+        "nn_config": "models/e2e_seacliff/prod/nn_config.json",
+        "numBlendshapes": 72,
+        "outputType": "uncertaintyLogit",
+        "preprocessing": {
+            "skipNormalization": true,
+            "processedHeight": 224,
+            "processedWidth": 224
+        },
+        "upperFaceUncertaintyThreshold": 100.0,
+        "lowerFaceUncertaintyThreshold": 0.43
+    },
+    "blendshapeSmoothing": {
+        "minCutoff": 2.0,
+        "beta": 65.0,
+        "dCutoff": 1.0,
+        "override": [
+            {
+                "blendshape": [
+                    "browLowerer_L",
+                    "browLowerer_R",
+                    "innerBrowRaiser_L",
+                    "innerBrowRaiser_R",
+                    "outerBrowRaiser_L",
+                    "outerBrowRaiser_R"
+                ],
+                "minCutoff": 1.0,
+                "beta": 7.5,
+                "dCutoff": 1.0
+            }
+        ]
+    },
+    "uncertaintySmoothing": {
+        "minCutoff": 2.0,
+        "beta": 20.0,
+        "dCutoff": 1.0
+    },
+    "lipsyncSmoothing": {
+        "minCutoff": 2.0,
+        "beta": 20.0,
+        "dCutoff": 1.0
+    },
+    "eyeGazeLogic": {
+        "method": "controlByEyesClosed",
+        "leftEyeLookLeftMax": -36.0,
+        "leftEyeLookRightMax": 36.0,
+        "leftEyeLookUpMax": -30.0,
+        "leftEyeLookDownMax": 30.0,
+        "rightEyeLookLeftMax": -36.0,
+        "rightEyeLookRightMax": 36.0,
+        "rightEyeLookUpMax": -30.0,
+        "rightEyeLookDownMax": 30.0
+    },
+    "lipsyncBlendshapes": {
+        "PP": [
+            {
+                "chinRaiser_B": 0.1
+            },
+            {
+                "chinRaiser_T": 0.1
+            },
+            {
+                "lipPressor_L": 0.5
+            },
+            {
+                "lipPressor_R": 0.5
+            },
+            {
+                "lipSuck_LB": 0.4
+            },
+            {
+                "lipSuck_LT": 0.4
+            },
+            {
+                "lipSuck_RB": 0.4
+            },
+            {
+                "lipSuck_RT": 0.4
+            }
+        ],
+        "FF": [
+            {
+                "chinRaiser_B": 0.34
+            },
+            {
+                "dimpler_L": 0.3
+            },
+            {
+                "dimpler_R": 0.3
+            },
+            {
+                "jawDrop": 0.0399
+            },
+            {
+                "lipSuck_LB": 0.6999
+            },
+            {
+                "lipSuck_RB": 0.6999
+            },
+            {
+                "upperLipRaiser_L": 0.1
+            },
+            {
+                "upperLipRaiser_R": 0.1
+            }
+        ],
+        "TH": [
+            {
+                "chinRaiser_B": 0.03
+            },
+            {
+                "dimpler_L": 0.42
+            },
+            {
+                "dimpler_R": 0.42
+            },
+            {
+                "jawDrop": 0.12
+            },
+            {
+                "lipFunneler_LB": 0.28
+            },
+            {
+                "lipFunneler_LT": 0.3499
+            },
+            {
+                "lipFunneler_RB": 0.28
+            },
+            {
+                "lipFunneler_RT": 0.3499
+            },
+            {
+                "lipTightener_L": 0.3899
+            },
+            {
+                "lipTightener_R": 0.3899
+            },
+            {
+                "lipsToward": 0.0299
+            },
+            {
+                "upperLipRaiser_L": 0.1
+            },
+            {
+                "upperLipRaiser_R": 0.1
+            }
+        ],
+        "DD": [
+            {
+                "jawDrop": 0.0599
+            },
+            {
+                "lowerLipDepressor_L": 0.43
+            },
+            {
+                "lowerLipDepressor_R": 0.43
+            },
+            {
+                "upperLipRaiser_L": 0.0599
+            },
+            {
+                "upperLipRaiser_R": 0.0599
+            }
+        ],
+        "KK": [
+            {
+                "jawDrop": 0.05
+            },
+            {
+                "lowerLipDepressor_L": 0.2
+            },
+            {
+                "lowerLipDepressor_R": 0.2
+            }
+        ],
+        "CH": [
+            {
+                "dimpler_L": 0.2
+            },
+            {
+                "dimpler_R": 0.2
+            },
+            {
+                "jawDrop": 0.0299
+            },
+            {
+                "lipFunneler_LB": 0.6
+            },
+            {
+                "lipFunneler_LT": 0.6
+            },
+            {
+                "lipFunneler_RB": 0.6
+            },
+            {
+                "lipFunneler_RT": 0.6
+            }
+        ],
+        "SS": [
+            {
+                "cheekRaiser_L": 0.17
+            },
+            {
+                "cheekRaiser_R": 0.17
+            },
+            {
+                "jawDrop": 0.0199
+            },
+            {
+                "lipStretcher_L": 0.2099
+            },
+            {
+                "lipStretcher_R": 0.2099
+            },
+            {
+                "lowerLipDepressor_L": 0.4399
+            },
+            {
+                "lowerLipDepressor_R": 0.4399
+            },
+            {
+                "upperLipRaiser_L": 0.15
+            },
+            {
+                "upperLipRaiser_R": 0.15
+            }
+        ],
+        "NN": [
+            {
+                "jawDrop": 0.1199
+            },
+            {
+                "lowerLipDepressor_L": 0.14
+            },
+            {
+                "lowerLipDepressor_R": 0.14
+            }
+        ],
+        "RR": [
+            {
+                "chinRaiser_B": 0.26
+            },
+            {
+                "dimpler_L": 0.55
+            },
+            {
+                "dimpler_R": 0.55
+            },
+            {
+                "jawDrop": 0.12
+            },
+            {
+                "lipFunneler_LB": 0.28
+            },
+            {
+                "lipFunneler_LT": 0.3499
+            },
+            {
+                "lipFunneler_RB": 0.28
+            },
+            {
+                "lipFunneler_RT": 0.3499
+            },
+            {
+                "lipTightener_L": 0.3899
+            },
+            {
+                "lipTightener_R": 0.3899
+            },
+            {
+                "upperLipRaiser_L": 0.1
+            },
+            {
+                "upperLipRaiser_R": 0.1
+            }
+        ],
+        "AA": [
+            {
+                "jawDrop": 0.4899
+            },
+            {
+                "lowerLipDepressor_L": 0.3499
+            },
+            {
+                "lowerLipDepressor_R": 0.3499
+            }
+        ],
+        "EE": [
+            {
+                "jawDrop": 0.0399
+            },
+            {
+                "lipStretcher_L": 0.3
+            },
+            {
+                "lipStretcher_R": 0.3
+            },
+            {
+                "lowerLipDepressor_L": 0.56
+            },
+            {
+                "lowerLipDepressor_R": 0.56
+            }
+        ],
+        "IH": [
+            {
+                "jawDrop": 0.0399
+            },
+            {
+                "lipStretcher_L": 0.3899
+            },
+            {
+                "lipStretcher_R": 0.3899
+            },
+            {
+                "lowerLipDepressor_L": 0.3799
+            },
+            {
+                "lowerLipDepressor_R": 0.3799
+            },
+            {
+                "noseWrinkler_L": 0.0399
+            },
+            {
+                "noseWrinkler_R": 0.0399
+            },
+            {
+                "upperLipRaiser_L": 0.31
+            },
+            {
+                "upperLipRaiser_R": 0.31
+            }
+        ],
+        "OH": [
+            {
+                "jawDrop": 0.5699
+            },
+            {
+                "lipFunneler_LB": 0.4099
+            },
+            {
+                "lipFunneler_LT": 0.4099
+            },
+            {
+                "lipFunneler_RB": 0.4099
+            },
+            {
+                "lipFunneler_RT": 0.4099
+            },
+            {
+                "lipPucker_L": 0.37
+            },
+            {
+                "lipPucker_R": 0.37
+            }
+        ],
+        "OU": [
+            {
+                "jawDrop": 0.06
+            },
+            {
+                "lipFunneler_LB": 0.6
+            },
+            {
+                "lipFunneler_LT": 0.6
+            },
+            {
+                "lipFunneler_RB": 0.6
+            },
+            {
+                "lipFunneler_RT": 0.6
+            },
+            {
+                "lipPucker_L": 0.77
+            },
+            {
+                "lipPucker_R": 0.77
+            },
+            {
+                "lipTightener_L": 0.4099
+            },
+            {
+                "lipTightener_R": 0.4099
+            }
+        ]
+    },
+    "lipsyncFusion": {
+        "method": "fallback",
+        "lowerFaceFallbackBlendshapes": [
+            {
+                "cheekPuff_L": 1
+            },
+            {
+                "cheekPuff_R": 1
+            },
+            {
+                "cheekRaiser_L": 1
+            },
+            {
+                "cheekRaiser_R": 1
+            },
+            {
+                "cheekSuck_L": 1
+            },
+            {
+                "cheekSuck_R": 1
+            },
+            {
+                "chinRaiser_T": 1
+            },
+            {
+                "chinRaiser_B": 1
+            },
+            {
+                "dimpler_L": 1
+            },
+            {
+                "dimpler_R": 1
+            },
+            {
+                "jawDrop": 1
+            },
+            {
+                "jawSidewaysLeft": 1
+            },
+            {
+                "jawSidewaysRight": 1
+            },
+            {
+                "jawThrust": 1
+            },
+            {
+                "lipCornerDepressor_L": 1
+            },
+            {
+                "lipCornerDepressor_R": 1
+            },
+            {
+                "lipCornerPuller_L": 1
+            },
+            {
+                "lipCornerPuller_R": 1
+            },
+            {
+                "lipFunneler_LB": 1
+            },
+            {
+                "lipFunneler_LT": 1
+            },
+            {
+                "lipFunneler_RB": 1
+            },
+            {
+                "lipFunneler_RT": 1
+            },
+            {
+                "lipPressor_L": 1
+            },
+            {
+                "lipPressor_R": 1
+            },
+            {
+                "lipPucker_L": 1
+            },
+            {
+                "lipPucker_R": 1
+            },
+            {
+                "lipStretcher_L": 1
+            },
+            {
+                "lipStretcher_R": 1
+            },
+            {
+                "lipSuck_LB": 1
+            },
+            {
+                "lipSuck_LT": 1
+            },
+            {
+                "lipSuck_RB": 1
+            },
+            {
+                "lipSuck_RT": 1
+            },
+            {
+                "lipTightener_L": 1
+            },
+            {
+                "lipTightener_R": 1
+            },
+            {
+                "lipsToward": 1
+            },
+            {
+                "lowerLipDepressor_L": 1
+            },
+            {
+                "lowerLipDepressor_R": 1
+            },
+            {
+                "mouthLeft": 1
+            },
+            {
+                "mouthRight": 1
+            },
+            {
+                "noseWrinkler_L": 1
+            },
+            {
+                "noseWrinkler_R": 1
+            },
+            {
+                "upperLipRaiser_L": 1
+            },
+            {
+                "upperLipRaiser_R": 1
+            }
+        ],
+        "fallbackThreshold": 0.43,
+        "fallbackTransitionTime": 0.2,
+        "tongueConflictHandlingMethod": "preferLipsync"
+    },
+    "lipsync": {
+        "modelPath": "models/lipsync/prod/nn_config.json"
+    },
+    "histogramCalibrator": {
+        "neutralDetectionMethod": "histogram",
+        "historyLength": 60.0,
+        "calibrationStartHistoryLength": 10.0,
+        "binCount": 40,
+        "maxMode": 0.4,
+        "minMax": 0.7,
+        "transitionTime": 4.0,
+        "neutralOnlyBlendshapes": [
+            "browLowerer_L",
+            "browLowerer_R",
+            "innerBrowRaiser_L",
+            "innerBrowRaiser_R",
+            "lidTightener_L",
+            "lidTightener_R",
+            "outerBrowRaiser_L",
+            "outerBrowRaiser_R",
+            "upperLidRaiser_L",
+            "upperLidRaiser_R"
+        ],
+        "neutralAndMaxBlendshapes": [
+            {
+                "eyesClosed_L": 1.0
+            },
+            {
+                "eyesClosed_R": 1.0
+            }
+        ]
+    }
+}

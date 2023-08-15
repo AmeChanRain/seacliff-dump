@@ -1,0 +1,4 @@
+service vendor.catty-1-0 /odm/bin/hw/vendor.oculus.hardware.catty@1.0-service
+    class hal
+    user system
+    group system

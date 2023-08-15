@@ -1,0 +1,20 @@
+[
+  {
+    "Model": "bolt/bolt.ptl",
+    "Backend": "TorchScript",
+    "QEngine": "QNNPACK",
+    "SingleThread": "True"
+  },
+  {
+    "CpuModel": "cpu/model.pt",
+    "Backend": "TorchScript",
+    "QEngine": "QNNPACK",
+    "SingleThread": "True"
+  },
+  {
+    "CpuModel": "cpu/model.pt",
+    "Backend": "TorchScript",
+    "QEngine": "FBGEMM",
+    "SingleThread": "True"
+  }
+]

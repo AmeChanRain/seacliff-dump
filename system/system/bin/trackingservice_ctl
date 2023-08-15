@@ -1,0 +1,32 @@
+#!/system/bin/sh
+
+ARG=$1
+
+case "$ARG" in
+start)
+  start trackingservice
+  ;;
+stop)
+  local pid=$(pidof trackingservice)
+  if [ ! -z "$pid" ]
+  then
+    kill -s SIGHUP "$pid"
+    sleep 2
+    stop trackingservice
+  fi
+  ;;
+restart)
+  local pid=$(pidof trackingservice)
+  if [ ! -z "$pid" ]
+  then
+    kill -s SIGHUP "$pid"
+    sleep 2
+    stop trackingservice
+    sleep 1
+  fi
+  start trackingservice
+  ;;
+*)
+  echo "Usage: trackingservice_ctl [start|stop|restart]"
+  ;;
+esac

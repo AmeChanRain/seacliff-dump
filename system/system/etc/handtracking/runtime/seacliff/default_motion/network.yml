@@ -1,0 +1,293 @@
+--- #Torch Neural Network
+version: 1
+layer_type: nn.gModule
+layer_id: 1082187544
+input_dims: [128 x 26, 128 x 32 x 26 x 1, 128 x 32 x 26 x 1]
+layer_test_input: test_input_001.torch
+ANNOTATE_inputChannelNames: [current pose estimation, cell 1, hidden 1]
+ANNOTATE_translationScale: 0.1
+ANNOTATE_connectionType: convolutional
+ANNOTATE_rnnSize: 32
+ANNOTATE_outputNames: [cell 1, hidden 1, current pose, next pose]
+ANNOTATE_rnnType: lstm
+ANNOTATE_rnnLayers: 1
+forward_nodes:
+    - node_id: 0
+      children: [1]
+    - node_id: 1
+      map_index: [0: 0]
+      children: [11, 2, 5]
+    - node_id: 2
+      select_index: 0
+      map_index: [1: 0]
+      children: [3]
+    - node_id: 3
+      map_index: [2: 0]
+      children: [4]
+      layer_type: nn.View
+      layer_id: 1103714712
+      input_dims: 128 x 26
+      layer_test_input: test_input_002.torch
+      size_file: weights_001.torch
+      layer_test_output: test_output_001.torch
+      output_dims: 128 x 1 x 26 x 1
+    - node_id: 4
+      map_index: [3: 0]
+      children: [8]
+      layer_type: nn.SpatialConvolution
+      layer_id: 1081034408
+      input_dims: 128 x 1 x 26 x 1
+      layer_test_input: test_input_003.torch
+      padW: 0
+      n_input_plane: 1
+      dH: 1
+      dW: 1
+      n_output_plane: 128
+      padH: 0
+      kH: 1
+      weights_file: weights_002.torch
+      kW: 1
+      bias_file: weights_003.torch
+      layer_test_output: test_output_002.torch
+      output_dims: 128 x 128 x 26 x 1
+    - node_id: 5
+      select_index: 2
+      map_index: [1: 0]
+      children: [6]
+    - node_id: 6
+      map_index: [5: 0]
+      children: [7]
+      layer_type: nn.Identity
+      layer_id: 1091602600
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_004.torch
+      layer_test_output: test_output_003.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 7
+      map_index: [6: 0]
+      children: [8]
+      layer_type: nn.SpatialConvolution
+      layer_id: 1102206336
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_005.torch
+      padW: 0
+      n_input_plane: 32
+      dH: 1
+      dW: 1
+      n_output_plane: 128
+      padH: 0
+      kH: 1
+      weights_file: weights_004.torch
+      kW: 1
+      bias_file: weights_005.torch
+      layer_test_output: test_output_004.torch
+      output_dims: 128 x 128 x 26 x 1
+    - node_id: 8
+      map_index: [7: 1, 4: 0]
+      children: [20, 9, 14, 16]
+      layer_type: nn.CAddTable
+      layer_id: 1103612144
+      input_dims: [128 x 128 x 26 x 1, 128 x 128 x 26 x 1]
+      layer_test_input: test_input_006.torch
+      layer_test_output: test_output_005.torch
+      output_dims: 128 x 128 x 26 x 1
+    - node_id: 9
+      map_index: [8: 0]
+      children: [10]
+      layer_type: nn.Narrow
+      layer_id: 1084314528
+      input_dims: 128 x 128 x 26 x 1
+      layer_test_input: test_input_007.torch
+      index: 33
+      dimension: 2
+      length: 32
+      layer_test_output: test_output_006.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 10
+      map_index: [9: 0]
+      children: [13]
+      layer_type: nn.Sigmoid
+      layer_id: 1084045464
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_008.torch
+      layer_test_output: test_output_007.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 11
+      select_index: 1
+      map_index: [1: 0]
+      children: [12]
+    - node_id: 12
+      map_index: [11: 0]
+      children: [13]
+      layer_type: nn.Identity
+      layer_id: 1086804512
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_009.torch
+      layer_test_output: test_output_008.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 13
+      map_index: [12: 1, 10: 0]
+      children: [19]
+      layer_type: nn.CMulTable
+      layer_id: 1103674448
+      input_dims: [128 x 32 x 26 x 1, 128 x 32 x 26 x 1]
+      layer_test_input: test_input_010.torch
+      layer_test_output: test_output_009.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 14
+      map_index: [8: 0]
+      children: [15]
+      layer_type: nn.Narrow
+      layer_id: 1081070296
+      input_dims: 128 x 128 x 26 x 1
+      layer_test_input: test_input_011.torch
+      index: 1
+      dimension: 2
+      length: 32
+      layer_test_output: test_output_010.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 15
+      map_index: [14: 0]
+      children: [18]
+      layer_type: nn.Sigmoid
+      layer_id: 1081071000
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_012.torch
+      layer_test_output: test_output_011.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 16
+      map_index: [8: 0]
+      children: [17]
+      layer_type: nn.Narrow
+      layer_id: 1088632624
+      input_dims: 128 x 128 x 26 x 1
+      layer_test_input: test_input_013.torch
+      index: 97
+      dimension: 2
+      length: 32
+      layer_test_output: test_output_012.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 17
+      map_index: [16: 0]
+      children: [18]
+      layer_type: nn.Tanh
+      layer_id: 1100705888
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_014.torch
+      layer_test_output: test_output_013.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 18
+      map_index: [15: 0, 17: 1]
+      children: [19]
+      layer_type: nn.CMulTable
+      layer_id: 1106658600
+      input_dims: [128 x 32 x 26 x 1, 128 x 32 x 26 x 1]
+      layer_test_input: test_input_015.torch
+      layer_test_output: test_output_014.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 19
+      map_index: [13: 0, 18: 1]
+      children: [28, 22, 24]
+      layer_type: nn.CAddTable
+      layer_id: 1081025128
+      input_dims: [128 x 32 x 26 x 1, 128 x 32 x 26 x 1]
+      layer_test_input: test_input_016.torch
+      layer_test_output: test_output_015.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 20
+      map_index: [8: 0]
+      children: [21]
+      layer_type: nn.Narrow
+      layer_id: 1100749952
+      input_dims: 128 x 128 x 26 x 1
+      layer_test_input: test_input_017.torch
+      index: 65
+      dimension: 2
+      length: 32
+      layer_test_output: test_output_016.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 21
+      map_index: [20: 0]
+      children: [23]
+      layer_type: nn.Sigmoid
+      layer_id: 1087961000
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_018.torch
+      layer_test_output: test_output_017.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 22
+      map_index: [19: 0]
+      children: [23]
+      layer_type: nn.Tanh
+      layer_id: 1081020872
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_019.torch
+      layer_test_output: test_output_018.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 23
+      map_index: [21: 0, 22: 1]
+      children: [28]
+      layer_type: nn.CMulTable
+      layer_id: 1091247840
+      input_dims: [128 x 32 x 26 x 1, 128 x 32 x 26 x 1]
+      layer_test_input: test_input_020.torch
+      layer_test_output: test_output_019.torch
+      output_dims: 128 x 32 x 26 x 1
+    - node_id: 24
+      map_index: [19: 0]
+      children: [25]
+      layer_type: nn.SpatialConvolution
+      layer_id: 1099834200
+      input_dims: 128 x 32 x 26 x 1
+      layer_test_input: test_input_021.torch
+      padW: 0
+      n_input_plane: 32
+      dH: 1
+      dW: 1
+      n_output_plane: 2
+      padH: 0
+      kH: 1
+      weights_file: weights_006.torch
+      kW: 1
+      bias_file: weights_007.torch
+      layer_test_output: test_output_020.torch
+      output_dims: 128 x 2 x 26 x 1
+    - node_id: 25
+      map_index: [24: 0]
+      children: [26, 27]
+      layer_type: nn.View
+      layer_id: 1081307368
+      input_dims: 128 x 2 x 26 x 1
+      layer_test_input: test_input_022.torch
+      size_file: weights_008.torch
+      layer_test_output: test_output_021.torch
+      output_dims: 128 x 52
+    - node_id: 26
+      map_index: [25: 0]
+      children: [28]
+      layer_type: nn.Narrow
+      layer_id: 1088717048
+      input_dims: 128 x 52
+      layer_test_input: test_input_023.torch
+      index: 1
+      dimension: 2
+      length: 26
+      layer_test_output: test_output_022.torch
+      output_dims: 128 x 26
+    - node_id: 27
+      map_index: [25: 0]
+      children: [28]
+      layer_type: nn.Narrow
+      layer_id: 1093489992
+      input_dims: 128 x 52
+      layer_test_input: test_input_024.torch
+      index: 27
+      dimension: 2
+      length: 26
+      layer_test_output: test_output_023.torch
+      output_dims: 128 x 26
+    - node_id: 28
+      map_index: [19: 0, 27: 3, 23: 1, 26: 2]
+layer_test_output: test_output_024.torch
+output_dims: [128 x 32 x 26 x 1, 128 x 32 x 26 x 1, 128 x 26, 128 x 26]
+

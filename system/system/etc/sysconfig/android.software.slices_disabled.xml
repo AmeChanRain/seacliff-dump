@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <!-- No app slices on Oculus VR devices -->
+    <feature name="android.software.slices_disabled" />
+</permissions>

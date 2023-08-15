@@ -1,0 +1,20 @@
+# xrspd (xrs protocol daemon, enables Oculus Link)
+service xrspd /system/bin/xrspd --root_seclabel=u:r:su:s0
+    setenv XRSPD_FFS_PATH /dev/usb-ffs/xrsp
+    onrestart setprop ovr.xrspd.ffs.ready 0
+    class core
+    user system
+    group system wifi inet net_admin usb
+    capabilities NET_RAW
+    disabled
+
+# On Android 10, after boot service will be started/stopped by
+#    frameworks/base/services/usb/java/com/android/server/usb/UsbDeviceManager.java
+#
+# and USB device configuration happens at
+#    vendor/oculus/services/usb/UsbGadget.cpp
+#
+# which receives its initial value from
+#    system/core/usbd/usbd.cpp
+#
+# once on late_start

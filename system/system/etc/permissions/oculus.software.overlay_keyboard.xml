@@ -1,0 +1,4 @@
+<!-- Indicates that this device has a soft keyboard that appears over immersive apps -->
+<permissions>
+    <feature name="oculus.software.overlay_keyboard" />
+</permissions>

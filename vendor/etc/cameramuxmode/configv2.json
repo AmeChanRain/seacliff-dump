@@ -1,0 +1,367 @@
+{
+  "version": 2,
+  "cameraSystems": {
+    "worldTracking": {
+      "niceEnabled": true,
+      "configurations": {
+        "default": {
+          "frameRateVariant": "utility",
+          "frameRateMultiplier": 1.0,
+          "slots": [
+            {"label": "0", "cameraIds": [0, 1, 2, 3]},
+            {"label": "1", "cameraIds": [0, 1, 2, 3]},
+            {"label": "2", "cameraIds": [0, 1, 2, 3]},
+            {"label": "3", "cameraIds": [0, 1, 2, 3]}
+          ]
+        }
+      },
+      "modes": [
+        {
+          "name": "selfTrackedControllerTracking",
+          "configuration": "default",
+          "purposes": [
+            {"name": "iot", "slots": [0, 2]},
+            {"name": "hand", "slots": []},
+            {"name": "constellation", "slots": []},
+            {"name": "object", "slots": [1]},
+            {"name": "iobt", "slots": [0, 2]},
+            {"name": "passthrough", "slots": [0, 2]},
+            {"name": "exposure_control", "slots": [0, 1, 2]},
+            {"name": "all", "slots": [0, 1, 2, 3]}
+          ],
+          "controlPurposes": [
+            {"name": "iotExposureControl", "slots": [0, 2]},
+            {"name": "flexibleFrameExposureControl", "slots": [1]},
+            {"name": "handExposureControl", "slots": []},
+            {"name": "constellationExposureControl", "slots": []}
+
+          ],
+          "illuminations": ["none", "none", "none", "none"],
+          "frameTags": [1, 0, 1, 0]
+        },
+        {
+          "name": "handTracking",
+          "configuration": "default",
+          "purposes": [
+            {"name": "iot", "slots": [0, 2]},
+            {"name": "hand", "slots": [0, 2]},
+            {"name": "constellation", "slots": []},
+            {"name": "object", "slots": [1]},
+            {"name": "iobt", "slots": [0, 2]},
+            {"name": "passthrough", "slots": [0, 2]},
+            {"name": "exposure_control", "slots": [0, 1, 2]},
+            {"name": "all", "slots": [0, 1, 2, 3]}
+          ],
+          "controlPurposes": [
+            {"name": "iotExposureControl", "slots": [0, 2]},
+            {"name": "flexibleFrameExposureControl", "slots": [1]},
+            {"name": "handExposureControl", "slots": []},
+            {"name": "constellationExposureControl", "slots": []}
+          ],
+          "illuminations": ["none", "none", "none", "none"],
+          "frameTags": [1, 0, 1, 0]
+        },
+        {
+          "name": "handTrackingExtraSlots",
+          "configuration": "default",
+          "purposes": [
+            {"name": "iot", "slots": [0, 2]},
+            {"name": "hand", "slots": [0, 1, 2, 3]},
+            {"name": "constellation", "slots": []},
+            {"name": "object", "slots": [0]},
+            {"name": "iobt", "slots": [0, 2]},
+            {"name": "passthrough", "slots": [0, 2]},
+            {"name": "exposure_control", "slots": [0, 1, 2, 3]},
+            {"name": "all", "slots": [0, 1, 2, 3]}
+          ],
+          "controlPurposes": [
+            {"name": "iotExposureControl", "slots": [0, 2]},
+            {"name": "flexibleFrameExposureControl", "slots": []},
+            {"name": "handExposureControl", "slots": [1, 3]},
+            {"name": "constellationExposureControl", "slots": []}
+
+          ],
+          "illuminations": ["none", "none", "none", "none"],
+          "frameTags": [1, 2, 1, 2]
+        },
+        {
+          "name": "rubyTracking",
+          "configuration": "default",
+          "purposes": [
+            {"name": "iot", "slots": [0, 2]},
+            {"name": "hand", "slots": []},
+            {"name": "constellation", "slots": [1]},
+            {"name": "object", "slots": [3]},
+            {"name": "iobt", "slots": []},
+            {"name": "passthrough", "slots": [0, 2]},
+            {"name": "exposure_control", "slots": [0, 1, 2, 3]},
+            {"name": "all", "slots": [0, 1, 2, 3]}
+          ],
+          "controlPurposes": [
+            {"name": "iotExposureControl", "slots": [0, 2]},
+            {"name": "flexibleFrameExposureControl", "slots": [3]},
+            {"name": "handExposureControl", "slots": []},
+            {"name": "constellationExposureControl", "slots": [1]}
+          ],
+          "illuminations": ["none", "constellation_led", "none", "none"],
+          "frameTags": [1, 0, 1, 0]
+        }
+      ]
+    },
+    "color": {
+      "niceEnabled": false,
+      "configurations": {
+        "default": {
+          "frameRateVariant": "utility",
+          "frameRateMultiplier": 0.5,
+          "slots": [
+            {"label": "default", "cameraIds": [4]}
+          ]
+        }
+      },
+      "modes": [
+        {
+          "name": "default",
+          "configuration": "default",
+          "purposes": [
+            {"name": "passthrough", "slots": [0]},
+            {"name": "ocal", "slots": [0]},
+            {"name": "exposure_control", "slots": []},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+          ],
+          "illuminations": ["none"],
+          "frameTags": [0]
+        }
+      ]
+    },
+    "faceEye": {
+      "niceEnabled": true,
+      "configurations": {
+        "disabled": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 0,
+          "slots": []
+        },
+        "eyeMatchDisplay": {
+          "frameRateVariant": "display",
+          "frameRateMultiplier": 1.0,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]}
+          ]
+        },
+        "faceEyeMatchDisplay": {
+          "frameRateVariant": "display",
+          "frameRateMultiplier": 1.0,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]},
+            {"label": "1:eye", "cameraIds": [5, 6]},
+            {"label": "2:faceeye", "cameraIds": [5, 6, 7, 8, 9]}
+          ]
+        },
+        "faceEyeHigh": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 72,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]},
+            {"label": "1:faceeye", "cameraIds": [5, 6, 7, 8, 9]}
+          ]
+        },
+        "faceEyeMedium": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 30,
+          "slots": [
+            {"label": "0:faceeye", "cameraIds": [5, 6, 7, 8, 9]}
+          ]
+        },
+        "faceEyeMediumLow": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 30,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]},
+            {"label": "1:faceeye", "cameraIds": [5, 6, 7, 8, 9]}
+          ]
+        },
+        "faceEyeLow": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 15,
+          "slots": [
+            {"label": "0:faceeye", "cameraIds": [5, 6, 7, 8, 9]}
+          ]
+        },
+        "orthofitBgMonitoring": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 1,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]}
+          ]
+        },
+        "gfrLow": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 30,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]}
+          ]
+        },
+        "gfrMedium": {
+          "frameRateVariant": "frequency",
+          "frameRateMultiplier": 60,
+          "slots": [
+            {"label": "0:eye", "cameraIds": [5, 6]}
+          ]
+        }
+      },
+      "modes": [
+        {
+          "name": "disabled",
+          "configuration": "disabled",
+          "purposes": [
+            {"name": "face", "slots": []},
+            {"name": "eye", "slots": []},
+            {"name": "exposure_control", "slots": []},
+            {"name": "all", "slots": []}
+          ],
+          "controlPurposes": [],
+          "illuminations": [],
+          "frameTags": []
+        },
+        {
+          "name": "matchDisplay",
+          "configuration": "eyeMatchDisplay",
+          "purposes": [
+            {"name": "face", "slots": []},
+            {"name": "eye", "slots": [0]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["eye_led"],
+          "frameTags": [16]
+        },
+        {
+          "name": "matchDisplayAndSocialAvatars",
+          "configuration": "faceEyeMatchDisplay",
+          "purposes": [
+            {"name": "face", "slots": [2]},
+            {"name": "eye", "slots": [0, 1, 2], "cameraIds": [5, 6]},
+            {"name": "exposure_control", "slots": [0, 1, 2]},
+            {"name": "all", "slots": [0, 1, 2]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0, 1, 2]}
+          ],
+          "illuminations": ["eye_led", "eye_led", "face_and_eye_led"],
+          "frameTags": [16, 16, 16]
+        },
+        {
+          "name": "socialAvatarsHigh",
+          "configuration": "faceEyeHigh",
+          "purposes": [
+            {"name": "face", "slots": [1]},
+            {"name": "eye", "slots": [0, 1], "cameraIds": [5, 6]},
+            {"name": "exposure_control", "slots": [0, 1]},
+            {"name": "all", "slots": [0, 1]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0, 1]}
+          ],
+          "illuminations": ["eye_led", "face_and_eye_led"],
+          "frameTags": [16, 16]
+        },
+        {
+          "name": "socialAvatarsLow",
+          "configuration": "faceEyeLow",
+          "purposes": [
+            {"name": "face", "slots": [0]},
+            {"name": "eye", "slots": [0], "cameraIds": [5, 6]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["face_and_eye_led"],
+          "frameTags": [16]
+        },
+        {
+          "name": "orthofitBgMonitoring",
+          "configuration": "orthofitBgMonitoring",
+          "purposes": [
+            {"name": "face", "slots": []},
+            {"name": "eye", "slots": [0]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["eye_led"],
+          "frameTags": [16]
+        },
+        {
+          "name": "socialAvatarsMedium",
+          "configuration": "faceEyeMedium",
+          "purposes": [
+            {"name": "face", "slots": [0]},
+            {"name": "eye", "slots": [0], "cameraIds": [5, 6]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["face_and_eye_led"],
+          "frameTags": [16]
+        },
+        {
+          "name": "socialAvatarsMediumLow",
+          "configuration": "faceEyeMediumLow",
+          "purposes": [
+            {"name": "face", "slots": [1]},
+            {"name": "eye", "slots": [0, 1], "cameraIds": [5, 6]},
+            {"name": "exposure_control", "slots": [0, 1]},
+            {"name": "all", "slots": [0, 1]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0, 1]}
+          ],
+          "illuminations": ["eye_led", "face_and_eye_led"],
+          "frameTags": [16, 16]
+        },
+        {
+          "name": "gfrLow",
+          "configuration": "gfrLow",
+          "purposes": [
+            {"name": "face", "slots": []},
+            {"name": "eye", "slots": [0]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["eye_led"],
+          "frameTags": [16]
+        },
+        {
+          "name": "gfrMedium",
+          "configuration": "gfrMedium",
+          "purposes": [
+            {"name": "face", "slots": []},
+            {"name": "eye", "slots": [0]},
+            {"name": "exposure_control", "slots": [0]},
+            {"name": "all", "slots": [0]}
+          ],
+          "controlPurposes": [
+            {"name": "eyeExposureControl", "slots": [0]}
+          ],
+          "illuminations": ["eye_led"],
+          "frameTags": [16]
+        }
+      ]
+    }
+  }
+}

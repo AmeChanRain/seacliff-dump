@@ -1,0 +1,5 @@
+service oculus-hardware-telemetry-1-0 /system/bin/hw/vendor.oculus.hardware.telemetry@1.0-service
+    interface vendor.oculus.hardware.telemetry@1.0::IDeviceTelemetry default
+    class hal
+    user system
+    group system

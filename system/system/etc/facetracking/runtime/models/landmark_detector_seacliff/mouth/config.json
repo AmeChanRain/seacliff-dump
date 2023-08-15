@@ -1,0 +1,27 @@
+{
+    "version": "f326187900",
+    "name": "fbnet_mouth_march_2022",
+    "nn_config": "prod/nn_config.json",
+    "numOutputLandmarks": 29,
+    "outputHeatmapHeight": 30,
+    "outputHeatmapWidth": 30,
+    "preprocessing": {
+        "inputMin": 0,
+        "inputMax": 255,
+        "processedMean": 0.0,
+        "processedStd": 1.0,
+        "processedHeight": 96,
+        "processedWidth": 96
+    },
+    "pitchGuidanceHeuristic": {
+        "type": "CenterThenLipsThenChip",
+        "lipIndices": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+        "chinIndices": [27, 28],
+        "jawLineIndices": [26],
+        "xMaxPitchUpThreshold": 22.0,
+        "xMinPitchDownThreshold": 7.0,
+        "noGuidanceConfidenceThreshold": 100.0,
+        "noGuidanceChinConfidenceThreshold": 100.0,
+        "xRangePitchUpThreshold": 14.0
+    }
+}

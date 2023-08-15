@@ -1,0 +1,14 @@
+# seacliff-user 12 SQ3A.220605.009.A1 50065460045400330 release-keys
+- manufacturer: oculus
+- platform: kona
+- codename: seacliff
+- flavor: seacliff-user
+- release: 12
+- id: SQ3A.220605.009.A1
+- incremental: 50065460045400330
+- tags: release-keys
+- fingerprint: oculus/seacliff/seacliff:12/SQ3A.220605.009.A1/50065460045400330:user/release-keys
+- is_ab: true
+- brand: oculus
+- branch: seacliff-user-12-SQ3A.220605.009.A1-50065460045400330-release-keys
+- repo: oculus_seacliff_dump

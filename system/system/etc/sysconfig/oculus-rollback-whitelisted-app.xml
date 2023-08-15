@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares packages eligible for rollback.
+-->
+<config>
+  <rollback-whitelisted-app package="com.oculus.bodyapiservice" />
+  <rollback-whitelisted-app package="com.oculus.fitnesstracker" />
+  <rollback-whitelisted-app package="com.oculus.ocms" />
+  <rollback-whitelisted-app package="com.oculus.vrosassetchunktest" />
+</config>

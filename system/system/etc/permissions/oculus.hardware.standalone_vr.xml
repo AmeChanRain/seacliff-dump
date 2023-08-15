@@ -1,0 +1,4 @@
+<!-- Indicates that this is a standalone VR device -->
+<permissions>
+    <feature name="oculus.hardware.standalone_vr" />
+</permissions>

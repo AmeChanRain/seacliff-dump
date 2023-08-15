@@ -1,0 +1,6 @@
+# Enable/disable based on ADBD (which aligns with Developer Mode)
+on property:init.svc.adbd=running
+    setprop persist.traced.enable 1
+
+on property:init.svc.adbd=stopped
+    setprop persist.traced.enable 0

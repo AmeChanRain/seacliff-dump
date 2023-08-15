@@ -1,0 +1,8 @@
+service vrfocus /system/bin/vrfocusserver
+    class late_start
+    user root
+    group root
+    group system
+
+on factorytest
+    start vrfocus

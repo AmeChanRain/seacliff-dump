@@ -1,0 +1,7 @@
+service fw_init /system/vendor/bin/fw_init
+    class main
+    user system
+    group system graphics input
+    oneshot
+    disabled
+    file /dev/kmsg w

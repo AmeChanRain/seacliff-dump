@@ -1,0 +1,4 @@
+<!-- Indicates that the gralloc implementation allows for the GPU_MIPMAP_COMPLETE flag when allocating a buffer -->
+<permissions>
+    <feature name="oculus.hardware.graphics.gralloc_mipmap_support" />
+</permissions>

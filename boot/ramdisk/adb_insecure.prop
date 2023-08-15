@@ -1,0 +1,9 @@
+# Note: This file will be loaded with highest priority to override adb or some
+# other system properties if the property `androidboot.adb=1` is present in
+# the kernel command-line.
+
+# Disable adb authentication
+ro.adb.secure=0
+
+# Introduce this property to indicate that init has loaded adb_insecure.prop
+ro.force.adb=1

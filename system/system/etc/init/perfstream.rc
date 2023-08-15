@@ -1,0 +1,9 @@
+on post-fs-data
+    mkdir /data/oculus 0750 system system
+    mkdir /data/oculus/perfstream 0750 system system
+
+service perfstream /system/bin/perfstream
+    class main
+    user system
+    group system readproc
+    writepid /dev/cpuset/system-background/tasks

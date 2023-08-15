@@ -1,0 +1,4 @@
+<!-- Indicates that device has eye tracking sensor capabilities -->
+<permissions>
+    <feature name="oculus.hardware.vr.eyetracking" />
+</permissions>

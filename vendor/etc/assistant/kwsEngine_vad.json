@@ -1,0 +1,27 @@
+{
+    "en_US": {
+        "chunkSize": 30,
+        "detectionThreshold": 0.6,
+        "enableTwoStage": false,
+        "featureSize": 40,
+        "kwsModelConfig": {
+            "modelPath": "vad_model.pt",
+            "modelType": "pytorch"
+        },
+        "frameLevel": true,
+        "kwsDecoderConfig":{
+          "decoderType": "rule",
+          "ruleDecoderConfig":{
+            "windowMax": 20,
+            "windowSmooth": 4,
+            "numClasses": 2
+          }
+        },
+        "mean": "mean_vad",
+        "numSuppressedChunks": 25,
+        "smean": "smean_vad",
+        "windowShift": 20,
+        "updatedConfig": true,
+        "updatedDecoderConfig": true
+    }
+}

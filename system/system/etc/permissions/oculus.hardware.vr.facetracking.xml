@@ -1,0 +1,4 @@
+<!-- Indicates that device has face tracking ("natural facial expressions") sensor capabilities -->
+<permissions>
+    <feature name="oculus.hardware.vr.facetracking" />
+</permissions>

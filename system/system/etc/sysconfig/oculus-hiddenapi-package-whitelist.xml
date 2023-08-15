@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which system apps should be exempted from the hidden API blacklisting, i.e.
+which apps should be allowed to access the entire private API. Only apps NOT signed with the
+platform cert need to be included, as apps signed with the platform cert are exempted by default.
+-->
+<config>
+  <hidden-api-whitelisted-app package="com.facebook.wearable.system.location.service" />
+  <hidden-api-whitelisted-app package="com.oculus.assistant" />
+  <hidden-api-whitelisted-app package="com.oculus.captionservice" />
+  <hidden-api-whitelisted-app package="com.oculus.home" />
+  <hidden-api-whitelisted-app package="com.oculus.horizon" />
+  <hidden-api-whitelisted-app package="com.oculus.ocms" />
+  <hidden-api-whitelisted-app package="com.oculus.q4bservice" />
+  <hidden-api-whitelisted-app package="com.oculus.socialplatform" />
+  <hidden-api-whitelisted-app package="com.oculus.systemactivities" />
+  <hidden-api-whitelisted-app package="com.oculus.systemdriver" />
+  <hidden-api-whitelisted-app package="com.oculus.systemux" />
+  <hidden-api-whitelisted-app package="com.oculus.updater" />
+  <hidden-api-whitelisted-app package="com.oculus.userserver2" />
+  <hidden-api-whitelisted-app package="com.oculus.vrshell" />
+  <hidden-api-whitelisted-app package="com.oculus.vrshell.home" />
+</config>

@@ -1,0 +1,131 @@
+#line 1 "sky_out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/device/oculus/kona-common/sepolicy/vendor/common/property_contexts"
+# Audio
+persist.vendor.audio.               u:object_r:vendor_audio_prop:s0
+persist.vendor.audio_hal.           u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.                    u:object_r:vendor_audio_prop:s0
+vendor.audio.                       u:object_r:vendor_audio_prop:s0
+vendor.audio_hal.                   u:object_r:vendor_audio_prop:s0
+vendor.voice.                       u:object_r:vendor_audio_prop:s0
+
+# Bluetooth
+persist.vendor.bluetooth.           u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bluetooth.a2dp.      u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bt                   u:object_r:bluetooth_prop:s0
+persist.vendor.btstack              u:object_r:bluetooth_prop:s0
+persist.vendor.qcom.bluetooth.      u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.service.bdroid.      u:object_r:vendor_bluetooth_prop:s0
+ro.vendor.bluetooth.                u:object_r:vendor_bluetooth_prop:s0
+vendor.bluetooth.                   u:object_r:vendor_bluetooth_prop:s0
+vendor.qcom.bluetooth.              u:object_r:vendor_bluetooth_prop:s0
+vendor.wc_transport.                u:object_r:vendor_bluetooth_prop:s0
+
+# Boot
+vendor.boot.boost.                  u:object_r:vendor_boot_boost_prop:s0
+
+# Build
+ro.vendor.build.                    u:object_r:vendor_build_prop:s0
+
+# CVP2
+vendor.runtime.cvp2.                u:object_r:vendor_cvp2_prop:s0
+
+# DSP
+vendor.fastrpc.                     u:object_r:vendor_adsprpc_prop:s0
+
+# Graphics
+persist.vendor.display.             u:object_r:vendor_display_prop:s0
+ro.vendor.display.                  u:object_r:vendor_display_prop:s0
+vendor.display.                     u:object_r:vendor_display_prop:s0
+vendor.gralloc.                     u:object_r:vendor_gralloc_prop:s0
+
+# hvdcp_opti properties
+persist.vendor.bms.                 u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.chg.                 u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.chg_plcy_mgr.        u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.cp.                  u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.ctm.                 u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.hvdcp2.              u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.hvdcp_opti.          u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.hvdcp.               u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.pps.                 u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.std-pd.              u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.tb.                  u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.vin.                 u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.qg.                  u:object_r:vendor_hvdcp_opti_prop:s0
+persist.vendor.soh.                 u:object_r:vendor_hvdcp_opti_prop:s0
+
+# Init
+vendor.all.modules.ready            u:object_r:vendor_init_prop:s0
+vendor.all.devices.ready            u:object_r:vendor_init_prop:s0
+vendor.powerhal.init                u:object_r:vendor_init_prop:s0
+
+# mm-parser
+vendor.mm.                          u:object_r:vendor_mm_parser_prop:s0
+
+# ODM
+ro.odm.build.                       u:object_r:vendor_odm_prop:s0
+ro.odm.product.                     u:object_r:vendor_odm_prop:s0
+
+# PD Locater
+persist.vendor.pd_locater_debug     u:object_r:vendor_pd_locater_dbg_prop:s0
+
+# Peripherals
+vendor.peripheral.                  u:object_r:vendor_per_mgr_state_prop:s0
+
+# Public
+ro.vendor.graphics.memory           u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.changepixelformat  u:object_r:public_vendor_default_prop:s0
+vendor.debug.prerotation.disable    u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.swapinterval       u:object_r:public_vendor_default_prop:s0
+vendor.debug.egl.profiler           u:object_r:public_vendor_default_prop:s0
+
+# Product
+ro.vendor.product.                  u:object_r:vendor_product_prop:s0
+
+# spcom
+vendor.spcom.                       u:object_r:vendor_spcomlib_prop:s0
+
+# SSR
+vendor.debug.ssrdump                u:object_r:vendor_ssr_prop:s0
+persist.vendor.sys.ssr.             u:object_r:vendor_ssr_prop:s0
+
+# Tee
+vendor.sys.listeners.registered     u:object_r:vendor_tee_listener_prop:s0
+
+# Time
+persist.vendor.delta_time.enable    u:object_r:vendor_time_service_prop:s0
+vendor.debug.time_services.enable   u:object_r:vendor_time_service_prop:s0
+
+# WLAN
+vendor.wlan.driver.version    u:object_r:vendor_wifi_version:s0
+vendor.wlan.firmware.version  u:object_r:vendor_wifi_version:s0
+
+# keymaster strongbox service
+vendor.keymaster.strongbox.version u:object_r:vendor_km_strongbox_version_prop:s0
+
+# Disable SPU property
+vendor.gatekeeper.disable_spu      u:object_r:vendor_disable_spu_prop:s0
+#line 1 "sky_out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/vendor/oculus/sepolicy-common/vendor/property_contexts"
+persist.vendor.camera.                        u:object_r:vendor_camera_prop:s0
+persist.vendor.enable.thermal.genl            u:object_r:vendor_thermal_prop:s0
+persist.vendor.ovr.                           u:object_r:vendor_oculus_prop:s0
+# FIXME(T151140313) persist.vendor.ovr.camera.raw_image_mode should be renamed to not overlap vendor_oculus_prop
+persist.vendor.ovr.camera.raw_image_mode      u:object_r:vendor_camera_raw_mode_prop:s0
+persist.vendor.syncbosshal.                   u:object_r:vendor_syncboss_prop:s0
+persist.vendor.usb.                           u:object_r:vendor_usb_prop:s0
+ro.vendor.audio.fcs.speaker                   u:object_r:vendor_board_init_prop:s0
+ro.vendor.hw.device_config                    u:object_r:vendor_board_init_prop:s0
+ro.vendor.hw.deviceid                         u:object_r:vendor_board_init_prop:s0
+ro.vendor.maintenanceboot.                    u:object_r:vendor_maintenanceboot_prop:s0 prefix
+ro.vendor.product.model_extended              u:object_r:vendor_board_init_prop:s0
+ro.vendor.usb.                                u:object_r:vendor_usb_prop:s0
+vendor.board_init.complete                    u:object_r:vendor_board_init_prop:s0
+vendor.debug.camera.                          u:object_r:vendor_camera_prop:s0
+vendor.debug.fw_init.                         u:object_r:vendor_fw_init_prop:s0
+vendor.fw_init.                               u:object_r:vendor_fw_init_prop:s0
+vendor.ovr.                                   u:object_r:vendor_oculus_prop:s0
+vendor.powerhal.                              u:object_r:vendor_powerhal_prop:s0
+vendor.syncbosshal.                           u:object_r:vendor_syncboss_prop:s0
+vendor.usb.                                   u:object_r:vendor_usb_prop:s0
+vendor.vidc.                                  u:object_r:vendor_vidc_prop:s0
+#line 1 "sky_out/soong/.intermediates/system/sepolicy/vendor_property_contexts/android_common/gen/namespace_checked/device/oculus/seacliff/sepolicy/vendor/common/property_contexts"
+ro.vendor.rfkilldisabled u:object_r:bluetooth_prop:s0
